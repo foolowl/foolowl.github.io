@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on foolowl</title>
-    <link>https://example.com/posts/</link>
+    <link>https://foolowl.github.io/posts/</link>
     <description>Recent content in Posts on foolowl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 12 Mar 2022 21:35:21 +0800</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Mar 2022 21:35:21 +0800</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testpost</title>
-      <link>https://example.com/posts/testpost/</link>
+      <link>https://foolowl.github.io/posts/testpost/</link>
       <pubDate>Sat, 12 Mar 2022 21:35:21 +0800</pubDate>
       
-      <guid>https://example.com/posts/testpost/</guid>
+      <guid>https://foolowl.github.io/posts/testpost/</guid>
       <description>&lt;p&gt;大綱測試&lt;/p&gt;</description>
     </item>
     
