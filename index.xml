@@ -5,7 +5,17 @@
     <link>https://foolowl.github.io/</link>
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 17 Apr 2022 06:17:23 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo安裝</title>
+      <link>https://foolowl.github.io/posts/hugo_install/</link>
+      <pubDate>Sun, 17 Apr 2022 06:17:23 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/hugo_install/</guid>
+      <description>&lt;p&gt;Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>聯絡我</title>
       <link>https://foolowl.github.io/contact/</link>
@@ -21,7 +31,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://foolowl.github.io/about/</guid>
-      <description>喜歡玩遊戲的廢柴大叔 目前主業是php程式，在小間的網頁公司工作。 下班後有在緩慢的學習畫圖和遊戲製作相關知識。 網站預定會拿來放置相關的筆記資料</description>
+      <description>i am a web programmer work on a little company. in holiday like play electronic games and occasionally drawing. this blog will write some note about program,games or draw. 喜歡玩遊戲的廢柴大叔 目前主業是php程式，在小間的網頁公司工作。 下班後有在緩慢的學</description>
     </item>
     
   </channel>

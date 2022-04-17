@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="zh-tw">
+<html lang="zh-tw" class="dark">
 <head>
 
-<title>foolowl | Posts</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYCVKM6JMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GYCVKM6JMQ');
+</script>
+
+<title>Posts | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -13,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="foolowl | Posts" />
+    <meta property="og:title" content="愚者樹屋 | Posts" />
     
     
     
@@ -26,9 +36,9 @@
 
 	
 
-<meta name="description" content="Blonde theme for Hugo.">
-<meta property="og:site_name" content="foolowl">
-<meta property="og:description" content="Blonde theme for Hugo.">
+<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta property="og:site_name" content="愚者樹屋">
+<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
 <meta property="og:url" content="https://foolowl.github.io/posts/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
@@ -37,9 +47,9 @@
 
 <link rel="canonical" href="https://foolowl.github.io/posts/">
 
-<meta name="twitter:description" content="Blonde theme for Hugo.">
-<meta property="article:published_time" content="2022-03-12T21:35:21&#43;08:00">
-<meta property="article:updated_time" content="2022-03-12T21:35:21&#43;08:00">
+<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta property="article:published_time" content="2022-04-17T06:17:23&#43;00:00">
+<meta property="article:updated_time" content="2022-04-17T06:17:23&#43;00:00">
 
 
 
@@ -52,11 +62,11 @@
     <link rel="stylesheet" href='/css/custom.css'>
     <i class="dark hidden"></i>
 </head><body class="font-sans">
-    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><header class="bg-gray-800">
     <div class="container max-w-screen-xl mr-auto ml-auto">
         <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
             <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
-                <a href="https://foolowl.github.io"><span class="font-semibold text-2xl tracking-tight">foolowl</span></a>
+                <h1><a href="https://foolowl.github.io"><span class="font-semibold text-2xl tracking-tight">愚者樹屋</span></a></h1>
             </div>
             <div class="flex md:hidden">
                 <div class="py-2">
@@ -97,7 +107,7 @@
             </div>
         </nav>
     </div>
-</div>
+</header>
 <style>
     .active {
         display: block;
@@ -120,12 +130,13 @@
   <div class="col-span-3 lg:col-span-2 mb-3">
   
     <h2 class="text-4xl dark:text-white">Posts</h2>
+	<main>
     
     
     
     
     
-    <a href="/posts/testpost/">
+    <a href="/posts/hugo_install/">
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
@@ -138,11 +149,11 @@
     
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Testpost</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">大綱測試
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Hugo安裝</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。
 ...</p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/03/12</time>
+            <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
         </p>
     </div>
 </div>
@@ -151,8 +162,10 @@
     
 
 
+	</main>
   </div>
   
+	<aside>
     <div class="hidden lg:block lg:col-span-1">
     
     
@@ -170,8 +183,11 @@
         
             
             <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
-    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (1)</a>
     
     
 </div>
@@ -181,6 +197,17 @@
         
             
             
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+    </div>
+</div>
+
 
         
             
@@ -190,13 +217,13 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/testpost/" class="">
+        <a href="/posts/hugo_install/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">Testpost</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Hugo安裝</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/03/12</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
                     </p>
                 </div>
             </div>
@@ -206,16 +233,36 @@
         
     
 </div>
+	</aside>
   
 </div>
 
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     
+    <div class="flex justify-center w-full md:flex md:flex-row sm:items-center sm:w-auto mb-4">
+        <div>
+            
+            <a href="https://www.pixiv.net/users/1824576"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                pixiv
+            </a>
+            
+            <a href="https://www.plurk.com/ringo8"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                plurk
+            </a>
+            
+            <a href="https://twitter.com/uryuu_ringo"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                twitter
+            </a>
+            
+        </div>
+    </div>
+    
     <div class="container max-w-screen-xl mr-auto ml-auto">
-        <p>&copy; 2022 <a href="https://foolowl.github.io" class="duration-200 hover:opacity-50">foolowl</a></p>
-        <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
-                href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+        <p>&copy; 2022-2022 <a href="https://foolowl.github.io" class="duration-200 hover:opacity-50">愚者樹屋</a></p>
     </div>
     <script>
         var icon = document.getElementById("icon");
