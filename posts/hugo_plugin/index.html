@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw" class="dark">
+<head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-037F3MYRK2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-037F3MYRK2');
+</script>
+
+<title>hugo外掛 | 愚者樹屋</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="愚者樹屋 | hugo外掛" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.c25dadb6edd9bc8fdb399fcd17a94cab71f8c8980461c39068dff5ffe076cd4a.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
+<meta property="og:site_name" content="愚者樹屋">
+<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
+<meta property="og:url" content="https://foolowl.github.io/posts/hugo_plugin/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://foolowl.github.io/posts/hugo_plugin/">
+
+<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
+<meta property="article:published_time" content="2022-04-24T06:52:51&#43;00:00">
+<meta property="article:updated_time" content="2022-04-24T06:52:51&#43;00:00">
+
+
+
+
+
+<meta property="og:image" content="https://foolowl.github.io">
+<meta property="og:image:url" content="https://foolowl.github.io">
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head><body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><header class="bg-gray-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <h1><a href="https://foolowl.github.io"><span class="font-semibold text-2xl tracking-tight">愚者樹屋</span></a></h1>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+	
+	
+		<div class="bg-white col-span-3 lg:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">hugo外掛</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/04/24</time>
+					
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。</p>
+<p>使用這個vscode外掛的話可以使用GUI的方式來新增Hugo的文章，這樣在發布文章的時候就可以只使用vscode而不用在指令和md檔案編輯器中切換，另外還有編輯front matter的功能，可以簡單的調整關鍵字、tag等等。</p>
+<p>參考自<br>
+<a href="https://blog.darkthread.net/blog/vscode-frontmatter-ext/">https://blog.darkthread.net/blog/vscode-frontmatter-ext/</a></p>
+<p>vscode<br>
+<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a><br>
+套件網址<br>
+<a href="https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter">https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter</a><br>
+套件文件檔案<br>
+<a href="https://frontmatter.codes/docs/content-creation/placeholders#placeholders">https://frontmatter.codes/docs/content-creation/placeholders#placeholders</a></p>
+<p>用vscode檔案總管開啟網站跟目錄<br>
+<img src="/img/Pasted%20image%2020220403135450.png" alt="根目錄"><br>
+開著用來當模板的md檔案按下create as template後輸入模板名稱<br>
+<img src="/img/Pasted%20image%2020220403135601.png" alt="按鈕"><br>
+就會自動建立.frontmatter資料夾儲存設定，之後在content\posts上按右鍵-&gt;Front Matter: New article from template選擇模板並輸入標題就好<br>
+<img src="/img/Pasted%20image%2020220403135737.png" alt="用模板建立"></p>
+<p>如果建立的檔案不想要日期的話打開設定找到templates: Prefix並刪除<br>
+<img src="/img/Pasted%20image%2020220403140328.png" alt="關閉日期"></p>
+						</section>
+					</div>
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden lg:block lg:col-span-1">
+				<div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://foolowl.github.io" />
+    </form>
+</div>
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (2)</a>
+    
+    
+</div>
+				
+				
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+    </div>
+</div>
+
+
+				
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        
+        <a href="/posts/hugo_plugin/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_install/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Hugo安裝</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+			</div>
+		</aside>
+        
+    </div>
+    
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="flex justify-center w-full md:flex md:flex-row sm:items-center sm:w-auto mb-4">
+        <div>
+            
+            <a href="https://www.pixiv.net/users/1824576"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                pixiv
+            </a>
+            
+            <a href="https://www.plurk.com/ringo8"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                plurk
+            </a>
+            
+            <a href="https://twitter.com/uryuu_ringo"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                twitter
+            </a>
+            
+        </div>
+    </div>
+    
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <p>&copy; 2022-2022 <a href="https://foolowl.github.io" class="duration-200 hover:opacity-50">愚者樹屋</a></p>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        var icon2 = document.getElementById("icon2");
+        
+        if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          icon.classList.remove("icon-moon");
+          icon.classList.add("icon-sun");
+          icon2.classList.remove("icon-moon");
+          icon2.classList.add("icon-sun");
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+        function toggleDarkMode() {
+        if (document.documentElement.classList.contains('dark')) {
+            icon.classList.remove("icon-sun");
+            icon.classList.add("icon-moon");
+            icon2.classList.remove("icon-sun");
+            icon2.classList.add("icon-moon");
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
+        } else {
+            icon.classList.remove("icon-moon");
+            icon.classList.add("icon-sun");
+            icon2.classList.remove("icon-moon");
+            icon2.classList.add("icon-sun");
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark'
+        }
+    }
+    </script>
+</footer>
+</div>
+</body>
+
+</html>
