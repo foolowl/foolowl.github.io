@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 17 Apr 2022 06:17:23 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Apr 2022 06:52:51 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo外掛</title>
+      <link>https://foolowl.github.io/posts/hugo_plugin/</link>
+      <pubDate>Sun, 24 Apr 2022 06:52:51 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/hugo_plugin/</guid>
+      <description>&lt;p&gt;一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Hugo安裝</title>
       <link>https://foolowl.github.io/posts/hugo_install/</link>
