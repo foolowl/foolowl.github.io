@@ -6,7 +6,16 @@
     <description>Recent content in Hugo on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 24 Apr 2022 06:52:51 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 10:32:20 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo config設定</title>
+      <link>https://foolowl.github.io/posts/hugo_config/</link>
+      <pubDate>Sat, 30 Apr 2022 10:32:20 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/hugo_config/</guid>
+      <description>&lt;p&gt;Hugo設定檔的簡單介紹，這設定會直接影響整個網站的運作。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>hugo外掛</title>
       <link>https://foolowl.github.io/posts/hugo_plugin/</link>

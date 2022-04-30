@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>hugo外掛 | 愚者樹屋</title>
+<title>hugo config設定 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="愚者樹屋 | hugo外掛" />
+    <meta property="og:title" content="愚者樹屋 | hugo config設定" />
     
     
     
@@ -35,20 +35,20 @@
 
 
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
+<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo設定">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
-<meta property="og:url" content="https://foolowl.github.io/posts/hugo_plugin/">
+<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo設定">
+<meta property="og:url" content="https://foolowl.github.io/posts/hugo_config/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/hugo_plugin/">
+<link rel="canonical" href="https://foolowl.github.io/posts/hugo_config/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
-<meta property="article:published_time" content="2022-04-24T06:52:51&#43;00:00">
-<meta property="article:updated_time" content="2022-04-24T06:52:51&#43;00:00">
+<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo設定">
+<meta property="article:published_time" content="2022-04-30T10:32:20&#43;00:00">
+<meta property="article:updated_time" content="2022-04-30T10:32:20&#43;00:00">
 
 
 
@@ -131,34 +131,70 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">hugo外掛</h2>
+					<h2 class="title text-4xl font-bold mb-2">hugo config設定</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+					<time><span class="icon-access_time mr-1"></span>2022/04/30</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/04/24</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/04/30</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。</p>
-<p>使用這個vscode外掛的話可以使用GUI的方式來新增Hugo的文章，這樣在發布文章的時候就可以只使用vscode而不用在指令和md檔案編輯器中切換，另外還有編輯front matter的功能，可以簡單的調整關鍵字、tag等等。</p>
-<p>參考自<br>
-<a href="https://blog.darkthread.net/blog/vscode-frontmatter-ext/">https://blog.darkthread.net/blog/vscode-frontmatter-ext/</a></p>
-<p>vscode<br>
-<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a><br>
-套件網址<br>
-<a href="https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter">https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter</a><br>
-套件文件檔案<br>
-<a href="https://frontmatter.codes/docs/content-creation/placeholders#placeholders">https://frontmatter.codes/docs/content-creation/placeholders#placeholders</a></p>
-<p>用vscode檔案總管開啟網站跟目錄<br>
-<img src="/img/Pasted%20image%2020220403135450.png" alt="根目錄"><br>
-開著用來當模板的md檔案按下create as template後輸入模板名稱<br>
-<img src="/img/Pasted%20image%2020220403135601.png" alt="按鈕"><br>
-就會自動建立.frontmatter資料夾儲存設定，之後在content\posts上按右鍵-&gt;Front Matter: New article from template選擇模板並輸入標題就好<br>
-<img src="/img/Pasted%20image%2020220403135737.png" alt="用模板建立"></p>
-<p>如果建立的檔案不想要日期的話打開設定找到templates: Prefix並刪除<br>
-<img src="/img/Pasted%20image%2020220403140328.png" alt="關閉日期"></p>
+						<p>Hugo設定檔的簡單介紹，這設定會直接影響整個網站的運作。</p>
+<p>一般來說模板套用的config只要把網址改成自己的就可以直接使用，這邊記錄一些自己有去調整的部分，這些可能比較容易會用到。</p>
+<hr>
+<h4 id="hugo讀取的設定">Hugo讀取的設定</h4>
+<p>預設使用config.toml, config.yaml, config.json做為網站的設定檔。<br>
+如果有準備多個不同環境的設定，可以在產生的時候使用&ndash;config選擇使用哪一個設定檔來使用。</p>
+<pre tabindex="0"><code>hugo --config debugconfig.toml
+hugo --config a.toml,b.toml,c.toml
+</code></pre><h4 id="基本設定">基本設定</h4>
+<p>baseURL = &ldquo;網址&rdquo;</p>
+<p>languageCode = &ldquo;語言&rdquo;<br>
+繁中的話這邊設定為&quot;zh-tw&quot;</p>
+<p>title = &ldquo;網站標題&rdquo;</p>
+<p>theme = &ldquo;使用模板的資料夾&rdquo;</p>
+<p>posts = &ldquo;文章網址格式&rdquo;<br>
+常見的設定為&quot;/:year/:month/:title/&quot;，這樣子發出的文章就會照檔案裡Front Matter裡面的資料，以/年/月/文章標題來產生網址。<br>
+由於這邊的文章應該是以中文為主，但是不想要使用中文來當作網址的緣故，改設定成&quot;/:year/:month/:slug/&quot;，這樣子就可以在Front Matter中加入slug來設定文章的英文當網址使用，如果設定了:slug 但 Front Matter 格式內卻沒給 slug 的值時，預設會使用 title 替代 slug。</p>
+<p>favicon = &ldquo;瀏覽器Tab上的小圖案路徑&rdquo;</p>
+<p>enableEmoji = true &ldquo;true的話可以在文章中使用emoji符號&rdquo;</p>
+<h4 id="類別">類別</h4>
+<p>預設提供了以下兩種 Taxonomy，只要佈景的layout有設定就可以在<code>網址/{taxonomy}</code>中顯示該類別全部文章</p>
+<ul>
+<li>categories：使用者可於 Front Matter 中，指定文章類別</li>
+<li>tags：使用者可於 Front Matter 中，指定文章標籤</li>
+</ul>
+<p>如果不想使用預設分類可以通過設定來關閉</p>
+<ul>
+<li>自訂分類 taxonomies，不想使用的分類不要列出就可以關閉，也能自行增加非關鍵字使用</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">taxonomies</span>]  
+  <span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+  <span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+  <span style="color:#a6e22e">product</span> = <span style="color:#e6db74">&#34;products&#34;</span>
+</code></pre></div><ul>
+<li>關閉分類 disableKinds</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">disableKinds</span> = [<span style="color:#e6db74">&#34;taxonomy&#34;</span>, <span style="color:#e6db74">&#34;term&#34;</span>]
+</code></pre></div><h4 id="sitemap">sitemap</h4>
+<p>SEO優化使用，可以參考官方範例<br>
+<a href="https://gohugo.io/templates/sitemap-template/#configure-sitemapxml">https://gohugo.io/templates/sitemap-template/#configure-sitemapxml</a><br>
+不特別調整的話加入下方這段並更改更新頻率就好</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">sitemap</span>]
+  <span style="color:#a6e22e">changefreq</span> = <span style="color:#e6db74">&#34;monthly&#34;</span>
+  <span style="color:#a6e22e">filename</span> = <span style="color:#e6db74">&#34;sitemap.xml&#34;</span>
+  <span style="color:#a6e22e">priority</span> = <span style="color:#ae81ff">0.5</span>
+</code></pre></div><p>頻率參數可參考<a href="https://www.sitemaps.org/zh_TW/protocol.html">https://www.sitemaps.org/zh_TW/protocol.html</a></p>
+<h4 id="google-analytics">Google Analytics</h4>
+<p>Hugo已整合GA，加入GA參數就好<br>
+<code>googleAnalytics = &quot;GA的ID&quot;</code></p>
+<h4 id="嵌入iframe">嵌入iframe</h4>
+<p>如果需要嵌入其他頁面的話需要設定這個選項，預設的安全性會把iframe排除掉，將安全性關閉即可。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+  <span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
+</code></pre></div>
 						</section>
 					</div>
 				</article>
@@ -207,13 +243,13 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_config/" class="">
+        <a href="/posts/hugo_plugin/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
                     </p>
                 </div>
             </div>
@@ -227,13 +263,13 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_plugin/" class="">
+        <a href="/posts/hugo_config/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
                     </p>
                 </div>
             </div>
