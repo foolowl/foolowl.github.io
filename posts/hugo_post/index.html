@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>Hugo安裝 | 愚者樹屋</title>
+<title>hugo發表文章 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="愚者樹屋 | Hugo安裝" />
+    <meta property="og:title" content="愚者樹屋 | hugo發表文章" />
     
     
     
@@ -34,20 +34,19 @@
     
 
 
-	
 
-<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="og:url" content="https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/">
+<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
+<meta property="og:url" content="https://foolowl.github.io/posts/hugo_post/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/">
+<link rel="canonical" href="https://foolowl.github.io/posts/hugo_post/">
 
-<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
 <meta property="article:published_time" content="2022-05-08T09:21:49&#43;00:00">
 <meta property="article:updated_time" content="2022-05-08T09:21:49&#43;00:00">
 
@@ -126,120 +125,152 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-  
-  <div class="col-span-3 lg:col-span-2 mb-3">
-  
-    <h2 class="text-4xl dark:text-white">Hugo安裝</h2>
-	<main>
+	
+	
+		<div class="bg-white col-span-3 lg:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">hugo發表文章</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/05/08</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/05/08</time>
+					
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>Hugo的文章基本上是以md檔案儲存的，這邊紀錄一下md能使用的語法。</p>
+<p>markdown是一種標記語言的格式，他可以用容易閱讀的方式來進行文件編輯，然後再利用其他程式(EX:Hugo)把檔案轉換成html文件來使用，使用這種文件撰寫可以同時保留一個容易閱讀的文件與分享出去的html文件。</p>
+<p>原則上除了換行以外多數的MD編輯器都有功能案就可以使用，如果不想記憶這些寫法的話，只要記得行尾兩個空白可以換行，一行以上的換行可以換段落就好，剩下的使用編輯器進行補助。</p>
+<h3 id="行內html">行內HTML</h3>
+<p>不在md標籤內的部分都可以直接使用html <br>
+區塊元素table、div、pre等標籤需要在前方空一行<br>
+而且無法在內部使用md語法</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">table</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+        &lt;<span style="color:#f92672">th</span>&gt;測試&lt;/<span style="color:#f92672">th</span>&gt;
+        &lt;<span style="color:#f92672">th</span>&gt;測試2&lt;/<span style="color:#f92672">th</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">tr</span>&gt;
+        &lt;<span style="color:#f92672">td</span>&gt;測試&lt;/<span style="color:#f92672">td</span>&gt;
+        &lt;<span style="color:#f92672">td</span>&gt;測試2&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;/<span style="color:#f92672">tr</span>&gt;
+&lt;/<span style="color:#f92672">table</span>&gt;
+</code></pre></div><p>其他標籤則不受這限制並且可以混用md語法</p>
+<h3 id="特殊字元轉換">特殊字元轉換</h3>
+<p>在html中&amp;不會被自動轉換<br>
+而一般md語法則會被轉換成&amp;amp;<br>
+直接轉換的例子 &amp;copy;-&gt;©</p>
+<h3 id="段落和換行">段落和換行</h3>
+<p>一個以上的空行會切分出不同的段落<br>
+換行則是在行尾加入兩個空白</p>
+<h3 id="標題">標題</h3>
+<p>有兩種方式，一種是用底線</p>
+<blockquote>
+<p>標題<br>
+======
+第二階標題<br>
+-&mdash;&ndash;</p>
+</blockquote>
+<p>另一種形式則是在前方加#，對應html的h1~h6</p>
+<blockquote>
+<p># 標題<br>
+## 標題二  最多6個#</p>
+</blockquote>
+<h3 id="區塊引言">區塊引言</h3>
+<p>在前方加入&gt;即可</p>
+<blockquote>
+<p>&gt; 引言區塊</p>
+</blockquote>
+<p>需要多層的話只要在區塊內再使用&gt;<br>
+並且在區塊內可以使用其他md語法</p>
+<h3 id="清單">清單</h3>
+<p>無序號清單使用*或+或-做開頭</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">*</span> 清單
+<span style="color:#66d9ef">*</span> 清單
++ tt
++ tt
+<span style="color:#66d9ef">-</span> tt
+<span style="color:#66d9ef">-</span> tt
+</code></pre></div><p>有序號清單使用數字加.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">1.</span> 清單
+<span style="color:#66d9ef">2.</span> 清單
+<span style="color:#66d9ef">8.</span> 數字不照順序也可以
+</code></pre></div><p>清單如果要包含多個段落，段落的開頭都必須有四個空白或一個tab</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">1.</span>  test
     
-    
-    
-    
-    
-    <a href="/posts/hugo_post/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.jpg'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">hugo發表文章</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo的文章基本上是以md檔案儲存的，這邊紀錄一下md能使用的語法。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/hugo_config/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.jpg'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">hugo config設定</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo設定檔的簡單介紹，這設定會直接影響整個網站的運作。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/hugo_plugin/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.jpg'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">hugo外掛</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/hugo_install/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.jpg'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Hugo安裝</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    
-
-
-	</main>
-  </div>
-  
-	<aside>
-    <div class="hidden lg:block lg:col-span-1">
-    
-    
-            
-            <div class="mb-3">
+    ttte
+</code></pre></div><p>放入引言也是需要四個空白</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">1.</span>  test
+<span style="color:#66d9ef">
+</span><span style="color:#66d9ef">    &gt; </span><span style="font-style:italic">test1111
+</span></code></pre></div><p>放入程式碼區塊則需要八個空白或兩個tab</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">*</span>   code  
+        &lt;<span style="color:#f92672">code</span> <span style="color:#a6e22e">goes</span> <span style="color:#a6e22e">here</span>&gt;
+        int test
+        &lt;/<span style="color:#f92672">code</span>&gt;
+</code></pre></div><h3 id="分隔線">分隔線</h3>
+<p>在一行中用三個以上的*或-或_可以建立分隔線</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">***
+---
+___
+</code></pre></div><h3 id="連結">連結</h3>
+<p>有兩種標記法，第一種是用方括號[]後面用()插入連結即可</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#f92672">連結文字</span>](<span style="color:#a6e22e">http://網址 &#34;網址title&#34;</span>)  
+[<span style="color:#f92672">相對路徑</span>](<span style="color:#a6e22e">/網址 &#34;網址title&#34;</span>)  
+</code></pre></div><p>另一種方式是是用方括號後再用一個方括號填入連結標籤</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[連結文字][linkaa]  
+</code></pre></div><p>然後在文件任意地點定義這個標籤，定義前記得空一行<br>
+定義方式為方括弧[]後接冒號:，接著空一格以上輸入網址，在空一格輸入標籤<br>
+這邊要注意定義不區分大小寫</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[linkaa]:   http://網址.com.tw &#34;test&#34;  
+</code></pre></div><p>簡單的連結也可以直接用&lt;&gt;包起來<br>
+只要用角括號包起來就會自動轉換成連結</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">&lt;<span style="color:#f92672">http:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">連結</span>&gt;  
+&lt;<span style="color:#f92672">email</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">ex</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">test</span>&gt;  
+</code></pre></div><h3 id="強調">強調</h3>
+<p>用*或_標記強調的文字，單個會變轉成&lt;em&gt;標籤，兩個則會轉為&lt;strong&gt;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">*test*  
+<span style="font-weight:bold">**test**</span>  
+<span style="font-style:italic">_test_</span>  
+<span style="font-weight:bold">__test__</span>
+</code></pre></div><h3 id="程式碼區塊">程式碼區塊</h3>
+<p>程式碼區塊只要空行後四個空格或一個tab即可</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">    code block
+        codeline2
+</code></pre></div><p>程式碼區塊會一直到沒有縮排為止<br>
+也可以使用三個`來包住程式碼</p>
+<blockquote>
+<p>```語言的英文(EX:PHP)<br>
+程式碼<br>
+```</p>
+</blockquote>
+<h3 id="程式碼">程式碼</h3>
+<p>如果要標記一小段程式碼可以用反引號`包起來</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#e6db74">` int a`</span>  
+</code></pre></div><p>如果程式碼中需要出現反引號的話可以使用兩個反引號作為開頭與結束</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">`` code need use <span style="color:#e6db74">`  `</span>`  
+</code></pre></div><h3 id="圖片">圖片</h3>
+<p>圖片有行內和參考兩種寫法<br>
+先一個驚嘆號!大括號[文字]括號(網址)<br>
+目前為止還沒有辦法指定圖片的寬高，如果需要其他設定需要直接使用html</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">圖片文字</span>](<span style="color:#a6e22e">/path/jpg &#34;title文字&#34;</span>)  
+用參考的方式和超連結一樣
+![<span style="color:#f92672">圖片文字</span>](<span style="color:#a6e22e">參考標籤</span>)  
+</code></pre></div><h3 id="跳脫字元">跳脫字元</h3>
+<p>在特殊字元前面加上反斜線\就可以顯示為原本的符號</p>
+						</section>
+					</div>
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden lg:block lg:col-span-1">
+				<div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -249,9 +280,7 @@
         <input type="hidden" name="sitesearch" value="https://foolowl.github.io" />
     </form>
 </div>
-        
-            
-            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -260,12 +289,8 @@
     
     
 </div>
-        
-            
-            
-        
-            
-            
+				
+				
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -278,9 +303,7 @@
 </div>
 
 
-        
-            
-            
+				
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
@@ -329,13 +352,11 @@
         </a>
     </div>
 </div>
+			</div>
+		</aside>
         
+    </div>
     
-</div>
-	</aside>
-  
-</div>
-
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     
