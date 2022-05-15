@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>hugo外掛 | 愚者樹屋</title>
+<title>hugo發表文章2 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="愚者樹屋 | hugo外掛" />
+    <meta property="og:title" content="愚者樹屋 | hugo發表文章2" />
     
     
     
@@ -35,20 +35,20 @@
 
 
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
+<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
-<meta property="og:url" content="https://foolowl.github.io/posts/hugo_plugin/">
+<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
+<meta property="og:url" content="https://foolowl.github.io/posts/hugo_post2/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/hugo_plugin/">
+<link rel="canonical" href="https://foolowl.github.io/posts/hugo_post2/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
-<meta property="article:published_time" content="2022-04-24T06:52:51&#43;00:00">
-<meta property="article:updated_time" content="2022-04-24T06:52:51&#43;00:00">
+<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
+<meta property="article:published_time" content="2022-05-15T03:00:34&#43;00:00">
+<meta property="article:updated_time" content="2022-05-15T03:00:34&#43;00:00">
 
 
 
@@ -131,34 +131,46 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">hugo外掛</h2>
+					<h2 class="title text-4xl font-bold mb-2">hugo發表文章2</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/04/24</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/05/15</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/04/24</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/05/15</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。</p>
-<p>使用這個vscode外掛的話可以使用GUI的方式來新增Hugo的文章，這樣在發布文章的時候就可以只使用vscode而不用在指令和md檔案編輯器中切換，另外還有編輯front matter的功能，可以簡單的調整關鍵字、tag等等。</p>
-<p>參考自<br>
-<a href="https://blog.darkthread.net/blog/vscode-frontmatter-ext/">https://blog.darkthread.net/blog/vscode-frontmatter-ext/</a></p>
-<p>vscode<br>
-<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a><br>
-套件網址<br>
-<a href="https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter">https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter</a><br>
-套件文件檔案<br>
-<a href="https://frontmatter.codes/docs/content-creation/placeholders#placeholders">https://frontmatter.codes/docs/content-creation/placeholders#placeholders</a></p>
-<p>用vscode檔案總管開啟網站跟目錄<br>
-<img src="/img/Pasted%20image%2020220403135450.png" alt="根目錄"><br>
-開著用來當模板的md檔案按下create as template後輸入模板名稱<br>
-<img src="/img/Pasted%20image%2020220403135601.png" alt="按鈕"><br>
-就會自動建立.frontmatter資料夾儲存設定，之後在content\posts上按右鍵-&gt;Front Matter: New article from template選擇模板並輸入標題就好<br>
-<img src="/img/Pasted%20image%2020220403135737.png" alt="用模板建立"></p>
-<p>如果建立的檔案不想要日期的話打開設定找到templates: Prefix並刪除<br>
-<img src="/img/Pasted%20image%2020220403140328.png" alt="關閉日期"></p>
+						<p>這篇介紹一下Front Matter格式，在hugo或一部分md編輯程式中建立的md檔案開頭會有兩個&mdash;包起來的設定區域，這塊區域使用參數標籤來記錄額外的文件設定。</p>
+<p>他長得類似這樣。</p>
+<pre tabindex="0"><code>---
+title: &quot;Testpost&quot;
+date: 2022-03-12T21:35:21+08:00
+draft: true
+tags:
+  - Hugo
+  - tag2
+---
+</code></pre><p>有了這些資料程式就能夠照這邊設定的參數來進行額外的處理，這邊列出來的會以Hugo常用的參數為主。<br>
+<a href="https://gohugo.io/content-management/front-matter/">官方文件</a></p>
+<pre><code>title:       &quot;標題&quot;  
+subtitle:    &quot;副標題 &quot;  
+description: &quot;文章概要&quot;  
+date:       文章日期  2019-04-19  
+publishDate: 預定發布日期，未設定的話將以date為準  
+expiryDate: 預定失效日期，如果有設定的話當時間超過後就不會再建置出來  
+author:      &quot;作者名稱&quot;  
+image:      通常用於文章列表縮圖 &quot;img/prism.jpg&quot;  
+tags:      具體搜尋名詞、標籤[&quot;標籤&quot;, &quot;Hugo&quot;]  
+categories:  大方向分類 技術 遊戲等等[&quot;文章分類&quot; ]  
+series:   頁面所屬系列 繪畫技巧等[&quot;Themes Guide&quot;]  
+keywords:  &quot;關鍵字 Hugo&quot;  
+draft: 是否為草稿，false或true，設為false則發佈出去  
+type: &quot;文章類型 同樣的類型會分成一類資料夾列出選單&quot;  
+aliases: 可設定其他連結到此頁的轉址 [&quot;migrate-from-jekyl,
+&quot;/2010/01/01/even-earlier-url.html&quot;]  
+</code></pre>
+<p>這裡列出來的參數大部分也可以使用之前介紹的<a href="/posts/hugo_plugin/">hugo外掛</a>來進行編輯，如果有使用外掛補助編輯的話，只要檢查使用的模板有沒有需要額外設定的參數就好。</p>
 						</section>
 					</div>
 				</article>
@@ -217,6 +229,26 @@
                     </p>
                 </div>
             </div>
+        <a href="/posts/hugo_plugin/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_config/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
+                    </p>
+                </div>
+            </div>
         <a href="/posts/hugo_post2/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -234,26 +266,6 @@
                     <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_config/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_plugin/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
                     </p>
                 </div>
             </div>

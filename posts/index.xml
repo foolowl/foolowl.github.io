@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 08 May 2022 09:21:49 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 03:00:34 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo發表文章2</title>
+      <link>https://foolowl.github.io/posts/hugo_post2/</link>
+      <pubDate>Sun, 15 May 2022 03:00:34 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/hugo_post2/</guid>
+      <description>&lt;p&gt;這篇介紹一下Front Matter格式，在hugo或一部分md編輯程式中建立的md檔案開頭會有兩個&amp;mdash;包起來的設定區域，這塊區域使用參數標籤來記錄額外的文件設定。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>hugo發表文章</title>
       <link>https://foolowl.github.io/posts/hugo_post/</link>
