@@ -6,7 +6,16 @@
     <description>Recent content in Hugo on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 15 May 2022 03:00:34 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 May 2022 09:56:10 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo資料夾用途</title>
+      <link>https://foolowl.github.io/posts/hugo_folder/</link>
+      <pubDate>Sat, 21 May 2022 09:56:10 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/hugo_folder/</guid>
+      <description>&lt;p&gt;這篇單純紀錄hugo各個資料夾的用途，一般來說只要知道圖片、文章和產生的檔案在哪邊就行了。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>hugo發表文章2</title>
       <link>https://foolowl.github.io/posts/hugo_post2/</link>
