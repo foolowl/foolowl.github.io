@@ -3,36 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://foolowl.github.io/tags/hugo/</loc>
-    <lastmod>2022-05-21T09:56:10+00:00</lastmod>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/</loc>
-    <lastmod>2022-05-21T09:56:10+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_folder/</loc>
-    <lastmod>2022-05-21T09:56:10+00:00</lastmod>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/posts/</loc>
-    <lastmod>2022-05-21T09:56:10+00:00</lastmod>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/series/</loc>
-    <lastmod>2022-05-21T09:56:10+00:00</lastmod>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/tags/</loc>
-    <lastmod>2022-05-21T09:56:10+00:00</lastmod>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/hugo_github/</loc>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/</loc>
+    <lastmod>2022-05-28T15:21:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/hugo_folder/</loc>
     <lastmod>2022-05-21T09:56:10+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

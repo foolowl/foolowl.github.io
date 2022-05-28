@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 21 May 2022 09:56:10 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 May 2022 15:21:06 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>將hugo網站放上github</title>
+      <link>https://foolowl.github.io/posts/hugo_github/</link>
+      <pubDate>Sat, 28 May 2022 15:21:06 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/hugo_github/</guid>
+      <description>&lt;p&gt;這篇設定github用來放置產生的檔案作為blog。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>hugo資料夾用途</title>
       <link>https://foolowl.github.io/posts/hugo_folder/</link>
