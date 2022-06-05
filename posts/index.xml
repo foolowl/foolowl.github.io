@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 28 May 2022 15:21:06 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 12:48:05 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>youtube點擊計數</title>
+      <link>https://foolowl.github.io/posts/youtube_counter/</link>
+      <pubDate>Sun, 05 Jun 2022 12:48:05 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/youtube_counter/</guid>
+      <description>&lt;p&gt;紀錄一下如何使用youtube api來計算嵌入影片被點擊的次數，這個API也可以用來控制嵌入影片的撥放、暫停等等，這裡就是利用影片的播放狀態來進行撥放的判斷。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>將hugo網站放上github</title>
       <link>https://foolowl.github.io/posts/hugo_github/</link>

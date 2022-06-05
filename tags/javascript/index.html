@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>將hugo網站放上github | 愚者樹屋</title>
+<title>javascript | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="愚者樹屋 | 將hugo網站放上github" />
+    <meta property="og:title" content="愚者樹屋 | javascript" />
     
     
     
@@ -34,21 +34,22 @@
     
 
 
+	
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
+<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta property="og:url" content="https://foolowl.github.io/posts/hugo_github/">
+<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta property="og:url" content="https://foolowl.github.io/tags/javascript/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/hugo_github/">
+<link rel="canonical" href="https://foolowl.github.io/tags/javascript/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta property="article:published_time" content="2022-05-28T15:21:06&#43;00:00">
-<meta property="article:updated_time" content="2022-05-28T15:21:06&#43;00:00">
+<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta property="article:published_time" content="2022-06-05T12:48:05&#43;00:00">
+<meta property="article:updated_time" content="2022-06-05T12:48:05&#43;00:00">
 
 
 
@@ -125,63 +126,51 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-	
-	
-		<div class="bg-white col-span-3 lg:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
-	
-			<main>
-				<article>
-					<h2 class="title text-4xl font-bold mb-2">將hugo網站放上github</h2>
-					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/05/28</time>
-					
-					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/05/28</time>
-					
-					
-					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
-						<section>
-						<p>這篇設定github用來放置產生的檔案作為blog。</p>
-<h4 id="建立帳號">建立帳號</h4>
-<p>建立帳號時要注意如果沒有買網址的話只能使用帳號名稱作為網址，網址的樣子會像這樣</p>
-<blockquote>
-<p>&lt;username&gt;.github.io</p>
-</blockquote>
-<h4 id="建立repository">建立Repository</h4>
-<p>首先建立存放網站的資源庫(New repository)<br>
-<img src="/img/Pasted%20image%2020220402181449.png" alt="建立資源庫"></p>
-<p>repository name填入&lt;username&gt;.github.io<br>
-<img src="/img/Pasted%20image%2020220402210623.png" alt="填寫"><br>
-剩下的設定使用預設值即可，按下建立資源庫</p>
-<p>接下來使用git小烏龜(tortoisegit)推送資料，先在public資料夾建立版本庫<br>
-<img src="/img/Pasted%20image%2020220402231752.png" alt="建立版本庫"><br>
-不要打勾直接按確認就好，接著右鍵-&gt;小烏龜-&gt;設定<br>
-<img src="/img/Pasted%20image%2020220402232044.png" alt="設定"><br>
-現在git內填寫名稱與email，接著到遠端選項中貼上資源庫的url<br>
-<img src="/img/Pasted%20image%2020220402232432.png" alt="遠端"><br>
-點下新增/保存後跳出視窗按下確認<br>
-<img src="/img/Pasted%20image%2020220402232601.png" alt="新增保存"><br>
-接著回到資料夾按右鍵-&gt;git提交-&gt;master，填寫理由並全選後按提交<br>
-<img src="/img/Pasted%20image%2020220402232903.png" alt="提交"><br>
-接下來在跳出的視窗中按下推送，會詢問登入方式/帳號密碼等等，驗證完身分後便可推送至github</p>
-<p>完成後就可以輸入 &lt;username&gt;.github.io觀看blog了</p>
-<p>以後有需要更新只要使用hugo產生新檔案再推送就可以完成blog更新</p>
-<p>如果購買了網址想要設定的話，在public資料夾內新增純文字檔案CNAME，注意不要有副檔名，內容則輸入購買的網址 <br>
-接著點資源庫的設定<br>
-<img src="/img/Pasted%20image%2020220402234250.png" alt="設定"><br>
-點選旁邊的page設定domain<br>
-<img src="/img/Pasted%20image%2020220402234350.png" alt="domain"><br>
-在cmd中輸入<code>ping 你的網址.github.io</code>取得ip，去買網址的地方進行設定完成</p>
-						</section>
-					</div>
-				</article>
-			</main>
-		</div>
-	
-        
-		<aside>
-			<div class="hidden lg:block lg:col-span-1">
-				<div class="mb-3">
+  
+  <div class="col-span-3 lg:col-span-2 mb-3">
+  
+    <h2 class="text-4xl dark:text-white">Javascript</h2>
+	<main>
+    
+    
+    
+    
+    
+    <a href="/posts/youtube_counter/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    <img alt="thumbnail" id="thumb"
+        class="lg:w-auto lg:h-44"
+        src='/img/default.jpg'>
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">youtube點擊計數</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">紀錄一下如何使用youtube api來計算嵌入影片被點擊的次數，這個API也可以用來控制嵌入影片的撥放、暫停等等，這裡就是利用影片的播放狀態來進行撥放的判斷。
+...</p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    
+
+
+	</main>
+  </div>
+  
+	<aside>
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            <div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -191,7 +180,9 @@
         <input type="hidden" name="sitesearch" value="https://foolowl.github.io" />
     </form>
 </div>
-				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -203,8 +194,12 @@
     
     
 </div>
-				
-				
+        
+            
+            
+        
+            
+            
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -227,22 +222,14 @@
 </div>
 
 
-				
+        
+            
+            
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_plugin/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
-                    </p>
-                </div>
-            </div>
         <a href="/posts/hugo_config/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -253,13 +240,13 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_post2/" class="">
+        <a href="/posts/hugo_install/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Hugo安裝</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
                     </p>
                 </div>
             </div>
@@ -273,24 +260,36 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_folder/" class="">
+        <a href="/posts/hugo_post/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_plugin/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
                     </p>
                 </div>
             </div>
         </a>
     </div>
 </div>
-			</div>
-		</aside>
         
-    </div>
     
+</div>
+	</aside>
+  
+</div>
+
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     
