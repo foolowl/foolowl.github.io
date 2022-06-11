@@ -6,7 +6,16 @@
     <description>Recent content in javascript on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 05 Jun 2022 12:48:05 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 09:37:21 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript加密</title>
+      <link>https://foolowl.github.io/posts/javascript_encryption/</link>
+      <pubDate>Sat, 11 Jun 2022 09:37:21 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/javascript_encryption/</guid>
+      <description>&lt;p&gt;利用套件把字串進行加密，在一些資安要求下可能會有需要。在資料傳送前進行加密，在後端程式接收後在解密還原。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>youtube點擊計數</title>
       <link>https://foolowl.github.io/posts/youtube_counter/</link>

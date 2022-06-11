@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on 愚者樹屋</title>
+    <link>https://foolowl.github.io/tags/php/</link>
+    <description>Recent content in php on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 11 Jun 2022 09:37:21 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript加密</title>
+      <link>https://foolowl.github.io/posts/javascript_encryption/</link>
+      <pubDate>Sat, 11 Jun 2022 09:37:21 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/javascript_encryption/</guid>
+      <description>&lt;p&gt;利用套件把字串進行加密，在一些資安要求下可能會有需要。在資料傳送前進行加密，在後端程式接收後在解密還原。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
