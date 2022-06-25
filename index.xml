@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 18 Jun 2022 03:42:19 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jun 2022 09:03:46 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>程式碼差異比對工具 - winmerge</title>
+      <link>https://foolowl.github.io/posts/winmerge/</link>
+      <pubDate>Sat, 25 Jun 2022 09:03:46 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/winmerge/</guid>
+      <description>&lt;p&gt;有時候因為各種原因會需要檢查兩份不同的程式碼中差異，比如說一個套裝軟體再為不同客戶加了客製調整的時候，沒有辦法直接用原本的覆蓋時有這種軟體就很方便了。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>youtube縮圖</title>
       <link>https://foolowl.github.io/posts/youtube_thumbnail/</link>

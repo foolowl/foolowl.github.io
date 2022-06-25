@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://foolowl.github.io/posts/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/series/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/tags/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/winmerge/</loc>
+    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://foolowl.github.io/tags/html/</loc>
     <lastmod>2022-06-18T03:42:19+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,27 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/</loc>
-    <lastmod>2022-06-18T03:42:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/series/</loc>
-    <lastmod>2022-06-18T03:42:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/</loc>
-    <lastmod>2022-06-18T03:42:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://foolowl.github.io/posts/youtube_thumbnail/</loc>
-    <lastmod>2022-06-18T03:42:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/</loc>
     <lastmod>2022-06-18T03:42:19+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
