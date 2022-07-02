@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>hugo外掛 | 愚者樹屋</title>
+<title>javascript鎖定右鍵 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="愚者樹屋 | hugo外掛" />
+    <meta property="og:title" content="愚者樹屋 | javascript鎖定右鍵" />
     
     
     
@@ -35,20 +35,20 @@
 
 
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
+<meta name="description" content="使用javascript鎖定右鍵">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
-<meta property="og:url" content="https://foolowl.github.io/posts/hugo_plugin/">
+<meta property="og:description" content="使用javascript鎖定右鍵">
+<meta property="og:url" content="https://foolowl.github.io/posts/javascript_lock_right_click/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/hugo_plugin/">
+<link rel="canonical" href="https://foolowl.github.io/posts/javascript_lock_right_click/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo外掛安裝">
-<meta property="article:published_time" content="2022-04-24T06:52:51&#43;00:00">
-<meta property="article:updated_time" content="2022-04-24T06:52:51&#43;00:00">
+<meta name="twitter:description" content="使用javascript鎖定右鍵">
+<meta property="article:published_time" content="2022-07-02T10:56:55&#43;00:00">
+<meta property="article:updated_time" content="2022-07-02T10:56:55&#43;00:00">
 
 
 
@@ -131,34 +131,45 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">hugo外掛</h2>
+					<h2 class="title text-4xl font-bold mb-2">javascript鎖定右鍵</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/04/24</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/02</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/04/24</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/07/02</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。</p>
-<p>使用這個vscode外掛的話可以使用GUI的方式來新增Hugo的文章，這樣在發布文章的時候就可以只使用vscode而不用在指令和md檔案編輯器中切換，另外還有編輯front matter的功能，可以簡單的調整關鍵字、tag等等。</p>
-<p>參考自<br>
-<a href="https://blog.darkthread.net/blog/vscode-frontmatter-ext/">https://blog.darkthread.net/blog/vscode-frontmatter-ext/</a></p>
-<p>vscode<br>
-<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a><br>
-套件網址<br>
-<a href="https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter">https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter</a><br>
-套件文件檔案<br>
-<a href="https://frontmatter.codes/docs/content-creation/placeholders#placeholders">https://frontmatter.codes/docs/content-creation/placeholders#placeholders</a></p>
-<p>用vscode檔案總管開啟網站跟目錄<br>
-<img src="/img/Pasted%20image%2020220403135450.png" alt="根目錄"><br>
-開著用來當模板的md檔案按下create as template後輸入模板名稱<br>
-<img src="/img/Pasted%20image%2020220403135601.png" alt="按鈕"><br>
-就會自動建立.frontmatter資料夾儲存設定，之後在content\posts上按右鍵-&gt;Front Matter: New article from template選擇模板並輸入標題就好<br>
-<img src="/img/Pasted%20image%2020220403135737.png" alt="用模板建立"></p>
-<p>如果建立的檔案不想要日期的話打開設定找到templates: Prefix並刪除<br>
-<img src="/img/Pasted%20image%2020220403140328.png" alt="關閉日期"></p>
+						<p>有時候客戶會想要把右鍵功能鎖定，這時可以加入這段javascript處理。</p>
+<p>只要加入這段javascript即可，雖然有很多方式可以繞過，不過姑且還是能擋掉一般使用者。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">iEsc</span>(){ <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>; }
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">iRec</span>(){ <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>; }
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">DisableKeys</span>() {
+<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">ctrlKey</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">shiftKey</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">altKey</span>) {
+window.<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">returnValue</span><span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>;
+<span style="color:#a6e22e">iEsc</span>();}
+}
+document.<span style="color:#a6e22e">ondragstart</span><span style="color:#f92672">=</span><span style="color:#a6e22e">iEsc</span>;
+document.<span style="color:#a6e22e">onkeydown</span><span style="color:#f92672">=</span><span style="color:#a6e22e">DisableKeys</span>;
+document.<span style="color:#a6e22e">oncontextmenu</span><span style="color:#f92672">=</span><span style="color:#a6e22e">iEsc</span>;
+<span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> document.<span style="color:#a6e22e">onselectstart</span> <span style="color:#f92672">!=</span><span style="color:#e6db74">&#34;undefined&#34;</span>)
+document.<span style="color:#a6e22e">onselectstart</span><span style="color:#f92672">=</span><span style="color:#a6e22e">iEsc</span>;
+<span style="color:#66d9ef">else</span>{
+document.<span style="color:#a6e22e">onmousedown</span><span style="color:#f92672">=</span><span style="color:#a6e22e">iEsc</span>;
+document.<span style="color:#a6e22e">onmouseup</span><span style="color:#f92672">=</span><span style="color:#a6e22e">iRec</span>;
+}
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">DisableRightClick</span>(<span style="color:#a6e22e">qsyzDOTnet</span>){
+<span style="color:#66d9ef">if</span> (window.<span style="color:#a6e22e">Event</span>){
+<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">qsyzDOTnet</span>.<span style="color:#a6e22e">which</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">qsyzDOTnet</span>.<span style="color:#a6e22e">which</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>)
+<span style="color:#a6e22e">iEsc</span>();}
+<span style="color:#66d9ef">else</span>
+<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">button</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">button</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>){
+<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">cancelBubble</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">returnValue</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+<span style="color:#a6e22e">iEsc</span>();}
+}
+</code></pre></div>
 						</section>
 					</div>
 				</article>
@@ -243,13 +254,13 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_post/" class="">
+        <a href="/posts/javascript_lock_right_click/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript鎖定右鍵</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/02</time>
                     </p>
                 </div>
             </div>
@@ -263,23 +274,13 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_encryption/" class="">
+        <a href="/posts/hugo_folder/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript加密</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/11</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_plugin/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
                     </p>
                 </div>
             </div>
@@ -290,6 +291,16 @@
                     <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_post2/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
                     </p>
                 </div>
             </div>
