@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw" class="dark">
+<head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-037F3MYRK2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-037F3MYRK2');
+</script>
+
+<title>phpcaptcha在ios上撥放沒有聲音 | 愚者樹屋</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="愚者樹屋 | phpcaptcha在ios上撥放沒有聲音" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.c25dadb6edd9bc8fdb399fcd17a94cab71f8c8980461c39068dff5ffe076cd4a.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="phpcaptcha在ios上撥放聲音解決方法">
+<meta property="og:site_name" content="愚者樹屋">
+<meta property="og:description" content="phpcaptcha在ios上撥放聲音解決方法">
+<meta property="og:url" content="https://foolowl.github.io/posts/phpcaptcha_noaudio_question/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://foolowl.github.io/posts/phpcaptcha_noaudio_question/">
+
+<meta name="twitter:description" content="phpcaptcha在ios上撥放聲音解決方法">
+<meta property="article:published_time" content="2022-07-09T03:48:34&#43;00:00">
+<meta property="article:updated_time" content="2022-07-09T03:48:34&#43;00:00">
+
+
+
+
+
+<meta property="og:image" content="https://foolowl.github.io">
+<meta property="og:image:url" content="https://foolowl.github.io">
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head><body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><header class="bg-gray-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <h1><a href="https://foolowl.github.io"><span class="font-semibold text-2xl tracking-tight">愚者樹屋</span></a></h1>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+	
+	
+		<div class="bg-white col-span-3 lg:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">phpcaptcha在ios上撥放沒有聲音</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/09</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/07/09</time>
+					
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>以前在一個網站的驗證碼處理中發現這個問題，也許新版已經有處理掉這個問題也說不定，在這邊還是另外做一個紀錄。</p>
+<p>這篇文章處理的是php常用的驗證碼(<a href="https://www.phpcaptcha.org/">https://www.phpcaptcha.org/</a>)在ios上無法放出聲音的問題。<br>
+雖然現在多數的網站應該是使用google recaptcha作為驗證碼工具，還是有些網站可能一些因素而選擇是用傳統的驗證碼來處理，在PHP中這是非常常被使用的套件。</p>
+<p>當時測試的結果有很大的機率是header的修改對ios不起作用的關係，所以在聲音撥放的時候沒有被當聲音來處理，最後決定稍微修改了程式讓他直接產生聲音檔案。</p>
+<h4 id="securimagephp修改">securimage.php修改</h4>
+<p>修改原本的檔案增加產生聲音檔的函數，複製public function outputAudioFile()進行修改，把輸出聲音改成存檔。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createAudioFile</span>($filePath)
+{
+	<span style="color:#a6e22e">set_error_handler</span>(<span style="color:#66d9ef">array</span>(<span style="color:#f92672">&amp;</span>$this, <span style="color:#e6db74">&#39;errorHandler&#39;</span>));
+
+	<span style="color:#66d9ef">require_once</span> <span style="color:#a6e22e">dirname</span>(<span style="color:#66d9ef">__FILE__</span>) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;/WavFile.php&#39;</span>;
+
+	<span style="color:#66d9ef">try</span> {
+		$audio <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getAudibleCode</span>();
+	} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">Exception</span> $ex) {
+		<span style="color:#66d9ef">if</span> (($fp <span style="color:#f92672">=</span> <span style="color:#f92672">@</span><span style="color:#a6e22e">fopen</span>(<span style="color:#a6e22e">dirname</span>(<span style="color:#66d9ef">__FILE__</span>) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;/si.error_log&#39;</span>, <span style="color:#e6db74">&#39;a+&#39;</span>)) <span style="color:#f92672">!==</span> <span style="color:#66d9ef">false</span>) {
+			<span style="color:#a6e22e">fwrite</span>($fp, <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;: Securimage audio error &#34;&#39;</span> <span style="color:#f92672">.</span> $ex<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getMessage</span>() <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+			<span style="color:#a6e22e">fclose</span>($fp);
+		}
+
+		$audio <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">audioError</span>();
+	}
+
+	$fileHandle <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span>($filePath, <span style="color:#e6db74">&#39;w&#39;</span>);
+	<span style="color:#a6e22e">fwrite</span>($fileHandle,$audio);
+	<span style="color:#a6e22e">fclose</span>($fileHandle);
+
+	<span style="color:#a6e22e">restore_error_handler</span>();
+}
+</code></pre></div><p>php呼叫函數產生檔案</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$pname <span style="color:#f92672">=</span> <span style="color:#a6e22e">md5</span>(<span style="color:#a6e22e">session_id</span>())<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;_&#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">time</span>()<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;.wav&#39;</span>;<span style="color:#75715e">//產生檔案名稱
+</span><span style="color:#75715e"></span>$dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/secwav/&#39;</span>;<span style="color:#75715e">//檔案存放位置
+</span><span style="color:#75715e"></span>
+$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">load</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#39;securimage/securimage&#39;</span>);
+$img <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Securimage</span>();
+$img<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createAudioFile</span>($dir<span style="color:#f92672">.</span>$pname);
+<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;/secwav/&#39;</span><span style="color:#f92672">.</span>$pname;
+<span style="color:#75715e">//檢查資料夾內過久的檔案刪除
+</span><span style="color:#75715e"></span>$clearpath <span style="color:#f92672">=</span> $dir;
+<span style="color:#66d9ef">if</span> ($handle <span style="color:#f92672">=</span> <span style="color:#a6e22e">opendir</span>($clearpath))
+{
+	<span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">false</span> <span style="color:#f92672">!==</span> ($file <span style="color:#f92672">=</span> <span style="color:#a6e22e">readdir</span>($handle)))
+	{
+		<span style="color:#66d9ef">if</span> ((<span style="color:#a6e22e">time</span>()<span style="color:#f92672">-</span><span style="color:#a6e22e">filectime</span>($clearpath<span style="color:#f92672">.</span>$file)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">180</span>)
+		{
+			<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#39;/\.wav$/i&#39;</span>, $file))
+			{
+				<span style="color:#a6e22e">unlink</span>($clearpath<span style="color:#f92672">.</span>$file);
+			}
+		}
+	}
+}
+</code></pre></div><p>html的部分</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;change_captcha(this);&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;logccimg&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;<span style="color:#75715e">&lt;!--顯示--&gt;</span>
+&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;change_captcha(document.getElementById(&#39;logccimg&#39;));&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/img/res.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;<span style="color:#75715e">&lt;!--重新整理用圖片--&gt;</span>
+&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;play_captcha();&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:24px&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?=base_url(&#39;assets/securimage/audio_icon.png&#39;)?&gt;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;<span style="color:#75715e">&lt;!--播放按鈕--&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;logccimg_audio&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:none;&#34;</span>&gt;
+	&lt;<span style="color:#f92672">audio</span> <span style="color:#a6e22e">controls</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;
+	  &lt;<span style="color:#f92672">source</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/captcha/play&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;audio/wav&#34;</span>&gt;
+	&lt;/<span style="color:#f92672">audio</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>javasciprt</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//更換驗證碼
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">change_captcha</span>(<span style="color:#a6e22e">obj</span>){
+	<span style="color:#a6e22e">$</span>(<span style="color:#a6e22e">obj</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#e6db74">&#39;取得新驗證碼網址?&#39;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">getTime</span>());
+	
+	<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+		<span style="color:#a6e22e">url</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;產生聲音檔案網址&#39;</span>
+		,<span style="color:#a6e22e">type</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;get&#34;</span>
+		,<span style="color:#a6e22e">dataType</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span>
+		,<span style="color:#a6e22e">success</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>){
+			<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#logccimg_audio&#39;</span>).<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;&lt;audio controls=&#34;&#34; &gt;&lt;source src=&#34;&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">response</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;&#34; type=&#34;audio/wav&#34;&gt;&lt;/audio&gt;&#39;</span>);
+		}
+	});
+}
+<span style="color:#75715e">//播放
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">play_captcha</span>(){
+	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#logccimg_audio audio&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">play</span>();
+}
+</code></pre></div>
+						</section>
+					</div>
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden lg:block lg:col-span-1">
+				<div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://foolowl.github.io" />
+    </form>
+</div>
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/javascript">javascript (4)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/php">php (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/%e5%85%8d%e8%b2%bb%e8%bb%9f%e9%ab%94">免費軟體 (1)</a>
+    
+    
+</div>
+				
+				
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/html'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                html
+            </span></a>
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+        <a href='/tags/javascript'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javascript
+            </span></a>
+        <a href='/tags/php'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                php
+            </span></a>
+        <a href='/tags/youtube-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                youtube-api
+            </span></a>
+        <a href='/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                免費軟體
+            </span></a>
+        <a href='/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                程式工具
+            </span></a>
+    </div>
+</div>
+
+
+				
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        
+        <a href="/posts/hugo_github/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/winmerge/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/phpcaptcha_noaudio_question/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">phpcaptcha在ios上撥放沒有聲音</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/07/09</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_folder/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/javascript_lock_right_click/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript鎖定右鍵</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/07/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+			</div>
+		</aside>
+        
+    </div>
+    
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="flex justify-center w-full md:flex md:flex-row sm:items-center sm:w-auto mb-4">
+        <div>
+            
+            <a href="https://www.pixiv.net/users/1824576"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                pixiv
+            </a>
+            
+            <a href="https://www.plurk.com/ringo8"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                plurk
+            </a>
+            
+            <a href="https://twitter.com/uryuu_ringo"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                twitter
+            </a>
+            
+        </div>
+    </div>
+    
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <p>&copy; 2022-2022 <a href="https://foolowl.github.io" class="duration-200 hover:opacity-50">愚者樹屋</a></p>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        var icon2 = document.getElementById("icon2");
+        
+        if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          icon.classList.remove("icon-moon");
+          icon.classList.add("icon-sun");
+          icon2.classList.remove("icon-moon");
+          icon2.classList.add("icon-sun");
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+        function toggleDarkMode() {
+        if (document.documentElement.classList.contains('dark')) {
+            icon.classList.remove("icon-sun");
+            icon.classList.add("icon-moon");
+            icon2.classList.remove("icon-sun");
+            icon2.classList.add("icon-moon");
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
+        } else {
+            icon.classList.remove("icon-moon");
+            icon.classList.add("icon-sun");
+            icon2.classList.remove("icon-moon");
+            icon2.classList.add("icon-sun");
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark'
+        }
+    }
+    </script>
+</footer>
+</div>
+</body>
+
+</html>

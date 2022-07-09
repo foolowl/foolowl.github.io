@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 02 Jul 2022 10:56:55 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 03:48:34 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>phpcaptcha在ios上撥放沒有聲音</title>
+      <link>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</link>
+      <pubDate>Sat, 09 Jul 2022 03:48:34 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</guid>
+      <description>&lt;p&gt;以前在一個網站的驗證碼處理中發現這個問題，也許新版已經有處理掉這個問題也說不定，在這邊還是另外做一個紀錄。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript鎖定右鍵</title>
       <link>https://foolowl.github.io/posts/javascript_lock_right_click/</link>

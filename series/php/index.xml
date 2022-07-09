@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>php on 愚者樹屋</title>
-    <link>https://foolowl.github.io/tags/php/</link>
+    <link>https://foolowl.github.io/series/php/</link>
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 09 Jul 2022 03:48:34 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 03:48:34 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>phpcaptcha在ios上撥放沒有聲音</title>
       <link>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</guid>
       <description>&lt;p&gt;以前在一個網站的驗證碼處理中發現這個問題，也許新版已經有處理掉這個問題也說不定，在這邊還是另外做一個紀錄。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>javascript加密</title>
-      <link>https://foolowl.github.io/posts/javascript_encryption/</link>
-      <pubDate>Sat, 11 Jun 2022 09:37:21 +0000</pubDate>
-      
-      <guid>https://foolowl.github.io/posts/javascript_encryption/</guid>
-      <description>&lt;p&gt;利用套件把字串進行加密，在一些資安要求下可能會有需要。在資料傳送前進行加密，在後端程式接收後在解密還原。&lt;/p&gt;</description>
     </item>
     
   </channel>
