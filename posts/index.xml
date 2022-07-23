@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 16 Jul 2022 08:29:26 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jul 2022 01:49:05 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php背景執行</title>
+      <link>https://foolowl.github.io/posts/php_background_run/</link>
+      <pubDate>Sat, 23 Jul 2022 01:49:05 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/php_background_run/</guid>
+      <description>&lt;p&gt;有些功能需要長時間處理或是不方便一次處理過多數量的通常就會使用背景處理，有幾種方式不過基本上需要伺服器設定能配合。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php cookies設定</title>
       <link>https://foolowl.github.io/posts/php_cookies/</link>
