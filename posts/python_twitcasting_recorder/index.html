@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="愚者樹屋 | 使用python錄TwitCasting直播" />
+    <meta property="og:title" content="使用python錄TwitCasting直播 | 愚者樹屋" />
     
     
     
@@ -35,7 +35,10 @@
 
 
 
+
 <meta name="description" content="使用python錄twitcasting直播">
+<meta name="keywords" content="python,TwitCasting">
+<meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
 <meta property="og:description" content="使用python錄twitcasting直播">
 <meta property="og:url" content="https://foolowl.github.io/posts/python_twitcasting_recorder/">
@@ -48,7 +51,7 @@
 
 <meta name="twitter:description" content="使用python錄twitcasting直播">
 <meta property="article:published_time" content="2022-07-30T02:34:08&#43;00:00">
-<meta property="article:updated_time" content="2022-07-30T02:34:08&#43;00:00">
+<meta property="article:updated_time" content="2022-08-06T08:54:24&#43;00:00">
 
 
 
@@ -136,7 +139,7 @@
 					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/30</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/07/30</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/08/06</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
@@ -146,7 +149,7 @@
 <a href="https://github.com/prinsss/twitcasting-recorder">https://github.com/prinsss/twitcasting-recorder</a></p>
 <hr>
 <h4 id="安裝python環境">安裝python環境</h4>
-<p>官方網站下載<br>
+<p>官方網站下載並安裝<br>
 <a href="https://www.python.org/">https://www.python.org/</a><br>
 如果有修改安裝路徑請記下來，晚點設定時需要使用。</p>
 <p>升級pip<br>
@@ -155,6 +158,7 @@
 使用cmd命令提示字元，輸入<code>py -m pip install --upgrade pip</code></p>
 <p>使用pip安裝相關套件需要先進入系統設定系統的path，打開設定-&gt;系統-&gt;進階系統設定-&gt;環境變數-&gt;找到系統變數中的Path查看<br>
 <img src="/img/Pasted%20image%2020220730105645.png" alt="環境設定參考圖"><br>
+由於權限的問題安裝後有可能沒有這兩個參數。<br>
 如果python和Python39/script沒有在參數內的話，新增這兩個路徑<br>
 預設安裝路徑是C:\Users[使用者名稱]\AppData\Local\Programs\Python\Python39<br>
 如果沒更改的話新增<br>
@@ -212,6 +216,9 @@ EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/a
     <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
         href="https://foolowl.github.io/series/%e5%85%8d%e8%b2%bb%e8%bb%9f%e9%ab%94">免費軟體 (1)</a>
     
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://foolowl.github.io/series/%e7%a4%be%e7%be%a4%e7%b6%b2%e7%ab%99">社群網站 (1)</a>
+    
     
 </div>
 				
@@ -254,6 +261,11 @@ EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/a
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
                 免費軟體
             </span></a>
+        <a href='/tags/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                社群網站
+            </span></a>
         <a href='/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7'>
             <span
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
@@ -269,13 +281,13 @@ EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/a
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_config/" class="">
+        <a href="/posts/community_share_update/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">社群分享暫存資料更新</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/08/06</time>
                     </p>
                 </div>
             </div>
@@ -289,6 +301,16 @@ EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/a
                     </p>
                 </div>
             </div>
+        <a href="/posts/youtube_counter/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
+                    </p>
+                </div>
+            </div>
         <a href="/posts/hugo_plugin/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -299,23 +321,13 @@ EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/a
                     </p>
                 </div>
             </div>
-        <a href="/posts/winmerge/" class="">
+        <a href="/posts/hugo_github/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/youtube_counter/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
                     </p>
                 </div>
             </div>
