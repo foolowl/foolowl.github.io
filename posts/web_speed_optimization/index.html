@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>javascript加密 | 愚者樹屋</title>
+<title>網頁速度優化 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="javascript加密 | 愚者樹屋" />
+    <meta property="og:title" content="網頁速度優化 | 愚者樹屋" />
     
     
     
@@ -36,22 +36,22 @@
 
 
 
-<meta name="description" content="使用javascript套件加密字串">
-<meta name="keywords" content="javascript,字串加密">
+<meta name="description" content="網站速度優化處理方式簡介,SEO優化">
+<meta name="keywords" content="網站速度優化,SEO,html,javascript">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="使用javascript套件加密字串">
-<meta property="og:url" content="https://foolowl.github.io/posts/javascript_encryption/">
+<meta property="og:description" content="網站速度優化處理方式簡介,SEO優化">
+<meta property="og:url" content="https://foolowl.github.io/posts/web_speed_optimization/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/javascript_encryption/">
+<link rel="canonical" href="https://foolowl.github.io/posts/web_speed_optimization/">
 
-<meta name="twitter:description" content="使用javascript套件加密字串">
-<meta property="article:published_time" content="2022-06-11T09:37:21&#43;00:00">
-<meta property="article:updated_time" content="2022-06-11T09:37:21&#43;00:00">
+<meta name="twitter:description" content="網站速度優化處理方式簡介,SEO優化">
+<meta property="article:published_time" content="2022-08-13T11:50:46&#43;00:00">
+<meta property="article:updated_time" content="2022-08-13T11:50:46&#43;00:00">
 
 
 
@@ -134,85 +134,88 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">javascript加密</h2>
+					<h2 class="title text-4xl font-bold mb-2">網頁速度優化</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/06/11</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/08/13</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/06/11</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/08/13</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>利用套件把字串進行加密，在一些資安要求下可能會有需要。在資料傳送前進行加密，在後端程式接收後在解密還原。</p>
-<p>當初需要用到這個功能是在資安要求下不能使用明碼傳送帳號密碼，於是找到這款套件在傳送前進行加密處理。</p>
-<p>使用套件crypto-js的文件與下載點<br>
-<a href="https://code.google.com/archive/p/crypto-js/">https://code.google.com/archive/p/crypto-js/</a><br>
-似乎是原始git的連結<br>
-<a href="https://github.com/brix/crypto-js">https://github.com/brix/crypto-js</a></p>
-<p>下面的範例使用的是aes加密<br>
-首先載入需要的js</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;assets/js/CryptoJS/components/core.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;assets/js/CryptoJS/rollups/aes.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;assets/js/CryptoJS/components/pad-zeropadding.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><p>接著是加密字串的方法，AES_key和AES_iv需換成自訂的<strong>16字元</strong>的英文或數字字串，並且在後端程式那邊有同樣一組才能解密，可能的情況最好隨機產生不同的字串發給不同使用者。<br>
-EX:2358abc087688978</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;想加密的字串&#39;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">CryptoJS</span>.<span style="color:#a6e22e">enc</span>.<span style="color:#a6e22e">Latin1</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#e6db74">&#39;AES_key&#39;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">iv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">CryptoJS</span>.<span style="color:#a6e22e">enc</span>.<span style="color:#a6e22e">Latin1</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#e6db74">&#39;AES_iv&#39;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">encrypted</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">CryptoJS</span>.<span style="color:#a6e22e">AES</span>.<span style="color:#a6e22e">encrypt</span>(<span style="color:#a6e22e">data</span>,<span style="color:#a6e22e">key</span>,{<span style="color:#a6e22e">iv</span><span style="color:#f92672">:</span><span style="color:#a6e22e">iv</span>});
-<span style="color:#a6e22e">encrypted</span><span style="color:#f92672">=</span>encodeURIComponent(<span style="color:#a6e22e">encrypted</span>);
-<span style="color:#75715e">//encrypted就是加密後的結果
-</span></code></pre></div><p>傳到後端程式後使用對應的解密方法即可<br>
-以下是PHP範例</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//ase解密用
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Aes_fun</span>
-{
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __construct()
-	{
-	}
-	<span style="color:#75715e">//php7或以上版本
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">//var encrypted = CryptoJS.AES.encrypt(data,key,{iv:iv});
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">encrypt</span>($key, $iv, $data)
-    {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">openssl_encrypt</span>($data,<span style="color:#e6db74">&#39;aes-128-cbc&#39;</span>,$key,<span style="color:#66d9ef">false</span>,$iv);
-    }
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">decrypt</span>($key, $iv, $data)
-    {
-		$decode <span style="color:#f92672">=</span> <span style="color:#a6e22e">base64_decode</span>($data);
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">openssl_decrypt</span>($decode,<span style="color:#e6db74">&#39;AES-128-CBC&#39;</span>,$key,<span style="color:#a6e22e">OPENSSL_RAW_DATA</span>,$iv);
-    }
+						<p>讓使用者可以更順暢瀏覽網頁的處理，除此之外網站速度也會被當成搜尋引擎SEO的參考之一，可能的情況最好能避免網站進入緩慢(紅色)的評分。</p>
+<p>檢測網站，直接輸入要檢測的網址等他執行就可以了，原則上錯誤都會有提示說怎麼處理，照問題直接搜尋也能找到方法抄。<br>
+<a href="https://pagespeed.web.dev/">https://pagespeed.web.dev/</a><br>
+處理的參考網站<br>
+<a href="https://web.dev/optimize-lcp/">https://web.dev/optimize-lcp/</a><br>
+下方會記錄一些之前有進行過的調整</p>
+<h4 id="資源壓縮">資源壓縮</h4>
+<p>自己碰到最影響網站速度的地方就是圖片檔案，一般來說將圖片處理好通常就能得到不錯的速度。</p>
+<h5 id="圖片">圖片</h5>
+<p>將圖片調整為剛好的大小與高壓縮減少讀取時間，如果要用WebP和AVIF要注意瀏覽器支援程度。<br>
+方便壓縮圖片的網站<br>
+<a href="https://squoosh.app/">https://squoosh.app/</a><br>
+<a href="https://imageoptim.com/api">https://imageoptim.com/api</a></p>
+<h5 id="css瘦身">CSS瘦身</h5>
+<p>沒有嘗試過這些工具，在網路上看到執行後有可能會有問題，比如說javascript變動後才會使用的css可能會被當作無用的css而遭到移除，最好是一開始就自己寫乾淨，另外手動移除也可以利用chrome工具右方的&hellip;-&gt;more tools-&gt;coverage檢查<br>
+掃描工具<br>
+<a href="https://uncss-online.com/">https://uncss-online.com/</a><br>
+<a href="https://purifycss.online/">https://purifycss.online/</a><br>
+<a href="https://purgecss.com/">https://purgecss.com/</a></p>
+<h4 id="快取設定">快取設定</h4>
+<p>直接更改伺服器設定或調整.htaccess，把不常更動的檔案快取設定成1周以上。<br>
+參考網站<a href="https://stackoverflow.com/questions/50772357/upload-new-files-when-htaccess-cach-is-set-to-one-week">https://stackoverflow.com/questions/50772357/upload-new-files-when-htaccess-cach-is-set-to-one-week</a></p>
+<pre tabindex="0"><code class="language-htaccess" data-lang="htaccess">&lt;IfModule mod_expires.c&gt;
+ExpiresActive On
+ExpiresByType image/jpg &quot;access 1 week&quot;
+ExpiresByType image/gif &quot;access 1 year&quot;
+ExpiresByType image/png &quot;access 1 month&quot;
+ExpiresByType text/css &quot;access 1 month&quot;
+ExpiresByType text/x-javascript &quot;access 1 month&quot;
+ExpiresByType image/x-icon &quot;access 1 month&quot;
+ExpiresDefault &quot;access 1 month&quot;
+&lt;/IfModule&gt;
 
-  <span style="color:#75715e">//php5處理方法
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">//舊版php 
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//javascript需要調整加密函數
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//var encrypted = CryptoJS.AES.encrypt(data,key,{iv:iv,mode:CryptoJS.mode.CBC,padding:CryptoJS.pad.ZeroPadding});
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">encrypt_php5</span>($key, $iv, $data)
-    {
-        $td <span style="color:#f92672">=</span> <span style="color:#a6e22e">mcrypt_module_open</span>(<span style="color:#a6e22e">MCRYPT_RIJNDAEL_128</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#a6e22e">MCRYPT_MODE_CBC</span>, <span style="color:#e6db74">&#34;&#34;</span>);
-        <span style="color:#a6e22e">mcrypt_generic_init</span>($td, $key, $iv);
-        $encrypted <span style="color:#f92672">=</span> <span style="color:#a6e22e">mcrypt_generic</span>($td, $data);
-        <span style="color:#a6e22e">mcrypt_generic_deinit</span>($td);
-        <span style="color:#a6e22e">mcrypt_module_close</span>($td);
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">base64_encode</span>($encrypted);
-    }
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">decrypt_php5</span>($key, $iv, $data)
-    {
-        $td <span style="color:#f92672">=</span> <span style="color:#a6e22e">mcrypt_module_open</span>(<span style="color:#a6e22e">MCRYPT_RIJNDAEL_128</span>,<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#a6e22e">MCRYPT_MODE_CBC</span>,<span style="color:#e6db74">&#34;&#34;</span>);
-        <span style="color:#a6e22e">mcrypt_generic_init</span>($td, $key, $iv);
-        $decode <span style="color:#f92672">=</span> <span style="color:#a6e22e">base64_decode</span>($data);
-        $dencrypted <span style="color:#f92672">=</span> <span style="color:#a6e22e">mdecrypt_generic</span>($td, $decode);
-        <span style="color:#a6e22e">mcrypt_generic_deinit</span>($td);
-        <span style="color:#a6e22e">mcrypt_module_close</span>($td);
+&lt;FilesMatch &quot;\.(ico|pdf|jpg|jpeg|png|gif|woff2|woff|svg)$&quot;&gt;
+Header set Cache-Control &quot;max-age=10, public, must-revalidate&quot;
+&lt;/FilesMatch&gt;
+</code></pre><h4 id="html資源異步載入">html資源異步載入</h4>
+<h5 id="css">css</h5>
+<p>將不影響排版的css設定成最後讀取，讓使用者以較快的速度讀好最開始需要的資料。<br>
+參考網站<br>
+<a href="https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously">https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously</a><br>
+下面這幾種寫法都可以，當時使用最上面這種，避免使用者的瀏覽器無法使用javascript，最好使用noscript加上一般載入的設定。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--當時最後使用這個--&gt;</span>
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;screen&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">as</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style&#34;</span> <span style="color:#a6e22e">onload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this.rel=&#39;stylesheet&#39;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span>&gt;
 
-        <span style="color:#66d9ef">return</span> $dencrypted;
-    }
-}
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;print&#34;</span> <span style="color:#a6e22e">onload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this.media=&#39;all&#39;&#34;</span>&gt;
 
-<span style="color:#75715e">//呼叫對應的函數解密
-</span><span style="color:#75715e"></span>$asefun <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Aes_fun</span>();
-$asefun<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">decrypt</span>(<span style="color:#a6e22e">AES_key</span>,<span style="color:#a6e22e">AES_iv</span>,<span style="color:#a6e22e">urldecode</span>(<span style="color:#a6e22e">trim</span>($_POST[<span style="color:#e6db74">&#39;data&#39;</span>])));
-</code></pre></div>
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;preload&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span> <span style="color:#a6e22e">as</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style&#34;</span>&gt;
+
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;print&#34;</span> <span style="color:#a6e22e">onload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this.media=&#39;all&#39;&#34;</span>&gt;
+
+&lt;<span style="color:#f92672">noscript</span>&gt;&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span>&gt;&lt;/<span style="color:#f92672">noscript</span>&gt;
+</code></pre></div><h5 id="javascript">javascript</h5>
+<p>將可以異步讀取的設定async，最後才讀也沒關係的設定defer，要注意這些設定可能會影響js執行，有調整的話一定要再確認網站的執行狀況。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/bootstrap.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/bootstrap.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;module&#34;</span> <span style="color:#a6e22e">defer</span>&gt;
+	<span style="color:#75715e">//行內js
+</span><span style="color:#75715e"></span>&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><h5 id="圖片延後載入">圖片延後載入</h5>
+<p>在圖片加上屬性 loading=&ldquo;lazy&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url&#34;</span> <span style="color:#a6e22e">loading</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazy&#34;</span> &gt;
+</code></pre></div><h4 id="css設定">css設定</h4>
+<p>設定media屬性，避免使用all<br>
+參考<a href="https://www.oxxostudio.tw/articles/201810/css-media-queries.html">https://www.oxxostudio.tw/articles/201810/css-media-queries.html</a><br>
+all	所有裝置。<br>
+print	印刷裝置，包含使用列印預覽產生的所有畫面 ( 例如列印為 pdf )。<br>
+screen	螢幕裝置，不屬於 print 和 speech 的設備。<br>
+speech	朗讀裝置，針對可以「讀出」頁面的設備。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;screen&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/www/css/style_.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>&gt;
+</code></pre></div><h4 id="避免clscumulative-layout-shift">避免CLS(Cumulative Layout Shift)</h4>
+<p>先取出固定版面用的css，或是一開始先使用額外的div卡住位置等等方式，先建立布局避免後來執行的javascript或延後載入的CSS造成大量的版面位移狀況，這部分的偵測目前只有判斷網頁上方的緣故，可以只對網站上面1000px以內的進行處理。</p>
 						</section>
 					</div>
 				</article>
@@ -319,13 +322,13 @@ $asefun<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">decry
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_folder/" class="">
+        <a href="/posts/youtube_thumbnail/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
                     </p>
                 </div>
             </div>
@@ -339,13 +342,23 @@ $asefun<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">decry
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_post2/" class="">
+        <a href="/posts/hugo_github/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/youtube_counter/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
                     </p>
                 </div>
             </div>
@@ -356,16 +369,6 @@ $asefun<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">decry
                     <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_github/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
                     </p>
                 </div>
             </div>

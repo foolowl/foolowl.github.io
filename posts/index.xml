@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Aug 2022 09:13:25 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 11:50:46 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網頁速度優化</title>
+      <link>https://foolowl.github.io/posts/web_speed_optimization/</link>
+      <pubDate>Sat, 13 Aug 2022 11:50:46 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/web_speed_optimization/</guid>
+      <description>&lt;p&gt;讓使用者可以更順暢瀏覽網頁的處理，除此之外網站速度也會被當成搜尋引擎SEO的參考之一，可能的情況最好能避免網站進入緩慢(紅色)的評分。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>社群分享暫存資料更新</title>
       <link>https://foolowl.github.io/posts/community_share_update/</link>
