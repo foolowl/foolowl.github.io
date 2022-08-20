@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 13 Aug 2022 11:50:46 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 10:09:35 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql字串函數</title>
+      <link>https://foolowl.github.io/posts/mysql_string_functions/</link>
+      <pubDate>Sat, 20 Aug 2022 10:09:35 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/mysql_string_functions/</guid>
+      <description>&lt;p&gt;記錄一下使用過的mysql字串處理函數，只包含了自己使用過的部分，如果之後有機會使用到其他的函數會再補上，全部的功能還是請大家去官方手冊查詢。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>網頁速度優化</title>
       <link>https://foolowl.github.io/posts/web_speed_optimization/</link>
