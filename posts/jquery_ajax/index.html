@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>phpcaptcha在ios上撥放沒有聲音 | 愚者樹屋</title>
+<title>jquery ajax | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="phpcaptcha在ios上撥放沒有聲音 | 愚者樹屋" />
+    <meta property="og:title" content="jquery ajax | 愚者樹屋" />
     
     
     
@@ -36,22 +36,22 @@
 
 
 
-<meta name="description" content="phpcaptcha在ios上撥放聲音解決方法">
-<meta name="keywords" content="phpcaptcha,php">
+<meta name="description" content="使用jquery的ajax進行非同步資料傳輸">
+<meta name="keywords" content="javascript,ajax,jquery">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="phpcaptcha在ios上撥放聲音解決方法">
-<meta property="og:url" content="https://foolowl.github.io/posts/phpcaptcha_noaudio_question/">
+<meta property="og:description" content="使用jquery的ajax進行非同步資料傳輸">
+<meta property="og:url" content="https://foolowl.github.io/posts/jquery_ajax/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/phpcaptcha_noaudio_question/">
+<link rel="canonical" href="https://foolowl.github.io/posts/jquery_ajax/">
 
-<meta name="twitter:description" content="phpcaptcha在ios上撥放聲音解決方法">
-<meta property="article:published_time" content="2022-07-09T03:48:34&#43;00:00">
-<meta property="article:updated_time" content="2022-07-09T03:48:34&#43;00:00">
+<meta name="twitter:description" content="使用jquery的ajax進行非同步資料傳輸">
+<meta property="article:published_time" content="2022-08-27T11:43:26&#43;00:00">
+<meta property="article:updated_time" content="2022-08-27T11:43:26&#43;00:00">
 
 
 
@@ -134,95 +134,90 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">phpcaptcha在ios上撥放沒有聲音</h2>
+					<h2 class="title text-4xl font-bold mb-2">jquery ajax</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/09</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/08/27</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/07/09</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/08/27</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>以前在一個網站的驗證碼處理中發現這個問題，也許新版已經有處理掉這個問題也說不定，在這邊還是另外做一個紀錄。</p>
-<p>這篇文章處理的是php常用的驗證碼(<a href="https://www.phpcaptcha.org/">https://www.phpcaptcha.org/</a>)在ios上無法放出聲音的問題。<br>
-雖然現在多數的網站應該是使用google recaptcha作為驗證碼工具，還是有些網站可能一些因素而選擇是用傳統的驗證碼來處理，在PHP中這是非常常被使用的套件。</p>
-<p>當時測試的結果有很大的機率是header的修改對ios不起作用的關係，所以在聲音撥放的時候沒有被當聲音來處理，最後決定稍微修改了程式讓他直接產生聲音檔案。</p>
-<h4 id="securimagephp修改">securimage.php修改</h4>
-<p>修改原本的檔案增加產生聲音檔的函數，複製public function outputAudioFile()進行修改，把輸出聲音改成存檔。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createAudioFile</span>($filePath)
-{
-	<span style="color:#a6e22e">set_error_handler</span>(<span style="color:#66d9ef">array</span>(<span style="color:#f92672">&amp;</span>$this, <span style="color:#e6db74">&#39;errorHandler&#39;</span>));
-
-	<span style="color:#66d9ef">require_once</span> <span style="color:#a6e22e">dirname</span>(<span style="color:#66d9ef">__FILE__</span>) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;/WavFile.php&#39;</span>;
-
-	<span style="color:#66d9ef">try</span> {
-		$audio <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getAudibleCode</span>();
-	} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">Exception</span> $ex) {
-		<span style="color:#66d9ef">if</span> (($fp <span style="color:#f92672">=</span> <span style="color:#f92672">@</span><span style="color:#a6e22e">fopen</span>(<span style="color:#a6e22e">dirname</span>(<span style="color:#66d9ef">__FILE__</span>) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;/si.error_log&#39;</span>, <span style="color:#e6db74">&#39;a+&#39;</span>)) <span style="color:#f92672">!==</span> <span style="color:#66d9ef">false</span>) {
-			<span style="color:#a6e22e">fwrite</span>($fp, <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;: Securimage audio error &#34;&#39;</span> <span style="color:#f92672">.</span> $ex<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getMessage</span>() <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-			<span style="color:#a6e22e">fclose</span>($fp);
-		}
-
-		$audio <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">audioError</span>();
-	}
-
-	$fileHandle <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span>($filePath, <span style="color:#e6db74">&#39;w&#39;</span>);
-	<span style="color:#a6e22e">fwrite</span>($fileHandle,$audio);
-	<span style="color:#a6e22e">fclose</span>($fileHandle);
-
-	<span style="color:#a6e22e">restore_error_handler</span>();
-}
-</code></pre></div><p>php呼叫函數產生檔案</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$pname <span style="color:#f92672">=</span> <span style="color:#a6e22e">md5</span>(<span style="color:#a6e22e">session_id</span>())<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;_&#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">time</span>()<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;.wav&#39;</span>;<span style="color:#75715e">//產生檔案名稱
-</span><span style="color:#75715e"></span>$dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/secwav/&#39;</span>;<span style="color:#75715e">//檔案存放位置
-</span><span style="color:#75715e"></span>
-$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">load</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#39;securimage/securimage&#39;</span>);
-$img <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Securimage</span>();
-$img<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createAudioFile</span>($dir<span style="color:#f92672">.</span>$pname);
-<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;/secwav/&#39;</span><span style="color:#f92672">.</span>$pname;
-<span style="color:#75715e">//檢查資料夾內過久的檔案刪除
-</span><span style="color:#75715e"></span>$clearpath <span style="color:#f92672">=</span> $dir;
-<span style="color:#66d9ef">if</span> ($handle <span style="color:#f92672">=</span> <span style="color:#a6e22e">opendir</span>($clearpath))
-{
-	<span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">false</span> <span style="color:#f92672">!==</span> ($file <span style="color:#f92672">=</span> <span style="color:#a6e22e">readdir</span>($handle)))
-	{
-		<span style="color:#66d9ef">if</span> ((<span style="color:#a6e22e">time</span>()<span style="color:#f92672">-</span><span style="color:#a6e22e">filectime</span>($clearpath<span style="color:#f92672">.</span>$file)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">180</span>)
-		{
-			<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#39;/\.wav$/i&#39;</span>, $file))
-			{
-				<span style="color:#a6e22e">unlink</span>($clearpath<span style="color:#f92672">.</span>$file);
-			}
-		}
-	}
-}
-</code></pre></div><p>html的部分</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;change_captcha(this);&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;logccimg&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;<span style="color:#75715e">&lt;!--顯示--&gt;</span>
-&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;change_captcha(document.getElementById(&#39;logccimg&#39;));&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/img/res.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;<span style="color:#75715e">&lt;!--重新整理用圖片--&gt;</span>
-&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;play_captcha();&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:24px&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?=base_url(&#39;assets/securimage/audio_icon.png&#39;)?&gt;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;<span style="color:#75715e">&lt;!--播放按鈕--&gt;</span>
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;logccimg_audio&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:none;&#34;</span>&gt;
-	&lt;<span style="color:#f92672">audio</span> <span style="color:#a6e22e">controls</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;
-	  &lt;<span style="color:#f92672">source</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/captcha/play&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;audio/wav&#34;</span>&gt;
-	&lt;/<span style="color:#f92672">audio</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><p>javasciprt</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//更換驗證碼
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">change_captcha</span>(<span style="color:#a6e22e">obj</span>){
-	<span style="color:#a6e22e">$</span>(<span style="color:#a6e22e">obj</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#e6db74">&#39;取得新驗證碼網址?&#39;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">getTime</span>());
-	
-	<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-		<span style="color:#a6e22e">url</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;產生聲音檔案網址&#39;</span>
-		,<span style="color:#a6e22e">type</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;get&#34;</span>
-		,<span style="color:#a6e22e">dataType</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span>
-		,<span style="color:#a6e22e">success</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>){
-			<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#logccimg_audio&#39;</span>).<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;&lt;audio controls=&#34;&#34; &gt;&lt;source src=&#34;&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">response</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;&#34; type=&#34;audio/wav&#34;&gt;&lt;/audio&gt;&#39;</span>);
-		}
-	});
-}
-<span style="color:#75715e">//播放
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">play_captcha</span>(){
-	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#logccimg_audio audio&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">play</span>();
-}
+						<p>使用jquery的ajax進行非同步資料傳輸，如果是使用javascript可以使用XMLHttpRequest函數去處理，由於jquery處理掉不少瀏覽器差異，使用上比較方便，加上碰過的專案大多為了特效都有使用，這邊只記錄自己比較熟的jquery部分。</p>
+<p>ajax主要用途是用來處理不換頁更新顯示資料，延後載入部分資料增加使用者體驗，或是處理一些即時的資料紀錄去後台等等，只要頁面沒有刷新而可以變動的東西幾乎都是使用他來處理。</p>
+<h4 id="基本用法">基本用法</h4>
+<p>這邊直接上範例。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">request</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+  <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;page.html&#34;</span>,<span style="color:#75715e">//目標頁面
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,<span style="color:#75715e">//模式 post或get
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">id</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">menuId</span> 
+        , <span style="color:#a6e22e">data</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;test&#39;</span>},<span style="color:#75715e">//資料 用,分開
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span> <span style="color:#75715e">//取得頁面的資料類型，除了html以外json也很常用
+</span><span style="color:#75715e"></span>});
+<span style="color:#75715e">//成功後執行
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">done</span>(<span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">msg</span> ) {
+  <span style="color:#a6e22e">$</span>( <span style="color:#e6db74">&#34;#log&#34;</span> ).<span style="color:#a6e22e">html</span>( <span style="color:#a6e22e">msg</span> );
+});
+<span style="color:#75715e">//失敗的話執行
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">fail</span>(<span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">jqXHR</span>, <span style="color:#a6e22e">textStatus</span> ) {
+  <span style="color:#a6e22e">alert</span>( <span style="color:#e6db74">&#34;Request failed: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">textStatus</span> );
+});
+</code></pre></div><p>或是這樣寫</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page.html&#39;</span>,
+    <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,
+    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">id</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">menuId</span> 
+        , <span style="color:#a6e22e">data</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;test&#39;</span>},
+    <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;json&#34;</span>,
+    <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">response</span>) {
+        <span style="color:#75715e">//成功後執行
+</span><span style="color:#75715e"></span>    },
+    <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">jqXHR</span>, <span style="color:#a6e22e">exception</span>) {
+        <span style="color:#75715e">//失敗的話執行
+</span><span style="color:#75715e"></span>    }
+});
+</code></pre></div><p>還有一些其他函數或設定可以使用，一般來說這些可以應付多數狀況。</p>
+<h4 id="送出整個form表單">送出整個form表單</h4>
+<p>一開始的時候還笨笨的每個欄位用id或name來抓，後來才知道有serializeArray這個函數能使用，所以紀錄一下。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pdata</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#repform&#39;</span>).<span style="color:#a6e22e">serializeArray</span>();
+<span style="color:#75715e">//額外增加參數
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">pdata</span>.<span style="color:#a6e22e">push</span>({<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;savemode&#34;</span>, <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;auto&#39;</span>});
+<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+   <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,
+   <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page.html&#39;</span>,
+   <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">param</span>(<span style="color:#a6e22e">pdata</span>),
+   <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;json&#34;</span>,
+   <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
+   }
+});
+</code></pre></div><h4 id="錯誤訊息顯示">錯誤訊息顯示</h4>
+<p>純紀錄，參考<a href="https://stackoverflow.com/questions/6792878/jquery-ajax-error-function">https://stackoverflow.com/questions/6792878/jquery-ajax-error-function</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page.html&#39;</span>,
+    <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">response</span>) {
+    },
+    <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">jqXHR</span>, <span style="color:#a6e22e">exception</span>, <span style="color:#a6e22e">errorThrown</span>) {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Not connect.\n Verify Network.&#39;</span>;
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">404</span>) {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Requested page not found. [404]&#39;</span>;
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">500</span>) {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Internal Server Error [500].&#39;</span>;
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">exception</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;parsererror&#39;</span>) {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Requested JSON parse failed.&#39;</span>;
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">exception</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;timeout&#39;</span>) {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Time out error.&#39;</span>;
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">exception</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;abort&#39;</span>) {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Ajax request aborted.&#39;</span>;
+        } <span style="color:#66d9ef">else</span> {
+            <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Uncaught Error.\n&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">jqXHR</span>.<span style="color:#a6e22e">responseText</span>;
+        }
+        <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#post&#39;</span>).<span style="color:#a6e22e">html</span>(<span style="color:#a6e22e">msg</span>);
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">textStatus</span>, <span style="color:#a6e22e">errorThrown</span>);
+    },
+});
 </code></pre></div>
 						</section>
 					</div>
@@ -346,53 +341,53 @@ $img<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">createAu
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/php_background_run/" class="">
+        <a href="/posts/hugo_post2/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php背景執行</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/23</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_lock_right_click/" class="">
+        <a href="/posts/javascript_encryption/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript鎖定右鍵</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript加密</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/02</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/11</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_github/" class="">
+        <a href="/posts/hugo_post/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_folder/" class="">
+        <a href="/posts/youtube_thumbnail/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_install/" class="">
+        <a href="/posts/php_cookies/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">Hugo安裝</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php cookies設定</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/16</time>
                     </p>
                 </div>
             </div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jquery on 愚者樹屋</title>
+    <link>https://foolowl.github.io/tags/jquery/</link>
+    <description>Recent content in jquery on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 27 Aug 2022 11:43:26 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jquery ajax</title>
+      <link>https://foolowl.github.io/posts/jquery_ajax/</link>
+      <pubDate>Sat, 27 Aug 2022 11:43:26 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/jquery_ajax/</guid>
+      <description>&lt;p&gt;使用jquery的ajax進行非同步資料傳輸，如果是使用javascript可以使用XMLHttpRequest函數去處理，由於jquery處理掉不少瀏覽器差異，使用上比較方便，加上碰過的專案大多為了特效都有使用，這邊只記錄自己比較熟的jquery部分。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

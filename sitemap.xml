@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://foolowl.github.io/tags/javascript/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/tags/jquery/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/series/jquery/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/jquery_ajax/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/series/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/tags/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/</loc>
+    <lastmod>2022-08-27T11:43:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://foolowl.github.io/tags/mysql/</loc>
     <lastmod>2022-08-20T10:09:35+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,37 +57,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/</loc>
-    <lastmod>2022-08-20T10:09:35+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/series/</loc>
-    <lastmod>2022-08-20T10:09:35+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/</loc>
-    <lastmod>2022-08-20T10:09:35+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/</loc>
-    <lastmod>2022-08-20T10:09:35+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://foolowl.github.io/tags/html/</loc>
     <lastmod>2022-08-13T11:50:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/series/html/</loc>
-    <lastmod>2022-08-13T11:50:46+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/javascript/</loc>
     <lastmod>2022-08-13T11:50:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
