@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>php背景執行 | 愚者樹屋</title>
+<title>mysql條件式 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="php背景執行 | 愚者樹屋" />
+    <meta property="og:title" content="mysql條件式 | 愚者樹屋" />
     
     
     
@@ -36,22 +36,22 @@
 
 
 
-<meta name="description" content="背景執行php的方式">
-<meta name="keywords" content="php">
+<meta name="description" content="mysql條件判斷語法紀錄">
+<meta name="keywords" content="mysql">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="背景執行php的方式">
-<meta property="og:url" content="https://foolowl.github.io/posts/php_background_run/">
+<meta property="og:description" content="mysql條件判斷語法紀錄">
+<meta property="og:url" content="https://foolowl.github.io/posts/mysql_conditionals/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/php_background_run/">
+<link rel="canonical" href="https://foolowl.github.io/posts/mysql_conditionals/">
 
-<meta name="twitter:description" content="背景執行php的方式">
-<meta property="article:published_time" content="2022-07-23T01:49:05&#43;00:00">
-<meta property="article:updated_time" content="2022-07-23T01:49:05&#43;00:00">
+<meta name="twitter:description" content="mysql條件判斷語法紀錄">
+<meta property="article:published_time" content="2022-09-04T12:17:43&#43;00:00">
+<meta property="article:updated_time" content="2022-09-04T12:17:43&#43;00:00">
 
 
 
@@ -134,77 +134,36 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">php背景執行</h2>
+					<h2 class="title text-4xl font-bold mb-2">mysql條件式</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/23</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/09/04</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/07/23</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/09/04</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>有些功能需要長時間處理或是不方便一次處理過多數量的通常就會使用背景處理，有幾種方式不過基本上需要伺服器設定能配合。</p>
-<p>以自己的情況來說，最常使用背景處理的就是email的寄送，有些主機沒有設定批次寄信的處理或間隔時間，避免短時間內寄出過多信件而加入間隔時間的處理。</p>
-<hr>
-<p>第1種方式是使用curl觸發<br>
-伺服器設定無法配合的話可能能考慮使用這種方式，利用不等待網頁回應的curl觸發長時間執行的檔案來進行，比較大的問題是在新版(php7)環境中可能是內建安全機制的關係，執行的時間似乎有上限，<strong>使用時請務必測試看看在自己的環境上會不會中斷</strong>，這邊測試的情況無論怎麼設定最多只能跑到4小時左右，<strong>使用這種方式的話需要設計能從中斷點手動重新觸發處理的機制</strong>。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//不等待回應的curl
-</span><span style="color:#75715e"></span>$ch <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_init</span>();
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_URL</span>, <span style="color:#e6db74">&#39;網址&#39;</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_FOLLOWLOCATION</span>, <span style="color:#66d9ef">true</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_CUSTOMREQUEST</span>, <span style="color:#e6db74">&#34;POST&#34;</span>);
-<span style="color:#75715e">//curl_setopt($ch, CURLOPT_POST,true);
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POSTREDIR</span>, <span style="color:#ae81ff">3</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POSTFIELDS</span>, <span style="color:#a6e22e">http_build_query</span>(<span style="color:#66d9ef">array</span>(
-										<span style="color:#e6db74">&#39;參數名&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;參數值&#39;</span>
-									)));
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_TIMEOUT</span>, <span style="color:#ae81ff">1</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_RETURNTRANSFER</span>, <span style="color:#66d9ef">false</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_CONNECTTIMEOUT</span>, <span style="color:#ae81ff">1</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_DNS_CACHE_TIMEOUT</span>, <span style="color:#ae81ff">10</span>);
-<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_FRESH_CONNECT</span>, <span style="color:#66d9ef">true</span>);
-$r <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_exec</span>($ch);
-<span style="color:#a6e22e">curl_close</span>($ch);
-</code></pre></div><p>處理頁上的設定</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">ignore_user_abort</span>(<span style="color:#66d9ef">true</span>);<span style="color:#75715e">//瀏覽器關閉後繼續執行
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">set_time_limit</span>(<span style="color:#ae81ff">0</span>);<span style="color:#75715e">//讓程式執行到結束為止
-</span></code></pre></div><p>在頁尾重新呼叫自己</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$retime <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">+</span> <span style="color:#ae81ff">900</span>;<span style="color:#75715e">//重新啟動時間 15分鐘
-</span><span style="color:#75715e"></span>$resendflag <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-
-<span style="color:#75715e">//從資料庫讀出的信件迴圈中加入時間判斷
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">time</span>() <span style="color:#f92672">&gt;</span> $retime){
-		<span style="color:#75715e">//超時 設定跳出並觸發
-</span><span style="color:#75715e"></span>		$resendflag <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-		<span style="color:#66d9ef">break</span>;
-	}
-
-<span style="color:#66d9ef">if</span>($resendflag<span style="color:#f92672">==</span><span style="color:#66d9ef">true</span>){
-	<span style="color:#75715e">//重新啟動寄送
-</span><span style="color:#75715e"></span>}<span style="color:#66d9ef">else</span>{
-	<span style="color:#75715e">//發信完成動作
-</span><span style="color:#75715e"></span>}
-</code></pre></div><hr>
-<p>第2種則是呼叫Linux指令觸發排程功能，產生sh檔案後使用指令執行，<strong>需要注意php是否有權限呼叫</strong>，因為安全性的關係基本上預設是關閉的。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;edm_send.sh&#34;</span>;
-<span style="color:#75715e">//檔案名稱 參數1 參數2
-</span><span style="color:#75715e"></span>$content <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;php edm_send.php &#34;</span><span style="color:#f92672">.</span>$id<span style="color:#f92672">.</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>$subscriber;
-$fbody <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span>($file,<span style="color:#e6db74">&#34;w&#34;</span>);
-<span style="color:#a6e22e">fwrite</span>($fbody,$content); 
-<span style="color:#a6e22e">fclose</span>($fbody);
-<span style="color:#a6e22e">unset</span>($content);
-
-<span style="color:#75715e">//00:00 2011-03-24 批次時間格式
-</span><span style="color:#75715e"></span>$settime <span style="color:#f92672">=</span> <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;H:i Y-m-d&#34;</span>,<span style="color:#a6e22e">mktime</span>(<span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;H&#34;</span>), <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;i&#34;</span>)<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;m&#34;</span>), <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;d&#34;</span>), <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;Y&#34;</span>)));
-<span style="color:#a6e22e">exec</span>(<span style="color:#e6db74">&#34;at -f &#34;</span><span style="color:#f92672">.</span>$file<span style="color:#f92672">.</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">.</span>$settime);
-</code></pre></div><p>其中排程觸發的參數可以用argv取得，如果沒有的話檢查php的register_argc_argv設定</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//用argv取得參數
-</span><span style="color:#75715e"></span>$argv[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test.php&#34;</span>;
-$id <span style="color:#f92672">=</span> $argv[<span style="color:#ae81ff">1</span>];
-$subscriber <span style="color:#f92672">=</span> $argv[<span style="color:#ae81ff">2</span>];
-</code></pre></div><hr>
-<p>第3種則是使用主機設定 crontab 排程定期觸發檔案，只要注意執行的檔案不會重複處理，還有能夠從每次結束的地方繼續處理就好。</p>
+						<p>記錄一下使用過的mysql條件判斷語法，只包含了自己使用過的部分，如果之後有機會使用到其他的語法會再補上，全部的功能還是請大家去官方手冊查詢。</p>
+<h4 id="ifnull">IFNULL</h4>
+<p>第一格如果是null的話使用第二格的資料</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#a6e22e">IFNULL</span>(not_null_run,<span style="color:#66d9ef">null</span>_run)
+</code></pre></div><h4 id="if">IF</h4>
+<p>條件判斷</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">判斷通過用第</span><span style="color:#ae81ff">2</span><span style="color:#960050;background-color:#1e0010">格</span>
+<span style="color:#66d9ef">IF</span>(AAA<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;0&#39;</span>	,<span style="color:#e6db74">&#39;A是0&#39;</span>	,<span style="color:#e6db74">&#39;不是0&#39;</span>)
+<span style="color:#f92672">//</span><span style="color:#960050;background-color:#1e0010">多條件</span>
+<span style="color:#66d9ef">IF</span>(Teacher_appointment.seek_id<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> <span style="color:#66d9ef">OR</span> (st.plusUSER <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">AND</span> st.c_user  <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span>),<span style="color:#e6db74">&#39;&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>)
+</code></pre></div><h4 id="switch-case">switch case</h4>
+<p>常見的switch功能，這邊不需要break</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">case</span> 
+	<span style="color:#66d9ef">when</span> AAA<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1&#39;</span>
+	<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;A是1&#39;</span>
+	<span style="color:#66d9ef">when</span> AAA<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2&#39;</span>
+	<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;A是2&#39;</span>
+	<span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#39;都不是&#39;</span>
+end
+</code></pre></div>
 						</section>
 					</div>
 				</article>
@@ -327,6 +286,16 @@ $subscriber <span style="color:#f92672">=</span> $argv[<span style="color:#ae81f
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
+        <a href="/posts/php_background_run/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php背景執行</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/07/23</time>
+                    </p>
+                </div>
+            </div>
         <a href="/posts/phpcaptcha_noaudio_question/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -337,36 +306,6 @@ $subscriber <span style="color:#f92672">=</span> $argv[<span style="color:#ae81f
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_cookies/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php cookies設定</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/16</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_github/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/web_speed_optimization/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">網頁速度優化</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/13</time>
-                    </p>
-                </div>
-            </div>
         <a href="/posts/hugo_plugin/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -374,6 +313,26 @@ $subscriber <span style="color:#f92672">=</span> $argv[<span style="color:#ae81f
                     <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/javascript_lock_right_click/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript鎖定右鍵</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/07/02</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_post/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
                     </p>
                 </div>
             </div>
