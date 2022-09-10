@@ -13,7 +13,7 @@
   gtag('config', 'G-037F3MYRK2');
 </script>
 
-<title>程式碼差異比對工具 - winmerge | 愚者樹屋</title>
+<title>javascript字串檢查 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="程式碼差異比對工具 - winmerge | 愚者樹屋" />
+    <meta property="og:title" content="javascript字串檢查 | 愚者樹屋" />
     
     
     
@@ -36,22 +36,22 @@
 
 
 
-<meta name="description" content="方便的程式碼差異比對工具，可以簡單地查出兩份檔案的差異">
-<meta name="keywords" content="程式碼差異比對,winmerge">
+<meta name="description" content="使用javascript檢查字串格式">
+<meta name="keywords" content="javascript">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="方便的程式碼差異比對工具，可以簡單地查出兩份檔案的差異">
-<meta property="og:url" content="https://foolowl.github.io/posts/winmerge/">
+<meta property="og:description" content="使用javascript檢查字串格式">
+<meta property="og:url" content="https://foolowl.github.io/posts/javascript_string_check/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://foolowl.github.io/posts/winmerge/">
+<link rel="canonical" href="https://foolowl.github.io/posts/javascript_string_check/">
 
-<meta name="twitter:description" content="方便的程式碼差異比對工具，可以簡單地查出兩份檔案的差異">
-<meta property="article:published_time" content="2022-06-25T09:03:46&#43;00:00">
-<meta property="article:updated_time" content="2022-06-25T09:03:46&#43;00:00">
+<meta name="twitter:description" content="使用javascript檢查字串格式">
+<meta property="article:published_time" content="2022-09-10T02:07:41&#43;00:00">
+<meta property="article:updated_time" content="2022-09-10T02:07:41&#43;00:00">
 
 
 
@@ -134,24 +134,55 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">程式碼差異比對工具 - winmerge</h2>
+					<h2 class="title text-4xl font-bold mb-2">javascript字串檢查</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/06/25</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/09/10</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/06/25</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/09/10</time>
 					
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>有時候因為各種原因會需要檢查兩份不同的程式碼中差異，比如說一個套裝軟體再為不同客戶加了客製調整的時候，沒有辦法直接用原本的覆蓋時有這種軟體就很方便了。</p>
-<p>目前碰到這種狀況下使用的軟體是winmerge，除了功能完整之外還有繁體中文，而且他還是一個免費軟體。<br>
-<a href="https://winmerge.org/">winmerge官方網站</a></p>
-<p>個人認為是一個很方便的差異比對軟體，可以檢查多份檔案或是資料夾內的差異並進行處理，記得在設定中調整備份檔案儲存的位置，如果沒調整的話預設會儲存在同個資料夾內，之後整理起來會比較麻煩。</p>
-<p>在兩個資料夾中比對的畫面如下，可以清楚的看出有差異的檔案。<br>
-<img src="/img/winmerge_1.png" alt="資料夾比對"><br>
-點開檔案後的畫面如下，除了可以看出差異外也可以簡單的合併至左邊或右邊，手動修改後也可以用重新整理再次比對差異。<br>
-<img src="/img/winmerge_2.png" alt="檔案比對"></p>
+						<p>記錄一下自己有用過的字串檢查，主要用來限制使用者輸入的資料，只在後端檢查的話很容易讓使用者頁面跳來跳去，在前端額外使用javascript補助就可以讓正常輸入的使用者有較佳的體驗。</p>
+<p>使用時要注意前端檢查只能防止一般使用者，使用工具或有些技術的人員可以繞過這種機制，所以後端一定得再檢查一次。</p>
+<p>利用編碼檢查有無英文以外的字元</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tmp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#introduction&#39;</span>).<span style="color:#a6e22e">val</span>();
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">len</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">showstr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;英文字&#39;</span>;
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+	<span style="color:#a6e22e">len</span><span style="color:#f92672">++</span>;
+	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">charCodeAt</span>(<span style="color:#a6e22e">i</span>) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">256</span>){
+	}<span style="color:#66d9ef">else</span>{
+		<span style="color:#a6e22e">showstr</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;英文以外字&#39;</span>;
+	}
+}
+<span style="color:#a6e22e">showstr</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;目前已&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">len</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;字&#39;</span>;
+</code></pre></div><p>正規</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//純中文字 注意這段連標點符號都不會過
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">chinese</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^[\u4E00-\u9FA5]+$/</span>;
+<span style="color:#75715e">//email
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">MailCheck</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^[a-zA-Z0-9]+[a-zA-Z0-9_.-]+[a-zA-Z0-9_-]+@[a-zA-Z0-9.-]+.[a-z]{2,4}$/</span>;
+<span style="color:#75715e">//email
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">emailchk</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/</span>;
+<span style="color:#75715e">//大小寫 數字 英文 特殊符號 4選3
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">pwdchk</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\W_]+$)(?![a-z0-9]+$)(?![a-z\W_]+$)(?![0-9\W_]+$)[a-zA-Z0-9\W_]{8,20}$/</span>;
+<span style="color:#75715e">//密碼 英文 數字 符號 3選2
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">pwdchk</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^(?![a-zA-Z]+$)(?![\W_]+$)(?![0-9]+$)[a-zA-Z0-9\W_]{8,}$/</span>;
+<span style="color:#75715e">//電話強制加區碼
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">telchk</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^(0\d+)-(\d{8})(?:(?:#)(\d+))?$/</span>; 
+<span style="color:#75715e">//電話區碼可省略
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">telchk</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^(\d*)-?(\d{8})(?:(?:#)(\d+))?$/</span>;
+<span style="color:#75715e">//手機
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">phonechk</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^(\d{4})-?(\d{3})-?(\d{3})$/</span>;
+
+<span style="color:#75715e">//檢查用
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">reg</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">input</span>)) {
+	<span style="color:#75715e">//通過
+</span><span style="color:#75715e"></span>} <span style="color:#66d9ef">else</span> {
+	<span style="color:#75715e">//不通過
+</span><span style="color:#75715e"></span>}
+</code></pre></div>
 						</section>
 					</div>
 				</article>
@@ -274,6 +305,26 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
+        <a href="/posts/hugo_install/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Hugo安裝</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/javascript_string_check/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串檢查</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/09/10</time>
+                    </p>
+                </div>
+            </div>
         <a href="/posts/community_share_update/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -284,43 +335,23 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/youtube_thumbnail/" class="">
+        <a href="/posts/hugo_config/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_github/" class="">
+        <a href="/posts/hugo_plugin/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_post/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/hugo_post2/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
                     </p>
                 </div>
             </div>

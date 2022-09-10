@@ -6,7 +6,16 @@
     <description>Recent content in javascript on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 02 Jul 2022 10:56:55 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 02:07:41 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript字串檢查</title>
+      <link>https://foolowl.github.io/posts/javascript_string_check/</link>
+      <pubDate>Sat, 10 Sep 2022 02:07:41 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/javascript_string_check/</guid>
+      <description>&lt;p&gt;記錄一下自己有用過的字串檢查，主要用來限制使用者輸入的資料，只在後端檢查的話很容易讓使用者頁面跳來跳去，在前端額外使用javascript補助就可以讓正常輸入的使用者有較佳的體驗。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript鎖定右鍵</title>
       <link>https://foolowl.github.io/posts/javascript_lock_right_click/</link>
