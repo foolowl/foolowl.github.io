@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 10 Sep 2022 02:07:41 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 15:11:02 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php取得使用者ip</title>
+      <link>https://foolowl.github.io/posts/php_client_ip/</link>
+      <pubDate>Sat, 17 Sep 2022 15:11:02 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/php_client_ip/</guid>
+      <description>&lt;p&gt;再一些安全防護的情況下需要紀錄或限制使用者的ip時可以使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript字串檢查</title>
       <link>https://foolowl.github.io/posts/javascript_string_check/</link>
