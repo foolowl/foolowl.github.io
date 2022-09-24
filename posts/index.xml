@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 17 Sep 2022 15:11:02 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Sep 2022 07:40:14 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php檔案路徑</title>
+      <link>https://foolowl.github.io/posts/php_file_path/</link>
+      <pubDate>Sat, 24 Sep 2022 07:40:14 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/php_file_path/</guid>
+      <description>&lt;p&gt;使用函數取得目前檔案的路徑，一般比較常用在設定檔中設定上傳路徑，可以不用因為更改位置而調整設定檔。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php取得使用者ip</title>
       <link>https://foolowl.github.io/posts/php_client_ip/</link>
