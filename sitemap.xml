@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://foolowl.github.io/tags/html/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/series/html/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/series/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/tags/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://foolowl.github.io/posts/robots_txt/</loc>
+    <lastmod>2022-10-08T09:55:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://foolowl.github.io/tags/php/</loc>
     <lastmod>2022-10-01T04:44:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,26 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://foolowl.github.io/posts/php_datetime/</loc>
-    <lastmod>2022-10-01T04:44:43+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/posts/</loc>
-    <lastmod>2022-10-01T04:44:43+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/series/</loc>
-    <lastmod>2022-10-01T04:44:43+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/</loc>
-    <lastmod>2022-10-01T04:44:43+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/</loc>
     <lastmod>2022-10-01T04:44:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -94,16 +109,6 @@
   </url><url>
     <loc>https://foolowl.github.io/posts/mysql_string_functions/</loc>
     <lastmod>2022-09-04T12:28:39+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/html/</loc>
-    <lastmod>2022-08-13T11:50:46+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/series/html/</loc>
-    <lastmod>2022-08-13T11:50:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

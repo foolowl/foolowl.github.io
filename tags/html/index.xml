@@ -6,7 +6,16 @@
     <description>Recent content in html on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 13 Aug 2022 11:50:46 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Oct 2022 09:55:28 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站爬蟲設定(robots.txt)</title>
+      <link>https://foolowl.github.io/posts/robots_txt/</link>
+      <pubDate>Sat, 08 Oct 2022 09:55:28 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/robots_txt/</guid>
+      <description>&lt;p&gt;要防止搜尋引擎顯示資料在搜尋列表時可以設定兩個東西，一個是meta另一個是robots.txt，雖然不能直接阻止別人看到頁面不過有名的搜尋引擎基本上都遵守這個規則。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>網頁速度優化</title>
       <link>https://foolowl.github.io/posts/web_speed_optimization/</link>
