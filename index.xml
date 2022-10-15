@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Oct 2022 09:55:28 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 09:18:37 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php字串搜尋</title>
+      <link>https://foolowl.github.io/posts/php_string_search/</link>
+      <pubDate>Sat, 15 Oct 2022 09:18:37 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/php_string_search/</guid>
+      <description>&lt;p&gt;紀錄一些常用的字串比對與字串搜尋方法，這些主要用來檢查使用者輸入的資料，畢竟搜尋資料多數都在資料庫時就處理掉了，只有少數情況會需要使用php搜尋已儲存的資料。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>網站爬蟲設定(robots.txt)</title>
       <link>https://foolowl.github.io/posts/robots_txt/</link>

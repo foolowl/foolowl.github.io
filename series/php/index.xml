@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 01 Oct 2022 04:44:43 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 09:18:37 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php字串搜尋</title>
+      <link>https://foolowl.github.io/posts/php_string_search/</link>
+      <pubDate>Sat, 15 Oct 2022 09:18:37 +0000</pubDate>
+      
+      <guid>https://foolowl.github.io/posts/php_string_search/</guid>
+      <description>&lt;p&gt;紀錄一些常用的字串比對與字串搜尋方法，這些主要用來檢查使用者輸入的資料，畢竟搜尋資料多數都在資料庫時就處理掉了，只有少數情況會需要使用php搜尋已儲存的資料。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php時間處理</title>
       <link>https://foolowl.github.io/posts/php_datetime/</link>
