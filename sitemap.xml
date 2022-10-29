@@ -2,281 +2,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://foolowl.github.io/posts/</loc>
+    <loc>https://www.foolowl.tw/tags/javascript/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/javascript/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/javascript_copy_string/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2022-10-29T03:28:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/game_vampire_survivors/</loc>
     <lastmod>2022-10-22T04:46:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/</loc>
+    <loc>https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
     <lastmod>2022-10-22T04:46:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/</loc>
+    <loc>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
     <lastmod>2022-10-22T04:46:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/game_vampire_survivors/</loc>
-    <lastmod>2022-10-22T04:46:05+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/</loc>
-    <lastmod>2022-10-22T04:46:05+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
-    <lastmod>2022-10-22T04:46:05+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
-    <lastmod>2022-10-22T04:46:05+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/php/</loc>
+    <loc>https://www.foolowl.tw/tags/php/</loc>
     <lastmod>2022-10-15T09:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/php/</loc>
+    <loc>https://www.foolowl.tw/series/php/</loc>
     <lastmod>2022-10-15T09:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/php_string_search/</loc>
+    <loc>https://www.foolowl.tw/posts/php_string_search/</loc>
     <lastmod>2022-10-15T09:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/html/</loc>
+    <loc>https://www.foolowl.tw/tags/html/</loc>
     <lastmod>2022-10-08T09:55:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/html/</loc>
+    <loc>https://www.foolowl.tw/series/html/</loc>
     <lastmod>2022-10-08T09:55:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/robots_txt/</loc>
+    <loc>https://www.foolowl.tw/posts/robots_txt/</loc>
     <lastmod>2022-10-08T09:55:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/php_datetime/</loc>
+    <loc>https://www.foolowl.tw/posts/php_datetime/</loc>
     <lastmod>2022-10-01T04:44:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/php_file_path/</loc>
+    <loc>https://www.foolowl.tw/posts/php_file_path/</loc>
     <lastmod>2022-09-24T07:40:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/php_client_ip/</loc>
+    <loc>https://www.foolowl.tw/posts/php_client_ip/</loc>
     <lastmod>2022-09-17T15:11:02+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/javascript/</loc>
-    <lastmod>2022-10-15T09:31:21+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/series/javascript/</loc>
+    <loc>https://www.foolowl.tw/posts/javascript_string_check/</loc>
     <lastmod>2022-09-10T02:07:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/javascript_string_check/</loc>
-    <lastmod>2022-09-10T02:07:41+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://foolowl.github.io/tags/mysql/</loc>
+    <loc>https://www.foolowl.tw/tags/mysql/</loc>
     <lastmod>2022-09-04T12:28:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/mysql/</loc>
+    <loc>https://www.foolowl.tw/series/mysql/</loc>
     <lastmod>2022-09-04T12:28:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/mysql_conditionals/</loc>
+    <loc>https://www.foolowl.tw/posts/mysql_conditionals/</loc>
     <lastmod>2022-09-04T12:17:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/jquery/</loc>
+    <loc>https://www.foolowl.tw/tags/jquery/</loc>
     <lastmod>2022-10-15T09:31:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/jquery/</loc>
+    <loc>https://www.foolowl.tw/series/jquery/</loc>
     <lastmod>2022-10-15T09:31:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/jquery_ajax/</loc>
+    <loc>https://www.foolowl.tw/posts/jquery_ajax/</loc>
     <lastmod>2022-10-15T09:31:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/mysql_string_functions/</loc>
+    <loc>https://www.foolowl.tw/posts/mysql_string_functions/</loc>
     <lastmod>2022-09-04T12:28:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/web_speed_optimization/</loc>
+    <loc>https://www.foolowl.tw/posts/web_speed_optimization/</loc>
     <lastmod>2022-08-13T11:50:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/community_share_update/</loc>
+    <loc>https://www.foolowl.tw/posts/community_share_update/</loc>
     <lastmod>2022-08-06T09:13:25+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</loc>
+    <loc>https://www.foolowl.tw/tags/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</loc>
     <lastmod>2022-08-06T09:13:25+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</loc>
+    <loc>https://www.foolowl.tw/series/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</loc>
     <lastmod>2022-08-06T09:13:25+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/python/</loc>
+    <loc>https://www.foolowl.tw/tags/python/</loc>
     <lastmod>2022-08-06T08:54:24+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/python/</loc>
+    <loc>https://www.foolowl.tw/series/python/</loc>
     <lastmod>2022-08-06T08:54:24+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/python_twitcasting_recorder/</loc>
+    <loc>https://www.foolowl.tw/posts/python_twitcasting_recorder/</loc>
     <lastmod>2022-08-06T08:54:24+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/php_background_run/</loc>
+    <loc>https://www.foolowl.tw/posts/php_background_run/</loc>
     <lastmod>2022-07-23T01:49:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/php_cookies/</loc>
+    <loc>https://www.foolowl.tw/posts/php_cookies/</loc>
     <lastmod>2022-07-16T08:29:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</loc>
+    <loc>https://www.foolowl.tw/posts/phpcaptcha_noaudio_question/</loc>
     <lastmod>2022-07-09T03:48:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/javascript_lock_right_click/</loc>
+    <loc>https://www.foolowl.tw/posts/javascript_lock_right_click/</loc>
     <lastmod>2022-07-02T10:56:55+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
+    <loc>https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2022-06-25T09:03:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
+    <loc>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2022-06-25T09:03:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://www.foolowl.tw/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-06-25T09:03:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/winmerge/</loc>
+    <loc>https://www.foolowl.tw/posts/winmerge/</loc>
     <lastmod>2022-06-25T09:03:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/youtube_thumbnail/</loc>
+    <loc>https://www.foolowl.tw/posts/youtube_thumbnail/</loc>
     <lastmod>2022-06-18T03:42:19+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/javascript_encryption/</loc>
+    <loc>https://www.foolowl.tw/posts/javascript_encryption/</loc>
     <lastmod>2022-06-11T09:37:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/youtube-api/</loc>
+    <loc>https://www.foolowl.tw/tags/youtube-api/</loc>
     <lastmod>2022-06-05T12:48:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/youtube_counter/</loc>
+    <loc>https://www.foolowl.tw/posts/youtube_counter/</loc>
     <lastmod>2022-06-05T12:48:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/tags/hugo/</loc>
+    <loc>https://www.foolowl.tw/tags/hugo/</loc>
     <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/</loc>
+    <loc>https://www.foolowl.tw/series/hugo%E5%AE%89%E8%A3%9D/</loc>
     <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_github/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_github/</loc>
     <lastmod>2022-05-28T15:21:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_folder/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_folder/</loc>
     <lastmod>2022-05-21T09:56:10+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_post2/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_post2/</loc>
     <lastmod>2022-05-15T03:00:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_post/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_post/</loc>
     <lastmod>2022-05-08T09:21:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_config/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_config/</loc>
     <lastmod>2022-04-30T10:32:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_plugin/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_plugin/</loc>
     <lastmod>2022-04-24T06:52:51+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/posts/hugo_install/</loc>
+    <loc>https://www.foolowl.tw/posts/hugo_install/</loc>
     <lastmod>2022-04-17T07:20:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/contact/</loc>
+    <loc>https://www.foolowl.tw/contact/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://foolowl.github.io/about/</loc>
+    <loc>https://www.foolowl.tw/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

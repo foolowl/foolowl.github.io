@@ -1,2 +1,2 @@
 # my chinese blog
-link: https://foolowl.github.io/
+link: http://www.foolowl.tw/

@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo安裝 on 愚者樹屋</title>
-    <link>https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/</link>
+    <link>https://www.foolowl.tw/series/hugo%E5%AE%89%E8%A3%9D/</link>
     <description>Recent content in Hugo安裝 on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 28 May 2022 15:21:06 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 May 2022 15:21:06 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/hugo%E5%AE%89%E8%A3%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>將hugo網站放上github</title>
-      <link>https://foolowl.github.io/posts/hugo_github/</link>
+      <link>https://www.foolowl.tw/posts/hugo_github/</link>
       <pubDate>Sat, 28 May 2022 15:21:06 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_github/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_github/</guid>
       <description>&lt;p&gt;這篇設定github用來放置產生的檔案作為blog。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo資料夾用途</title>
-      <link>https://foolowl.github.io/posts/hugo_folder/</link>
+      <link>https://www.foolowl.tw/posts/hugo_folder/</link>
       <pubDate>Sat, 21 May 2022 09:56:10 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_folder/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_folder/</guid>
       <description>&lt;p&gt;這篇單純紀錄hugo各個資料夾的用途，一般來說只要知道圖片、文章和產生的檔案在哪邊就行了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo發表文章2</title>
-      <link>https://foolowl.github.io/posts/hugo_post2/</link>
+      <link>https://www.foolowl.tw/posts/hugo_post2/</link>
       <pubDate>Sun, 15 May 2022 03:00:34 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_post2/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_post2/</guid>
       <description>&lt;p&gt;這篇介紹一下Front Matter格式，在hugo或一部分md編輯程式中建立的md檔案開頭會有兩個&amp;mdash;包起來的設定區域，這塊區域使用參數標籤來記錄額外的文件設定。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo發表文章</title>
-      <link>https://foolowl.github.io/posts/hugo_post/</link>
+      <link>https://www.foolowl.tw/posts/hugo_post/</link>
       <pubDate>Sun, 08 May 2022 09:21:49 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_post/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_post/</guid>
       <description>&lt;p&gt;Hugo的文章基本上是以md檔案儲存的，這邊紀錄一下md能使用的語法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo config設定</title>
-      <link>https://foolowl.github.io/posts/hugo_config/</link>
+      <link>https://www.foolowl.tw/posts/hugo_config/</link>
       <pubDate>Sat, 30 Apr 2022 10:32:20 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_config/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_config/</guid>
       <description>&lt;p&gt;Hugo設定檔的簡單介紹，這設定會直接影響整個網站的運作。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo外掛</title>
-      <link>https://foolowl.github.io/posts/hugo_plugin/</link>
+      <link>https://www.foolowl.tw/posts/hugo_plugin/</link>
       <pubDate>Sun, 24 Apr 2022 06:52:51 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_plugin/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_plugin/</guid>
       <description>&lt;p&gt;一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo安裝</title>
-      <link>https://foolowl.github.io/posts/hugo_install/</link>
+      <link>https://www.foolowl.tw/posts/hugo_install/</link>
       <pubDate>Sun, 17 Apr 2022 06:17:23 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_install/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_install/</guid>
       <description>&lt;p&gt;Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。&lt;/p&gt;</description>
     </item>
     

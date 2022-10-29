@@ -2,278 +2,287 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>愚者樹屋</title>
-    <link>https://foolowl.github.io/</link>
+    <link>https://www.foolowl.tw/</link>
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 22 Oct 2022 04:46:05 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 03:28:52 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript字串複製</title>
+      <link>https://www.foolowl.tw/posts/javascript_copy_string/</link>
+      <pubDate>Sat, 29 Oct 2022 03:28:52 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/javascript_copy_string/</guid>
+      <description>&lt;p&gt;雖然可以自己複製還是有網站有要求快速複製的按鈕方便使用者使用，記錄一下使用javascript複製字串的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>吸血鬼倖存者(vampire survivors)</title>
-      <link>https://foolowl.github.io/posts/game_vampire_survivors/</link>
+      <link>https://www.foolowl.tw/posts/game_vampire_survivors/</link>
       <pubDate>Sat, 22 Oct 2022 04:46:05 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/game_vampire_survivors/</guid>
+      <guid>https://www.foolowl.tw/posts/game_vampire_survivors/</guid>
       <description>&lt;p&gt;應該算是很有名的小品遊戲，最近推出正式版了這邊記錄一下比較麻煩的角色拿法，喜歡rogue like類型遊戲的請一定要試看看。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php字串搜尋</title>
-      <link>https://foolowl.github.io/posts/php_string_search/</link>
+      <link>https://www.foolowl.tw/posts/php_string_search/</link>
       <pubDate>Sat, 15 Oct 2022 09:18:37 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_string_search/</guid>
+      <guid>https://www.foolowl.tw/posts/php_string_search/</guid>
       <description>&lt;p&gt;紀錄一些常用的字串比對與字串搜尋方法，這些主要用來檢查使用者輸入的資料，畢竟搜尋資料多數都在資料庫時就處理掉了，只有少數情況會需要使用php搜尋已儲存的資料。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>網站爬蟲設定(robots.txt)</title>
-      <link>https://foolowl.github.io/posts/robots_txt/</link>
+      <link>https://www.foolowl.tw/posts/robots_txt/</link>
       <pubDate>Sat, 08 Oct 2022 09:55:28 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/robots_txt/</guid>
+      <guid>https://www.foolowl.tw/posts/robots_txt/</guid>
       <description>&lt;p&gt;要防止搜尋引擎顯示資料在搜尋列表時可以設定兩個東西，一個是meta另一個是robots.txt，雖然不能直接阻止別人看到頁面不過有名的搜尋引擎基本上都遵守這個規則。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php時間處理</title>
-      <link>https://foolowl.github.io/posts/php_datetime/</link>
+      <link>https://www.foolowl.tw/posts/php_datetime/</link>
       <pubDate>Sat, 01 Oct 2022 04:44:43 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_datetime/</guid>
+      <guid>https://www.foolowl.tw/posts/php_datetime/</guid>
       <description>&lt;p&gt;簡單記錄一下php的時間檢查與轉換。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php檔案路徑</title>
-      <link>https://foolowl.github.io/posts/php_file_path/</link>
+      <link>https://www.foolowl.tw/posts/php_file_path/</link>
       <pubDate>Sat, 24 Sep 2022 07:40:14 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_file_path/</guid>
+      <guid>https://www.foolowl.tw/posts/php_file_path/</guid>
       <description>&lt;p&gt;使用函數取得目前檔案的路徑，一般比較常用在設定檔中設定上傳路徑，可以不用因為更改位置而調整設定檔。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php取得使用者ip</title>
-      <link>https://foolowl.github.io/posts/php_client_ip/</link>
+      <link>https://www.foolowl.tw/posts/php_client_ip/</link>
       <pubDate>Sat, 17 Sep 2022 15:11:02 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_client_ip/</guid>
+      <guid>https://www.foolowl.tw/posts/php_client_ip/</guid>
       <description>&lt;p&gt;再一些安全防護的情況下需要紀錄或限制使用者的ip時可以使用。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>javascript字串檢查</title>
-      <link>https://foolowl.github.io/posts/javascript_string_check/</link>
+      <link>https://www.foolowl.tw/posts/javascript_string_check/</link>
       <pubDate>Sat, 10 Sep 2022 02:07:41 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/javascript_string_check/</guid>
+      <guid>https://www.foolowl.tw/posts/javascript_string_check/</guid>
       <description>&lt;p&gt;記錄一下自己有用過的字串檢查，主要用來限制使用者輸入的資料，只在後端檢查的話很容易讓使用者頁面跳來跳去，在前端額外使用javascript補助就可以讓正常輸入的使用者有較佳的體驗。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>mysql條件式</title>
-      <link>https://foolowl.github.io/posts/mysql_conditionals/</link>
+      <link>https://www.foolowl.tw/posts/mysql_conditionals/</link>
       <pubDate>Sun, 04 Sep 2022 12:17:43 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/mysql_conditionals/</guid>
+      <guid>https://www.foolowl.tw/posts/mysql_conditionals/</guid>
       <description>&lt;p&gt;記錄一下使用過的mysql條件判斷語法，只包含了自己使用過的部分，如果之後有機會使用到其他的語法會再補上，全部的功能還是請大家去官方手冊查詢。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>jquery ajax</title>
-      <link>https://foolowl.github.io/posts/jquery_ajax/</link>
+      <link>https://www.foolowl.tw/posts/jquery_ajax/</link>
       <pubDate>Sat, 27 Aug 2022 11:43:26 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/jquery_ajax/</guid>
+      <guid>https://www.foolowl.tw/posts/jquery_ajax/</guid>
       <description>&lt;p&gt;使用jquery的ajax進行非同步資料傳輸，如果是使用javascript可以使用XMLHttpRequest函數去處理，由於jquery處理掉不少瀏覽器差異，使用上比較方便，加上碰過的專案大多為了特效都有使用，這邊只記錄自己比較熟的jquery部分。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>mysql字串函數</title>
-      <link>https://foolowl.github.io/posts/mysql_string_functions/</link>
+      <link>https://www.foolowl.tw/posts/mysql_string_functions/</link>
       <pubDate>Sat, 20 Aug 2022 10:09:35 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/mysql_string_functions/</guid>
+      <guid>https://www.foolowl.tw/posts/mysql_string_functions/</guid>
       <description>&lt;p&gt;記錄一下使用過的mysql字串處理函數，只包含了自己使用過的部分，如果之後有機會使用到其他的函數會再補上，全部的功能還是請大家去官方手冊查詢。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>網頁速度優化</title>
-      <link>https://foolowl.github.io/posts/web_speed_optimization/</link>
+      <link>https://www.foolowl.tw/posts/web_speed_optimization/</link>
       <pubDate>Sat, 13 Aug 2022 11:50:46 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/web_speed_optimization/</guid>
+      <guid>https://www.foolowl.tw/posts/web_speed_optimization/</guid>
       <description>&lt;p&gt;讓使用者可以更順暢瀏覽網頁的處理，除此之外網站速度也會被當成搜尋引擎SEO的參考之一，可能的情況最好能避免網站進入緩慢(紅色)的評分。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>社群分享暫存資料更新</title>
-      <link>https://foolowl.github.io/posts/community_share_update/</link>
+      <link>https://www.foolowl.tw/posts/community_share_update/</link>
       <pubDate>Sat, 06 Aug 2022 09:13:25 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/community_share_update/</guid>
+      <guid>https://www.foolowl.tw/posts/community_share_update/</guid>
       <description>&lt;p&gt;用來強制社群網站更新分享暫存資料的方法，還可以用來檢查分享的資料設定沒有問題。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用python錄TwitCasting直播</title>
-      <link>https://foolowl.github.io/posts/python_twitcasting_recorder/</link>
+      <link>https://www.foolowl.tw/posts/python_twitcasting_recorder/</link>
       <pubDate>Sat, 30 Jul 2022 02:34:08 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/python_twitcasting_recorder/</guid>
+      <guid>https://www.foolowl.tw/posts/python_twitcasting_recorder/</guid>
       <description>&lt;p&gt;使用python錄製&lt;a href=&#34;https://twitcasting.tv/&#34;&gt;https://twitcasting.tv/&lt;/a&gt;直播的方法&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php背景執行</title>
-      <link>https://foolowl.github.io/posts/php_background_run/</link>
+      <link>https://www.foolowl.tw/posts/php_background_run/</link>
       <pubDate>Sat, 23 Jul 2022 01:49:05 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_background_run/</guid>
+      <guid>https://www.foolowl.tw/posts/php_background_run/</guid>
       <description>&lt;p&gt;有些功能需要長時間處理或是不方便一次處理過多數量的通常就會使用背景處理，有幾種方式不過基本上需要伺服器設定能配合。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php cookies設定</title>
-      <link>https://foolowl.github.io/posts/php_cookies/</link>
+      <link>https://www.foolowl.tw/posts/php_cookies/</link>
       <pubDate>Sat, 16 Jul 2022 08:29:26 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_cookies/</guid>
+      <guid>https://www.foolowl.tw/posts/php_cookies/</guid>
       <description>&lt;p&gt;簡單記錄一下php的cookies設定，以及各參數的用途。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>phpcaptcha在ios上撥放沒有聲音</title>
-      <link>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</link>
+      <link>https://www.foolowl.tw/posts/phpcaptcha_noaudio_question/</link>
       <pubDate>Sat, 09 Jul 2022 03:48:34 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</guid>
+      <guid>https://www.foolowl.tw/posts/phpcaptcha_noaudio_question/</guid>
       <description>&lt;p&gt;以前在一個網站的驗證碼處理中發現這個問題，也許新版已經有處理掉這個問題也說不定，在這邊還是另外做一個紀錄。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>javascript鎖定右鍵</title>
-      <link>https://foolowl.github.io/posts/javascript_lock_right_click/</link>
+      <link>https://www.foolowl.tw/posts/javascript_lock_right_click/</link>
       <pubDate>Sat, 02 Jul 2022 10:56:55 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/javascript_lock_right_click/</guid>
+      <guid>https://www.foolowl.tw/posts/javascript_lock_right_click/</guid>
       <description>&lt;p&gt;有時候客戶會想要把右鍵功能鎖定，這時可以加入這段javascript處理。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>程式碼差異比對工具 - winmerge</title>
-      <link>https://foolowl.github.io/posts/winmerge/</link>
+      <link>https://www.foolowl.tw/posts/winmerge/</link>
       <pubDate>Sat, 25 Jun 2022 09:03:46 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/winmerge/</guid>
+      <guid>https://www.foolowl.tw/posts/winmerge/</guid>
       <description>&lt;p&gt;有時候因為各種原因會需要檢查兩份不同的程式碼中差異，比如說一個套裝軟體再為不同客戶加了客製調整的時候，沒有辦法直接用原本的覆蓋時有這種軟體就很方便了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>youtube縮圖</title>
-      <link>https://foolowl.github.io/posts/youtube_thumbnail/</link>
+      <link>https://www.foolowl.tw/posts/youtube_thumbnail/</link>
       <pubDate>Sat, 18 Jun 2022 03:42:19 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/youtube_thumbnail/</guid>
+      <guid>https://www.foolowl.tw/posts/youtube_thumbnail/</guid>
       <description>&lt;p&gt;有時候在網頁排版上不會直接嵌入影片而需要使用圖片排版的情況，直接利用網址取得youtube縮圖，比起在網站建立資料時自己額外上傳圖片方便，也不用擔心調整後網站忘記更換圖片的問題。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>javascript加密</title>
-      <link>https://foolowl.github.io/posts/javascript_encryption/</link>
+      <link>https://www.foolowl.tw/posts/javascript_encryption/</link>
       <pubDate>Sat, 11 Jun 2022 09:37:21 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/javascript_encryption/</guid>
+      <guid>https://www.foolowl.tw/posts/javascript_encryption/</guid>
       <description>&lt;p&gt;利用套件把字串進行加密，在一些資安要求下可能會有需要。在資料傳送前進行加密，在後端程式接收後在解密還原。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>youtube點擊計數</title>
-      <link>https://foolowl.github.io/posts/youtube_counter/</link>
+      <link>https://www.foolowl.tw/posts/youtube_counter/</link>
       <pubDate>Sun, 05 Jun 2022 12:48:05 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/youtube_counter/</guid>
+      <guid>https://www.foolowl.tw/posts/youtube_counter/</guid>
       <description>&lt;p&gt;紀錄一下如何使用youtube api來計算嵌入影片被點擊的次數，這個API也可以用來控制嵌入影片的撥放、暫停等等，這裡就是利用影片的播放狀態來進行撥放的判斷。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>將hugo網站放上github</title>
-      <link>https://foolowl.github.io/posts/hugo_github/</link>
+      <link>https://www.foolowl.tw/posts/hugo_github/</link>
       <pubDate>Sat, 28 May 2022 15:21:06 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_github/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_github/</guid>
       <description>&lt;p&gt;這篇設定github用來放置產生的檔案作為blog。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo資料夾用途</title>
-      <link>https://foolowl.github.io/posts/hugo_folder/</link>
+      <link>https://www.foolowl.tw/posts/hugo_folder/</link>
       <pubDate>Sat, 21 May 2022 09:56:10 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_folder/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_folder/</guid>
       <description>&lt;p&gt;這篇單純紀錄hugo各個資料夾的用途，一般來說只要知道圖片、文章和產生的檔案在哪邊就行了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo發表文章2</title>
-      <link>https://foolowl.github.io/posts/hugo_post2/</link>
+      <link>https://www.foolowl.tw/posts/hugo_post2/</link>
       <pubDate>Sun, 15 May 2022 03:00:34 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_post2/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_post2/</guid>
       <description>&lt;p&gt;這篇介紹一下Front Matter格式，在hugo或一部分md編輯程式中建立的md檔案開頭會有兩個&amp;mdash;包起來的設定區域，這塊區域使用參數標籤來記錄額外的文件設定。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo發表文章</title>
-      <link>https://foolowl.github.io/posts/hugo_post/</link>
+      <link>https://www.foolowl.tw/posts/hugo_post/</link>
       <pubDate>Sun, 08 May 2022 09:21:49 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_post/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_post/</guid>
       <description>&lt;p&gt;Hugo的文章基本上是以md檔案儲存的，這邊紀錄一下md能使用的語法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo config設定</title>
-      <link>https://foolowl.github.io/posts/hugo_config/</link>
+      <link>https://www.foolowl.tw/posts/hugo_config/</link>
       <pubDate>Sat, 30 Apr 2022 10:32:20 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_config/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_config/</guid>
       <description>&lt;p&gt;Hugo設定檔的簡單介紹，這設定會直接影響整個網站的運作。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>hugo外掛</title>
-      <link>https://foolowl.github.io/posts/hugo_plugin/</link>
+      <link>https://www.foolowl.tw/posts/hugo_plugin/</link>
       <pubDate>Sun, 24 Apr 2022 06:52:51 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_plugin/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_plugin/</guid>
       <description>&lt;p&gt;一個方便編輯hugo檔案的外掛，設定完成以後大部分的工作都可以在vscode裡面完成。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo安裝</title>
-      <link>https://foolowl.github.io/posts/hugo_install/</link>
+      <link>https://www.foolowl.tw/posts/hugo_install/</link>
       <pubDate>Sun, 17 Apr 2022 06:17:23 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/hugo_install/</guid>
+      <guid>https://www.foolowl.tw/posts/hugo_install/</guid>
       <description>&lt;p&gt;Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>聯絡我</title>
-      <link>https://foolowl.github.io/contact/</link>
+      <link>https://www.foolowl.tw/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/contact/</guid>
+      <guid>https://www.foolowl.tw/contact/</guid>
       <description>如果有需要找我的話可以使用底部的社群網站私訊或標記我 或是使用表單留下訊息，會不定時查看這些東西 載入中…</description>
     </item>
     
     <item>
       <title>關於我</title>
-      <link>https://foolowl.github.io/about/</link>
+      <link>https://www.foolowl.tw/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/about/</guid>
+      <guid>https://www.foolowl.tw/about/</guid>
       <description>i am a web programmer work on a little company. in holiday like play electronic games and occasionally drawing. this blog will write some note about program,games or draw. 喜歡玩遊戲的廢柴大叔 目前主業是php程式，在小間的網頁公司工作。 下班後有在緩慢的學</description>
     </item>
     

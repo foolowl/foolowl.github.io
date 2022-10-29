@@ -2,71 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on 愚者樹屋</title>
-    <link>https://foolowl.github.io/tags/javascript/</link>
+    <link>https://www.foolowl.tw/tags/javascript/</link>
     <description>Recent content in javascript on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 10 Sep 2022 02:07:41 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 03:28:52 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript字串複製</title>
+      <link>https://www.foolowl.tw/posts/javascript_copy_string/</link>
+      <pubDate>Sat, 29 Oct 2022 03:28:52 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/javascript_copy_string/</guid>
+      <description>&lt;p&gt;雖然可以自己複製還是有網站有要求快速複製的按鈕方便使用者使用，記錄一下使用javascript複製字串的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript字串檢查</title>
-      <link>https://foolowl.github.io/posts/javascript_string_check/</link>
+      <link>https://www.foolowl.tw/posts/javascript_string_check/</link>
       <pubDate>Sat, 10 Sep 2022 02:07:41 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/javascript_string_check/</guid>
+      <guid>https://www.foolowl.tw/posts/javascript_string_check/</guid>
       <description>&lt;p&gt;記錄一下自己有用過的字串檢查，主要用來限制使用者輸入的資料，只在後端檢查的話很容易讓使用者頁面跳來跳去，在前端額外使用javascript補助就可以讓正常輸入的使用者有較佳的體驗。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>jquery ajax</title>
-      <link>https://foolowl.github.io/posts/jquery_ajax/</link>
+      <link>https://www.foolowl.tw/posts/jquery_ajax/</link>
       <pubDate>Sat, 27 Aug 2022 11:43:26 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/jquery_ajax/</guid>
+      <guid>https://www.foolowl.tw/posts/jquery_ajax/</guid>
       <description>&lt;p&gt;使用jquery的ajax進行非同步資料傳輸，如果是使用javascript可以使用XMLHttpRequest函數去處理，由於jquery處理掉不少瀏覽器差異，使用上比較方便，加上碰過的專案大多為了特效都有使用，這邊只記錄自己比較熟的jquery部分。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>網頁速度優化</title>
-      <link>https://foolowl.github.io/posts/web_speed_optimization/</link>
+      <link>https://www.foolowl.tw/posts/web_speed_optimization/</link>
       <pubDate>Sat, 13 Aug 2022 11:50:46 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/web_speed_optimization/</guid>
+      <guid>https://www.foolowl.tw/posts/web_speed_optimization/</guid>
       <description>&lt;p&gt;讓使用者可以更順暢瀏覽網頁的處理，除此之外網站速度也會被當成搜尋引擎SEO的參考之一，可能的情況最好能避免網站進入緩慢(紅色)的評分。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>javascript鎖定右鍵</title>
-      <link>https://foolowl.github.io/posts/javascript_lock_right_click/</link>
+      <link>https://www.foolowl.tw/posts/javascript_lock_right_click/</link>
       <pubDate>Sat, 02 Jul 2022 10:56:55 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/javascript_lock_right_click/</guid>
+      <guid>https://www.foolowl.tw/posts/javascript_lock_right_click/</guid>
       <description>&lt;p&gt;有時候客戶會想要把右鍵功能鎖定，這時可以加入這段javascript處理。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>youtube縮圖</title>
-      <link>https://foolowl.github.io/posts/youtube_thumbnail/</link>
+      <link>https://www.foolowl.tw/posts/youtube_thumbnail/</link>
       <pubDate>Sat, 18 Jun 2022 03:42:19 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/youtube_thumbnail/</guid>
+      <guid>https://www.foolowl.tw/posts/youtube_thumbnail/</guid>
       <description>&lt;p&gt;有時候在網頁排版上不會直接嵌入影片而需要使用圖片排版的情況，直接利用網址取得youtube縮圖，比起在網站建立資料時自己額外上傳圖片方便，也不用擔心調整後網站忘記更換圖片的問題。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>javascript加密</title>
-      <link>https://foolowl.github.io/posts/javascript_encryption/</link>
+      <link>https://www.foolowl.tw/posts/javascript_encryption/</link>
       <pubDate>Sat, 11 Jun 2022 09:37:21 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/javascript_encryption/</guid>
+      <guid>https://www.foolowl.tw/posts/javascript_encryption/</guid>
       <description>&lt;p&gt;利用套件把字串進行加密，在一些資安要求下可能會有需要。在資料傳送前進行加密，在後端程式接收後在解密還原。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>youtube點擊計數</title>
-      <link>https://foolowl.github.io/posts/youtube_counter/</link>
+      <link>https://www.foolowl.tw/posts/youtube_counter/</link>
       <pubDate>Sun, 05 Jun 2022 12:48:05 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/youtube_counter/</guid>
+      <guid>https://www.foolowl.tw/posts/youtube_counter/</guid>
       <description>&lt;p&gt;紀錄一下如何使用youtube api來計算嵌入影片被點擊的次數，這個API也可以用來控制嵌入影片的撥放、暫停等等，這裡就是利用影片的播放狀態來進行撥放的判斷。&lt;/p&gt;</description>
     </item>
     

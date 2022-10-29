@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html on 愚者樹屋</title>
-    <link>https://foolowl.github.io/tags/html/</link>
+    <link>https://www.foolowl.tw/tags/html/</link>
     <description>Recent content in html on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Oct 2022 09:55:28 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Oct 2022 09:55:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>網站爬蟲設定(robots.txt)</title>
-      <link>https://foolowl.github.io/posts/robots_txt/</link>
+      <link>https://www.foolowl.tw/posts/robots_txt/</link>
       <pubDate>Sat, 08 Oct 2022 09:55:28 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/robots_txt/</guid>
+      <guid>https://www.foolowl.tw/posts/robots_txt/</guid>
       <description>&lt;p&gt;要防止搜尋引擎顯示資料在搜尋列表時可以設定兩個東西，一個是meta另一個是robots.txt，雖然不能直接阻止別人看到頁面不過有名的搜尋引擎基本上都遵守這個規則。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>網頁速度優化</title>
-      <link>https://foolowl.github.io/posts/web_speed_optimization/</link>
+      <link>https://www.foolowl.tw/posts/web_speed_optimization/</link>
       <pubDate>Sat, 13 Aug 2022 11:50:46 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/web_speed_optimization/</guid>
+      <guid>https://www.foolowl.tw/posts/web_speed_optimization/</guid>
       <description>&lt;p&gt;讓使用者可以更順暢瀏覽網頁的處理，除此之外網站速度也會被當成搜尋引擎SEO的參考之一，可能的情況最好能避免網站進入緩慢(紅色)的評分。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>youtube縮圖</title>
-      <link>https://foolowl.github.io/posts/youtube_thumbnail/</link>
+      <link>https://www.foolowl.tw/posts/youtube_thumbnail/</link>
       <pubDate>Sat, 18 Jun 2022 03:42:19 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/youtube_thumbnail/</guid>
+      <guid>https://www.foolowl.tw/posts/youtube_thumbnail/</guid>
       <description>&lt;p&gt;有時候在網頁排版上不會直接嵌入影片而需要使用圖片排版的情況，直接利用網址取得youtube縮圖，比起在網站建立資料時自己額外上傳圖片方便，也不用擔心調整後網站忘記更換圖片的問題。&lt;/p&gt;</description>
     </item>
     

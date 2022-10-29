@@ -2,98 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on 愚者樹屋</title>
-    <link>https://foolowl.github.io/series/</link>
+    <link>https://www.foolowl.tw/series/</link>
     <description>Recent content in Series on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 22 Oct 2022 04:46:05 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 03:28:52 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript</title>
+      <link>https://www.foolowl.tw/series/javascript/</link>
+      <pubDate>Sat, 29 Oct 2022 03:28:52 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/series/javascript/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>遊戲推薦</title>
-      <link>https://foolowl.github.io/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</link>
+      <link>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</link>
       <pubDate>Sat, 22 Oct 2022 04:46:05 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</guid>
+      <guid>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>php</title>
-      <link>https://foolowl.github.io/series/php/</link>
+      <link>https://www.foolowl.tw/series/php/</link>
       <pubDate>Sat, 15 Oct 2022 09:18:37 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/php/</guid>
+      <guid>https://www.foolowl.tw/series/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://foolowl.github.io/series/html/</link>
+      <link>https://www.foolowl.tw/series/html/</link>
       <pubDate>Sat, 08 Oct 2022 09:55:28 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://foolowl.github.io/series/javascript/</link>
-      <pubDate>Sat, 10 Sep 2022 02:07:41 +0000</pubDate>
-      
-      <guid>https://foolowl.github.io/series/javascript/</guid>
+      <guid>https://www.foolowl.tw/series/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>https://foolowl.github.io/series/mysql/</link>
+      <link>https://www.foolowl.tw/series/mysql/</link>
       <pubDate>Sun, 04 Sep 2022 12:17:43 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/mysql/</guid>
+      <guid>https://www.foolowl.tw/series/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jquery</title>
-      <link>https://foolowl.github.io/series/jquery/</link>
+      <link>https://www.foolowl.tw/series/jquery/</link>
       <pubDate>Sat, 27 Aug 2022 11:43:26 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/jquery/</guid>
+      <guid>https://www.foolowl.tw/series/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>社群網站</title>
-      <link>https://foolowl.github.io/series/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</link>
+      <link>https://www.foolowl.tw/series/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</link>
       <pubDate>Sat, 06 Aug 2022 09:13:25 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</guid>
+      <guid>https://www.foolowl.tw/series/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://foolowl.github.io/series/python/</link>
+      <link>https://www.foolowl.tw/series/python/</link>
       <pubDate>Sat, 30 Jul 2022 02:34:08 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/python/</guid>
+      <guid>https://www.foolowl.tw/series/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>免費軟體</title>
-      <link>https://foolowl.github.io/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</link>
+      <link>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</link>
       <pubDate>Sat, 25 Jun 2022 09:03:46 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</guid>
+      <guid>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo安裝</title>
-      <link>https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/</link>
+      <link>https://www.foolowl.tw/series/hugo%E5%AE%89%E8%A3%9D/</link>
       <pubDate>Sat, 28 May 2022 15:21:06 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/series/hugo%E5%AE%89%E8%A3%9D/</guid>
+      <guid>https://www.foolowl.tw/series/hugo%E5%AE%89%E8%A3%9D/</guid>
       <description></description>
     </item>
     

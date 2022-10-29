@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>php on 愚者樹屋</title>
-    <link>https://foolowl.github.io/series/php/</link>
+    <link>https://www.foolowl.tw/series/php/</link>
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 15 Oct 2022 09:18:37 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 09:18:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>php字串搜尋</title>
-      <link>https://foolowl.github.io/posts/php_string_search/</link>
+      <link>https://www.foolowl.tw/posts/php_string_search/</link>
       <pubDate>Sat, 15 Oct 2022 09:18:37 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_string_search/</guid>
+      <guid>https://www.foolowl.tw/posts/php_string_search/</guid>
       <description>&lt;p&gt;紀錄一些常用的字串比對與字串搜尋方法，這些主要用來檢查使用者輸入的資料，畢竟搜尋資料多數都在資料庫時就處理掉了，只有少數情況會需要使用php搜尋已儲存的資料。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php時間處理</title>
-      <link>https://foolowl.github.io/posts/php_datetime/</link>
+      <link>https://www.foolowl.tw/posts/php_datetime/</link>
       <pubDate>Sat, 01 Oct 2022 04:44:43 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_datetime/</guid>
+      <guid>https://www.foolowl.tw/posts/php_datetime/</guid>
       <description>&lt;p&gt;簡單記錄一下php的時間檢查與轉換。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php檔案路徑</title>
-      <link>https://foolowl.github.io/posts/php_file_path/</link>
+      <link>https://www.foolowl.tw/posts/php_file_path/</link>
       <pubDate>Sat, 24 Sep 2022 07:40:14 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_file_path/</guid>
+      <guid>https://www.foolowl.tw/posts/php_file_path/</guid>
       <description>&lt;p&gt;使用函數取得目前檔案的路徑，一般比較常用在設定檔中設定上傳路徑，可以不用因為更改位置而調整設定檔。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php取得使用者ip</title>
-      <link>https://foolowl.github.io/posts/php_client_ip/</link>
+      <link>https://www.foolowl.tw/posts/php_client_ip/</link>
       <pubDate>Sat, 17 Sep 2022 15:11:02 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_client_ip/</guid>
+      <guid>https://www.foolowl.tw/posts/php_client_ip/</guid>
       <description>&lt;p&gt;再一些安全防護的情況下需要紀錄或限制使用者的ip時可以使用。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php背景執行</title>
-      <link>https://foolowl.github.io/posts/php_background_run/</link>
+      <link>https://www.foolowl.tw/posts/php_background_run/</link>
       <pubDate>Sat, 23 Jul 2022 01:49:05 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_background_run/</guid>
+      <guid>https://www.foolowl.tw/posts/php_background_run/</guid>
       <description>&lt;p&gt;有些功能需要長時間處理或是不方便一次處理過多數量的通常就會使用背景處理，有幾種方式不過基本上需要伺服器設定能配合。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php cookies設定</title>
-      <link>https://foolowl.github.io/posts/php_cookies/</link>
+      <link>https://www.foolowl.tw/posts/php_cookies/</link>
       <pubDate>Sat, 16 Jul 2022 08:29:26 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/php_cookies/</guid>
+      <guid>https://www.foolowl.tw/posts/php_cookies/</guid>
       <description>&lt;p&gt;簡單記錄一下php的cookies設定，以及各參數的用途。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>phpcaptcha在ios上撥放沒有聲音</title>
-      <link>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</link>
+      <link>https://www.foolowl.tw/posts/phpcaptcha_noaudio_question/</link>
       <pubDate>Sat, 09 Jul 2022 03:48:34 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/phpcaptcha_noaudio_question/</guid>
+      <guid>https://www.foolowl.tw/posts/phpcaptcha_noaudio_question/</guid>
       <description>&lt;p&gt;以前在一個網站的驗證碼處理中發現這個問題，也許新版已經有處理掉這個問題也說不定，在這邊還是另外做一個紀錄。&lt;/p&gt;</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on 愚者樹屋</title>
-    <link>https://foolowl.github.io/tags/python/</link>
+    <link>https://www.foolowl.tw/tags/python/</link>
     <description>Recent content in python on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 30 Jul 2022 02:34:08 +0000</lastBuildDate><atom:link href="https://foolowl.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 02:34:08 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用python錄TwitCasting直播</title>
-      <link>https://foolowl.github.io/posts/python_twitcasting_recorder/</link>
+      <link>https://www.foolowl.tw/posts/python_twitcasting_recorder/</link>
       <pubDate>Sat, 30 Jul 2022 02:34:08 +0000</pubDate>
       
-      <guid>https://foolowl.github.io/posts/python_twitcasting_recorder/</guid>
+      <guid>https://www.foolowl.tw/posts/python_twitcasting_recorder/</guid>
       <description>&lt;p&gt;使用python錄製&lt;a href=&#34;https://twitcasting.tv/&#34;&gt;https://twitcasting.tv/&lt;/a&gt;直播的方法&lt;/p&gt;</description>
     </item>
     

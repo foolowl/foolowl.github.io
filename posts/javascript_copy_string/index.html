@@ -13,7 +13,7 @@
   gtag('config', 'G-FR2TLMEHLT');
 </script>
 
-<title>遊戲推薦 | 愚者樹屋</title>
+<title>javascript字串複製 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="遊戲推薦 | 愚者樹屋" />
+    <meta property="og:title" content="javascript字串複製 | 愚者樹屋" />
     
     
     
@@ -34,25 +34,24 @@
     
 
 
-	
 
 
-<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta name="keywords" content="">
-<meta name="author" content="">
+<meta name="description" content="使用javascript複製字串">
+<meta name="keywords" content="javascript">
+<meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="og:url" content="https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/">
+<meta property="og:description" content="使用javascript複製字串">
+<meta property="og:url" content="https://www.foolowl.tw/posts/javascript_copy_string/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/javascript_copy_string/">
 
-<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="article:published_time" content="2022-10-22T04:46:05&#43;00:00">
-<meta property="article:updated_time" content="2022-10-22T04:46:05&#43;00:00">
+<meta name="twitter:description" content="使用javascript複製字串">
+<meta property="article:published_time" content="2022-10-29T03:28:52&#43;00:00">
+<meta property="article:updated_time" content="2022-10-29T03:28:52&#43;00:00">
 
 
 
@@ -129,51 +128,77 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
+	
+	
+		<div class="bg-white col-span-3 lg:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">javascript字串複製</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/10/29</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/10/29</time>
+					
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>雖然可以自己複製還是有網站有要求快速複製的按鈕方便使用者使用，記錄一下使用javascript複製字串的方式。</p>
+<p>基本上來自stackovefflow，只是稍微調整一點點方便自己使用。<br>
+<a href="https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript">https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//複製用函數
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fallbackCopyTextToClipboard</span>(<span style="color:#a6e22e">text</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">textArea</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;textarea&#34;</span>);
+  <span style="color:#a6e22e">textArea</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">text</span>;
   
-  <div class="col-span-3 lg:col-span-2 mb-3">
-  
-    <h2 class="text-4xl dark:text-white">遊戲推薦</h2>
-	<main>
-    
-    
-    
-    
-    
-    <a href="/posts/game_vampire_survivors/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">吸血鬼倖存者(vampire survivors)</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">應該算是很有名的小品遊戲，最近推出正式版了這邊記錄一下比較麻煩的角色拿法，喜歡rogue like類型遊戲的請一定要試看看。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/10/22</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    
+  <span style="color:#75715e">// Avoid scrolling to bottom
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">textArea</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0&#34;</span>;
+  <span style="color:#a6e22e">textArea</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0&#34;</span>;
+  <span style="color:#a6e22e">textArea</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">position</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fixed&#34;</span>;
 
+  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">textArea</span>);
+  <span style="color:#a6e22e">textArea</span>.<span style="color:#a6e22e">focus</span>();
+  <span style="color:#a6e22e">textArea</span>.<span style="color:#a6e22e">select</span>();
 
-	</main>
-  </div>
-  
-	<aside>
-    <div class="hidden lg:block lg:col-span-1">
-    
-    
-            
-            <div class="mb-3">
+  <span style="color:#66d9ef">try</span> {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">successful</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">execCommand</span>(<span style="color:#e6db74">&#39;copy&#39;</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">successful</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;successful&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;unsuccessful&#39;</span>;
+    <span style="color:#75715e">//console.log(&#39;Fallback: Copying text command was &#39; + msg);
+</span><span style="color:#75715e"></span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">err</span>) {
+    <span style="color:#75715e">//console.error(&#39;Fallback: Oops, unable to copy&#39;, err);
+</span><span style="color:#75715e"></span>  }
+
+  document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>(<span style="color:#a6e22e">textArea</span>);
+}
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">copyTextToClipboard</span>(<span style="color:#a6e22e">text</span>) {
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">clipboard</span>) {
+    <span style="color:#a6e22e">fallbackCopyTextToClipboard</span>(<span style="color:#a6e22e">text</span>);
+    <span style="color:#66d9ef">return</span>;
+  }
+  <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">clipboard</span>.<span style="color:#a6e22e">writeText</span>(<span style="color:#a6e22e">text</span>).<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>() {
+    <span style="color:#75715e">//console.log(&#39;Async: Copying to clipboard was successful!&#39;);
+</span><span style="color:#75715e"></span>  }, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">err</span>) {
+    <span style="color:#75715e">//console.error(&#39;Async: Could not copy text: &#39;, err);
+</span><span style="color:#75715e"></span>  });
+}
+
+<span style="color:#75715e">//綁定複製功能
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.js-copy-btn&#39;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>){
+	<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">preventDefault</span>();
+	<span style="color:#a6e22e">copyTextToClipboard</span>(<span style="color:#e6db74">&#34;複製的字串&#34;</span>);
+});
+</code></pre></div>
+						</section>
+					</div>
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden lg:block lg:col-span-1">
+				<div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -183,9 +208,7 @@
         <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
     </form>
 </div>
-        
-            
-            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -221,12 +244,8 @@
     
     
 </div>
-        
-            
-            
-        
-            
-            
+				
+				
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -294,74 +313,70 @@
 </div>
 
 
-        
-            
-            
+				
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/youtube_thumbnail/" class="">
+        <a href="/posts/javascript_encryption/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript加密</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/11</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_post/" class="">
+        <a href="/posts/hugo_install/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Hugo安裝</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/youtube_counter/" class="">
+        <a href="/posts/php_file_path/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php檔案路徑</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/24</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_folder/" class="">
+        <a href="/posts/php_datetime/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php時間處理</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/01</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/python_twitcasting_recorder/" class="">
+        <a href="/posts/php_background_run/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">使用python錄TwitCasting直播</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php背景執行</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/30</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/23</time>
                     </p>
                 </div>
             </div>
         </a>
     </div>
 </div>
+			</div>
+		</aside>
         
+    </div>
     
-</div>
-	</aside>
-  
-</div>
-
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     
