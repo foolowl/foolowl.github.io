@@ -6,7 +6,16 @@
     <description>Recent content in 免費軟體 on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 25 Jun 2022 09:03:46 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Nov 2022 14:39:26 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D AI 試玩(NVIDIA get3d)</title>
+      <link>https://www.foolowl.tw/posts/nv-tlabs_get3d/</link>
+      <pubDate>Wed, 02 Nov 2022 14:39:26 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/nv-tlabs_get3d/</guid>
+      <description>&lt;p&gt;跑去玩了一下最近NVIDIA放出來的3D AI GET3D，可以用來產生有貼圖的模型(obj)檔案，目前出來的狀況非常慘，不確定是不是設定有錯誤就是了，這邊還是記錄一下執行的過程。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>程式碼差異比對工具 - winmerge</title>
       <link>https://www.foolowl.tw/posts/winmerge/</link>
