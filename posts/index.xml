@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 02 Nov 2022 14:39:26 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2022 15:46:41 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript檢查函數是否存在</title>
+      <link>https://www.foolowl.tw/posts/javascript_check_function_exists/</link>
+      <pubDate>Sat, 05 Nov 2022 15:46:41 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/javascript_check_function_exists/</guid>
+      <description>&lt;p&gt;javascript檢查函數或物件是否存在的方法，基本上就用來檢查是否有建立或載入額外的函數或外掛等等，雖然沒試過也許可以用來檢查某些過舊的瀏覽器去跑不同的方法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>3D AI 試玩(NVIDIA get3d)</title>
       <link>https://www.foolowl.tw/posts/nv-tlabs_get3d/</link>
