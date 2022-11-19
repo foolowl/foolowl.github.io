@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 15 Oct 2022 09:18:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Nov 2022 10:01:23 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php json格式</title>
+      <link>https://www.foolowl.tw/posts/php_json/</link>
+      <pubDate>Sat, 19 Nov 2022 10:01:23 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_json/</guid>
+      <description>&lt;p&gt;現在的網頁在資料處理上常常會使用這種格式來傳輸，php中處理這種格式也很簡單，可以快速地在json和陣列中轉換。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php字串搜尋</title>
       <link>https://www.foolowl.tw/posts/php_string_search/</link>
