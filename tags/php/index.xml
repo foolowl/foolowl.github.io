@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 19 Nov 2022 10:01:23 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 13:26:50 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php 字串處理</title>
+      <link>https://www.foolowl.tw/posts/php_string_functions/</link>
+      <pubDate>Fri, 25 Nov 2022 13:26:50 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_string_functions/</guid>
+      <description>&lt;p&gt;記錄一下之前用來處理字串的一些方法，基本上就是常見的字串取代、字串擷取的等等。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php json格式</title>
       <link>https://www.foolowl.tw/posts/php_json/</link>

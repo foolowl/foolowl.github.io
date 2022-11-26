@@ -13,7 +13,7 @@
   gtag('config', 'G-FR2TLMEHLT');
 </script>
 
-<title>使用python錄TwitCasting直播 | 愚者樹屋</title>
+<title>php 字串處理 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="使用python錄TwitCasting直播 | 愚者樹屋" />
+    <meta property="og:title" content="php 字串處理 | 愚者樹屋" />
     
     
     
@@ -36,22 +36,22 @@
 
 
 
-<meta name="description" content="使用python錄twitcasting直播">
-<meta name="keywords" content="python,TwitCasting">
+<meta name="description" content="php字串取代、隨機字串、字串補0、字串擷取的紀錄">
+<meta name="keywords" content="php">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="使用python錄twitcasting直播">
-<meta property="og:url" content="https://www.foolowl.tw/posts/python_twitcasting_recorder/">
+<meta property="og:description" content="php字串取代、隨機字串、字串補0、字串擷取的紀錄">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_string_functions/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/python_twitcasting_recorder/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_string_functions/">
 
-<meta name="twitter:description" content="使用python錄twitcasting直播">
-<meta property="article:published_time" content="2022-07-30T02:34:08&#43;00:00">
-<meta property="article:updated_time" content="2022-08-06T08:54:24&#43;00:00">
+<meta name="twitter:description" content="php字串取代、隨機字串、字串補0、字串擷取的紀錄">
+<meta property="article:published_time" content="2022-11-25T13:26:50&#43;00:00">
+<meta property="article:updated_time" content="2022-11-25T13:26:50&#43;00:00">
 
 
 
@@ -256,58 +256,63 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">使用python錄TwitCasting直播</h2>
+					<h2 class="title text-4xl font-bold mb-2">php 字串處理</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/30</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/11/25</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/08/06</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/11/25</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>使用python錄製<a href="https://twitcasting.tv/">https://twitcasting.tv/</a>直播的方法</p>
-<p>使用別人寫好的程式，點右上的code-&gt;donwload zip整包下載後解壓縮。<br>
-<a href="https://github.com/prinsss/twitcasting-recorder">https://github.com/prinsss/twitcasting-recorder</a></p>
-<hr>
-<h4 id="安裝python環境">安裝python環境</h4>
-<p>官方網站下載並安裝<br>
-<a href="https://www.python.org/">https://www.python.org/</a><br>
-如果有修改安裝路徑請記下來，晚點設定時需要使用。</p>
-<p>升級pip<br>
-直接在路徑輸入cmd叫出提示字元<br>
-<img src="/img/Pasted%20image%2020220730101423.png" alt="cmd"><br>
-使用cmd命令提示字元，輸入<code>py -m pip install --upgrade pip</code></p>
-<p>使用pip安裝相關套件需要先進入系統設定系統的path，打開設定-&gt;系統-&gt;進階系統設定-&gt;環境變數-&gt;找到系統變數中的Path查看<br>
-<img src="/img/Pasted%20image%2020220730105645.png" alt="環境設定參考圖"><br>
-由於權限的問題安裝後有可能沒有這兩個參數。<br>
-如果python和Python39/script沒有在參數內的話，新增這兩個路徑<br>
-預設安裝路徑是C:\Users[使用者名稱]\AppData\Local\Programs\Python\Python39<br>
-如果沒更改的話新增<br>
-C:\Users[使用者名稱]\AppData\Local\Programs\Python\Python39\Scripts<br>
-C:\Users[使用者名稱]\AppData\Local\Programs\Python\Python39<br>
-一路按確定儲存</p>
-<hr>
-<h4 id="安裝錄影需要的套件">安裝錄影需要的套件</h4>
-<p>下載的資料夾內開啟cmd，執行<code>pip install -r requirements.txt</code>安裝相關套件，輸入後等待跑完就好<br>
-<img src="/img/Pasted%20image%2020220730101942.png" alt="安裝"></p>
-<p>接下來就可以錄影了<br>
-一樣在資料夾內執行cmd</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">main<span style="color:#f92672">.</span>py [錄影的id]
-</code></pre></div><p>或</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">main<span style="color:#f92672">.</span>py [錄影的id] <span style="color:#f92672">-</span>o [儲存的檔案名稱]<span style="color:#f92672">.</span>ts
-</code></pre></div><p>[錄影的id]是twitcasting.tv/後的文字<br>
-EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/abcdef</a><br>
-則輸入main.py  abcdef<br>
-錄影中如果需要中途停止則按下ctrl+c</p>
+						<p>記錄一下之前用來處理字串的一些方法，基本上就是常見的字串取代、字串擷取的等等。</p>
+<h4 id="字串取代">字串取代</h4>
+<p>除了常見的str_replace和正則用的preg_replace以外，preg_replace_callback也是很方便的東西，一樣是用正則的方式處理，不過可以自訂取出的字串要怎麼處理，下方的範例是取出數字後進行計算。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//一般文字
+</span><span style="color:#75715e"></span>$newstr <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#39;要找的字&#39;</span>,<span style="color:#e6db74">&#39;替換的字&#39;</span>,<span style="color:#e6db74">&#34;原本的字串&#34;</span>);
+<span style="color:#75715e">//正則
+</span><span style="color:#75715e"></span>$newstr <span style="color:#f92672">=</span> <span style="color:#a6e22e">preg_replace</span>(<span style="color:#e6db74">&#34;/(&lt;img[^&gt;]+)\/&gt;/&#34;</span>,<span style="color:#e6db74">&#39;$1 alt=&#34;&#34; &gt;&#39;</span>,$html);
+<span style="color:#75715e">//正則 可自訂回傳處理方式
+</span><span style="color:#75715e"></span>$html <span style="color:#f92672">=</span> <span style="color:#a6e22e">preg_replace_callback</span>(<span style="color:#e6db74">&#34;/font-size: ([0-9.]+)px;/&#34;</span>,
+										<span style="color:#66d9ef">function</span> ($matches) { 
+											<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;font-size: &#34;</span><span style="color:#f92672">.</span>(((<span style="color:#a6e22e">float</span>)$matches[<span style="color:#ae81ff">1</span>])<span style="color:#f92672">/</span><span style="color:#ae81ff">16</span>)<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;em&#34;</span>;
+										},
+										$html
+									);
+</code></pre></div><h4 id="隨機字串">隨機字串</h4>
+<p>從設定好的字元隨機組成，可以自行加減。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">	$characters <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>;
+	$charactersLength <span style="color:#f92672">=</span> <span style="color:#a6e22e">strlen</span>($characters);
+	$randomString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+	<span style="color:#66d9ef">for</span> ($i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; $i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">30</span>; $i<span style="color:#f92672">++</span>) {
+		$randomString <span style="color:#f92672">.=</span> $characters[<span style="color:#a6e22e">rand</span>(<span style="color:#ae81ff">0</span>, $charactersLength <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)];
+	}
+</code></pre></div><h4 id="轉碼">轉碼</h4>
+<p>將json等等被編碼的中文字(\uxxxx)轉回<br>
+參考<a href="https://stackoverflow.com/questions/2934563/how-to-decode-unicode-escape-sequences-like-u00ed-to-proper-utf-8-encoded-cha">https://stackoverflow.com/questions/2934563/how-to-decode-unicode-escape-sequences-like-u00ed-to-proper-utf-8-encoded-cha</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$str <span style="color:#f92672">=</span> <span style="color:#a6e22e">preg_replace_callback</span>(<span style="color:#e6db74">&#39;/\\\\u([0-9a-fA-F]{4})/&#39;</span>, <span style="color:#66d9ef">function</span> ($match) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">mb_convert_encoding</span>(<span style="color:#a6e22e">pack</span>(<span style="color:#e6db74">&#39;H*&#39;</span>, $match[<span style="color:#ae81ff">1</span>]), <span style="color:#e6db74">&#39;UTF-8&#39;</span>, <span style="color:#e6db74">&#39;UCS-2BE&#39;</span>);
+}, $str);
+</code></pre></div><h4 id="取字串">取字串</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//字串 開始字元 取幾字元 字串編碼方式
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">mb_substr</span>(<span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;Y&#34;</span>),<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#e6db74">&#34;utf-8&#34;</span>);
+<span style="color:#75715e">//抽出src
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#39;/src=&#34;([^&#34;]+)&#34;/&#39;</span>, $iframe_string, $match);
+$url <span style="color:#f92672">=</span> $match[<span style="color:#ae81ff">1</span>];
+</code></pre></div><h4 id="補0補字">補0/補字</h4>
+<p>補字方式有STR_PAD_RIGHT, STR_PAD_LEFT,STR_PAD_BOTH三種，補右邊、補左邊、補兩邊(非偶數的話右邊優先)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//元字串 捕到幾字元 捕的字 補字方式
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">str_pad</span>(<span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;m&#34;</span>),<span style="color:#ae81ff">2</span>,<span style="color:#e6db74">&#39;0&#39;</span>,<span style="color:#a6e22e">STR_PAD_LEFT</span>)
+</code></pre></div>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/python'>
+							<a href='/tags/php'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									python
+									php
 								</span>
 							</a>
 						
@@ -446,53 +451,53 @@ EX:如果要錄 <a href="https://twitcasting.tv/abcdef">https://twitcasting.tv/a
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/php_json/" class="">
+        <a href="/posts/winmerge/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php json格式</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/19</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/jquery_ajax/" class="">
+        <a href="/posts/community_share_update/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery ajax</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">社群分享暫存資料更新</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/27</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/08/06</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_string_convert/" class="">
+        <a href="/posts/robots_txt/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串型別轉換</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">網站爬蟲設定(robots.txt)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/13</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/08</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/youtube_thumbnail/" class="">
+        <a href="/posts/javascript_encryption/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript加密</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/11</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/youtube_counter/" class="">
+        <a href="/posts/php_string_search/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php字串搜尋</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/15</time>
                     </p>
                 </div>
             </div>
