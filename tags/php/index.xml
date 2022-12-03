@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 25 Nov 2022 13:26:50 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Dec 2022 07:15:39 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php檔案上傳</title>
+      <link>https://www.foolowl.tw/posts/php_file_upload/</link>
+      <pubDate>Sat, 03 Dec 2022 07:15:39 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_file_upload/</guid>
+      <description>&lt;p&gt;使用php上傳檔案的簡單紀錄，順便留一下自己以前用的class。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php 字串處理</title>
       <link>https://www.foolowl.tw/posts/php_string_functions/</link>
