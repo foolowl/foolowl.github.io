@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw" class="dark">
+<head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FR2TLMEHLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FR2TLMEHLT');
+</script>
+
+<title>vroid模型改造並匯出vrm | 愚者樹屋</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="vroid模型改造並匯出vrm | 愚者樹屋" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.ac6055b2635cfe437a8d0803dcf4e9e392be3f2ca9f1536067a3e234765a60ca.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+
+<meta name="description" content="編輯vroid模型方法並匯出VRM">
+<meta name="keywords" content="vroid,vrm">
+<meta name="author" content="foolowl/月月鴞">
+<meta property="og:site_name" content="愚者樹屋">
+<meta property="og:description" content="編輯vroid模型方法並匯出VRM">
+<meta property="og:url" content="https://www.foolowl.tw/posts/vroid_model_edit/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://www.foolowl.tw/posts/vroid_model_edit/">
+
+<meta name="twitter:description" content="編輯vroid模型方法並匯出VRM">
+<meta property="article:published_time" content="2022-12-10T06:21:47&#43;00:00">
+<meta property="article:updated_time" content="2022-12-10T06:21:47&#43;00:00">
+
+
+
+
+
+<meta property="og:image" content="https://www.foolowl.tw/">
+<meta property="og:image:url" content="https://www.foolowl.tw/">
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head><body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><header class="bg-gray-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <h1><a href="https://www.foolowl.tw/"><span class="font-semibold text-2xl tracking-tight">愚者樹屋</span></a></h1>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+				<div class="block md:hidden ">
+					<div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
+    </form>
+</div>
+					<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/3d%e8%bb%9f%e9%ab%94">3d軟體 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/html">html (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/javascript">javascript (8)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/jquery">jquery (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/mysql">mysql (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/php">php (10)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/python">python (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%85%8d%e8%b2%bb%e8%bb%9f%e9%ab%94">免費軟體 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e7%a4%be%e7%be%a4%e7%b6%b2%e7%ab%99">社群網站 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e9%81%8a%e6%88%b2%e6%8e%a8%e8%96%a6">遊戲推薦 (1)</a>
+    
+    
+</div>
+					
+					
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/3d%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                3d軟體
+            </span></a>
+        <a href='/tags/html'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                html
+            </span></a>
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+        <a href='/tags/javascript'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javascript
+            </span></a>
+        <a href='/tags/jquery'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                jquery
+            </span></a>
+        <a href='/tags/mysql'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                mysql
+            </span></a>
+        <a href='/tags/php'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                php
+            </span></a>
+        <a href='/tags/python'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                python
+            </span></a>
+        <a href='/tags/vroid'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                vroid
+            </span></a>
+        <a href='/tags/youtube-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                youtube-api
+            </span></a>
+        <a href='/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                免費軟體
+            </span></a>
+        <a href='/tags/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                社群網站
+            </span></a>
+        <a href='/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                程式工具
+            </span></a>
+        <a href='/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                遊戲推薦
+            </span></a>
+    </div>
+</div>
+
+
+				</div>
+            </div>
+        </nav>
+    </div>
+</header>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+	
+	
+		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">vroid模型改造並匯出vrm</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2022/12/10</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/12/10</time>
+					
+
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>最近為玩一下孔明舞(チキチキバンバン)，嘗試用了Vroid這款捏人軟體弄模型出來玩，雖然限制上蠻多的不過對於3D能力薄弱的人也能做出一個還可以的模型，記錄一下調整衣服和匯出、編輯VRM模型的方式。</p>
+<p>總之先貼一下孔明舞的結果<br>
+<a href="https://twitter.com/uryuu_ringo/status/1599750365007650817?s=20&amp;t=nTHCXm0XpYS6dYEFibHpWA">https://twitter.com/uryuu_ringo/status/1599750365007650817?s=20&amp;t=nTHCXm0XpYS6dYEFibHpWA</a></p>
+<p>捏人使用的軟體為Vroid(有英、日兩種語言)<br>
+<a href="https://vroid.com/">https://vroid.com/</a><br>
+這款應該算蠻有名氣的免費軟體，除了內建的樣式外還有很多素材可以在軟體內的連結中找到，如果要使用另外下載的模型或衣服記得注意素材的授權模式可不可以再改造、商用等等，如果是內建的樣式就沒有這個問題。</p>
+<p>首先先建立基本的模型<br>
+<img src="/img/vroid_1.png" alt="vroid"><br>
+由於無法直接編輯3D網格與顯示遮罩範圍等等的關係，必須要先挑選最符合的樣式來進行改造，選完後記得先調整右方需要的參數，這些參數會影響3D的網格位置，這樣可以避免畫完顏色等等又因為調整這一塊而造成位移。<br>
+<img src="/img/vroid_2.png" alt="vroid 2"><br>
+調整完後就可以點上方的編輯按鈕進入編輯模式了，雖然比較推薦選擇接近的樣式再處理，如果剛才服裝格式沒選好的話也在這裡面可以調整能用的範圍，
+點選下方的[テンプレートを追加する]與刪除不要的圖層進行調整。<br>
+接下來可以先在模型上畫出記號，比如說袖子的長度要畫到哪邊阿，花紋的標記等等方便等一下用軟體進行處理，接著圖層上按右鍵-&gt;output(エクスポート)就另存出圖層。<br>
+<img src="/img/Pasted%20image%2020221120152330.png" alt="vroid output"><br>
+在下方一格的選項(ガクドをエクスポート)則是可以匯出3D用的網格圖。<br>
+<img src="/img/Pasted%20image%2020221120152415.png" alt="vroid output2"><br>
+有了這兩樣檔案就可以知道需要的圖檔大小怎樣，位置是怎樣對應的，改完檔案後再inport(インポート)回去就好。</p>
+<p>頭髮的部分則是單純而可怕的拉線工作，拉出需要髮型的網格-&gt;在上面拉出粗細符合你想要的頭髮，如果頭髮有不同流向的話就是拉多個網格來進行處理，很好理解但是非常費工的工作。<br>
+雙色或多色頭髮的部分如果是整根毛色這樣更換的話，也可以在軟體內直接處理，利用不同的網子設定去拉就可以了，如果是單根中變色的話似乎只能進3D軟體再調整VRM了。</p>
+<p>能調整的都後條完後就可以匯出vrm檔案了，右上角按鈕找到vrm這個點下去會進入匯出模式可以做最後的調整，如果沒有要調的話直接匯出填寫必要資料就可以取得vrm檔案了。<br>
+<img src="/img/vroid_3.png" alt="vroid vrm"></p>
+<hr>
+<p>接下來是改造vrm用的軟體blender<br>
+<a href="https://www.blender.org/">https://www.blender.org/</a><br>
+要讀取的話讓blender安裝vrm插件就可以匯入/匯出vrm了<br>
+插件<a href="https://github.com/saturday06/VRM_Addon_for_Blender">https://github.com/saturday06/VRM_Addon_for_Blender</a><br>
+改造的部分這邊只是簡單的拉出與綁幾個飾品到vrm上面就不多介紹了，單純的弄好飾品放好位置ctrl+p直接綁到對應的物件或骨架上。</p>
+						</section>
+							
+						Tags : 
+						
+							<a href='/tags/3d%e8%bb%9f%e9%ab%94'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									3d軟體
+								</span>
+							</a>
+						
+							<a href='/tags/vroid'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									vroid
+								</span>
+							</a>
+						
+					</div>
+					
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden md:block md:col-span-1">
+				<div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
+    </form>
+</div>
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/3d%e8%bb%9f%e9%ab%94">3d軟體 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/html">html (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/javascript">javascript (8)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/jquery">jquery (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/mysql">mysql (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/php">php (10)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/python">python (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%85%8d%e8%b2%bb%e8%bb%9f%e9%ab%94">免費軟體 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e7%a4%be%e7%be%a4%e7%b6%b2%e7%ab%99">社群網站 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e9%81%8a%e6%88%b2%e6%8e%a8%e8%96%a6">遊戲推薦 (1)</a>
+    
+    
+</div>
+				
+				
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/3d%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                3d軟體
+            </span></a>
+        <a href='/tags/html'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                html
+            </span></a>
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+        <a href='/tags/javascript'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javascript
+            </span></a>
+        <a href='/tags/jquery'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                jquery
+            </span></a>
+        <a href='/tags/mysql'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                mysql
+            </span></a>
+        <a href='/tags/php'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                php
+            </span></a>
+        <a href='/tags/python'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                python
+            </span></a>
+        <a href='/tags/vroid'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                vroid
+            </span></a>
+        <a href='/tags/youtube-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                youtube-api
+            </span></a>
+        <a href='/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                免費軟體
+            </span></a>
+        <a href='/tags/%E7%A4%BE%E7%BE%A4%E7%B6%B2%E7%AB%99'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                社群網站
+            </span></a>
+        <a href='/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                程式工具
+            </span></a>
+        <a href='/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                遊戲推薦
+            </span></a>
+    </div>
+</div>
+
+
+				
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        
+        <a href="/posts/php_file_path/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php檔案路徑</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/09/24</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/winmerge/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/phpcaptcha_noaudio_question/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">phpcaptcha在ios上撥放沒有聲音</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/07/09</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/php_string_search/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php字串搜尋</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/10/15</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/php_file_upload/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php檔案上傳</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/12/03</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+			</div>
+		</aside>
+        
+    </div>
+    
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="flex justify-center w-full md:flex md:flex-row sm:items-center sm:w-auto mb-4">
+        <div>
+            
+            <a href="https://www.pixiv.net/users/1824576"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                pixiv
+            </a>
+            
+            <a href="https://www.plurk.com/ringo8"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                plurk
+            </a>
+            
+            <a href="https://twitter.com/uryuu_ringo"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                twitter
+            </a>
+            
+        </div>
+    </div>
+    
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <p>&copy; 2022-2022 <a href="https://www.foolowl.tw/" class="duration-200 hover:opacity-50">愚者樹屋</a></p>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        var icon2 = document.getElementById("icon2");
+        
+        if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          icon.classList.remove("icon-moon");
+          icon.classList.add("icon-sun");
+          icon2.classList.remove("icon-moon");
+          icon2.classList.add("icon-sun");
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+        function toggleDarkMode() {
+        if (document.documentElement.classList.contains('dark')) {
+            icon.classList.remove("icon-sun");
+            icon.classList.add("icon-moon");
+            icon2.classList.remove("icon-sun");
+            icon2.classList.add("icon-moon");
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
+        } else {
+            icon.classList.remove("icon-moon");
+            icon.classList.add("icon-sun");
+            icon2.classList.remove("icon-moon");
+            icon2.classList.add("icon-sun");
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark'
+        }
+    }
+    </script>
+</footer>
+</div>
+</body>
+
+</html>
