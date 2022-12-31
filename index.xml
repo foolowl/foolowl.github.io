@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 18 Dec 2022 08:46:58 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 01:39:55 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php pdf旋轉與合併</title>
+      <link>https://www.foolowl.tw/posts/php_pdf/</link>
+      <pubDate>Sat, 31 Dec 2022 01:39:55 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_pdf/</guid>
+      <description>&lt;p&gt;紀錄以前在處理網站pdf的方式，功能上是將上傳的圖片與pdf合併成一個檔案，需要注意的地方是pdf如果有加密會直接錯誤，需要使用者自行注意上傳的檔案。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>孔明舞(チキチキバンバン)跳舞用法</title>
       <link>https://www.foolowl.tw/posts/cikicikibambam_dance/</link>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/tags/ai/</link>
+    <description>Recent content in AI on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 02 Nov 2022 14:39:26 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D AI 試玩(NVIDIA get3d)</title>
+      <link>https://www.foolowl.tw/posts/nv-tlabs_get3d/</link>
+      <pubDate>Wed, 02 Nov 2022 14:39:26 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/nv-tlabs_get3d/</guid>
+      <description>&lt;p&gt;跑去玩了一下最近NVIDIA放出來的3D AI GET3D，可以用來產生有貼圖的模型(obj)檔案，目前出來的狀況非常慘，不確定是不是設定有錯誤就是了，這邊還是記錄一下執行的過程。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
