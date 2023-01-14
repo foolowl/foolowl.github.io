@@ -13,7 +13,7 @@
   gtag('config', 'G-FR2TLMEHLT');
 </script>
 
-<title>遊戲推薦 | 愚者樹屋</title>
+<title>php curl Moved Permanently解決方法 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +23,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="遊戲推薦 | 愚者樹屋" />
+    <meta property="og:title" content="php curl Moved Permanently解決方法 | 愚者樹屋" />
     
     
     
@@ -34,25 +34,24 @@
     
 
 
-	
 
 
-<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta name="keywords" content="">
-<meta name="author" content="">
+<meta name="description" content="curl出現Moved Permanently時的處理方法">
+<meta name="keywords" content="php">
+<meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="og:url" content="https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/">
+<meta property="og:description" content="curl出現Moved Permanently時的處理方法">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_curl_moved_permanently_solve/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_curl_moved_permanently_solve/">
 
-<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="article:published_time" content="2022-10-22T04:46:05&#43;00:00">
-<meta property="article:updated_time" content="2022-11-26T01:55:11&#43;00:00">
+<meta name="twitter:description" content="curl出現Moved Permanently時的處理方法">
+<meta property="article:published_time" content="2023-01-14T15:17:24&#43;00:00">
+<meta property="article:updated_time" content="2023-01-14T15:17:24&#43;00:00">
 
 
 
@@ -272,51 +271,68 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-  
-  <div class="col-span-3 md:col-span-2 mb-2">
-  
-    <h2 class="text-4xl dark:text-white">遊戲推薦</h2>
-	<main>
-    
-    
-    
-    
-    
-    <a href="/posts/game_vampire_survivors/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">吸血鬼倖存者(vampire survivors)</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">應該算是很有名的小品遊戲，最近推出正式版了這邊記錄一下比較麻煩的角色拿法，喜歡rogue like類型遊戲的請一定要試看看。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/10/22</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    
+	
+	
+		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">php curl Moved Permanently解決方法</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/01/14</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/01/14</time>
+					
 
-
-	</main>
-  </div>
-  
-	<aside>
-    <div class="hidden md:block md:col-span-1">
-    
-    
-            
-            <div class="mb-3">
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>以前使用curl時出現了Moved Permanently錯誤，紀錄一下解決方式。</p>
+<p>當時的狀況是使用curl發送post時，curl_exec回來的資料無論怎樣都出現Moved Permanently，依照網路的答案調整寫法後即可。</p>
+<p>參考資料:<a href="https://stackoverflow.com/questions/22296828/php-curl-says-moved-permanently-when-posting-to-a-virtual-host">stackoverflow</a></p>
+<p>增加/調整的參數</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">curl_setopt</span>($curl, <span style="color:#a6e22e">CURLOPT_FOLLOWLOCATION</span>, <span style="color:#66d9ef">true</span>);
+<span style="color:#a6e22e">curl_setopt</span>($curl, <span style="color:#a6e22e">CURLOPT_CUSTOMREQUEST</span>, <span style="color:#e6db74">&#34;POST&#34;</span>);
+<span style="color:#a6e22e">curl_setopt</span>($curl, <span style="color:#a6e22e">CURLOPT_POSTREDIR</span>, <span style="color:#ae81ff">3</span>);
+</code></pre></div><p>整段程式(觸發後不等待回應)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$ch <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_init</span>();
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_URL</span>, <span style="color:#e6db74">&#39;http://目標位置&#39;</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_FOLLOWLOCATION</span>, <span style="color:#66d9ef">true</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_CUSTOMREQUEST</span>, <span style="color:#e6db74">&#34;POST&#34;</span>);
+<span style="color:#75715e">//curl_setopt($ch, CURLOPT_POST,true);
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POSTREDIR</span>, <span style="color:#ae81ff">3</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POSTFIELDS</span>, <span style="color:#a6e22e">http_build_query</span>(<span style="color:#66d9ef">array</span>(
+										<span style="color:#e6db74">&#39;sendid&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;資料&#39;</span>
+									)));
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_TIMEOUT</span>, <span style="color:#ae81ff">1</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_RETURNTRANSFER</span>, <span style="color:#66d9ef">false</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_CONNECTTIMEOUT</span>, <span style="color:#ae81ff">1</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_DNS_CACHE_TIMEOUT</span>, <span style="color:#ae81ff">10</span>);
+<span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_FRESH_CONNECT</span>, <span style="color:#66d9ef">true</span>);
+$r <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_exec</span>($ch);
+<span style="color:#a6e22e">curl_close</span>($ch);
+</code></pre></div>
+						</section>
+							
+						Tags : 
+						
+							<a href='/tags/php'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									php
+								</span>
+							</a>
+						
+					</div>
+					
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden md:block md:col-span-1">
+				<div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -326,9 +342,7 @@
         <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
     </form>
 </div>
-        
-            
-            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -370,12 +384,8 @@
     
     
 </div>
-        
-            
-            
-        
-            
-            
+				
+				
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -463,74 +473,70 @@
 </div>
 
 
-        
-            
-            
+				
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/php_string_search/" class="">
+        <a href="/posts/web_speed_optimization/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php字串搜尋</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">網頁速度優化</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/15</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/08/13</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/robots_txt/" class="">
+        <a href="/posts/php_curl_moved_permanently_solve/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">網站爬蟲設定(robots.txt)</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php curl Moved Permanently解決方法</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/08</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/01/14</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/jquery_ajax/" class="">
+        <a href="/posts/php_pdf/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery ajax</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php pdf旋轉與合併</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/27</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/12/31</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/cikicikibambam_dance/" class="">
+        <a href="/posts/javascript_check_function_exists/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">孔明舞(チキチキバンバン)跳舞用法</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript檢查函數是否存在</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/12/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/05</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_config/" class="">
+        <a href="/posts/mysql_conditionals/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql條件式</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/04</time>
                     </p>
                 </div>
             </div>
         </a>
     </div>
 </div>
+			</div>
+		</aside>
         
+    </div>
     
-</div>
-	</aside>
-  
-</div>
-
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     

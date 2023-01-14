@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 08 Jan 2023 06:22:14 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jan 2023 15:17:24 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php curl Moved Permanently解決方法</title>
+      <link>https://www.foolowl.tw/posts/php_curl_moved_permanently_solve/</link>
+      <pubDate>Sat, 14 Jan 2023 15:17:24 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_curl_moved_permanently_solve/</guid>
+      <description>&lt;p&gt;以前使用curl時出現了Moved Permanently錯誤，紀錄一下解決方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php資料夾權限</title>
       <link>https://www.foolowl.tw/posts/php_folder/</link>
