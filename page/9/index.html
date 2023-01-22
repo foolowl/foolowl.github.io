@@ -2,6 +2,7 @@
 
 <html lang="zh-tw" class="dark">
 <head>
+	<meta name="generator" content="Hugo 0.92.2" />
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FR2TLMEHLT"></script>
@@ -13,7 +14,7 @@
   gtag('config', 'G-FR2TLMEHLT');
 </script>
 
-<title>Hugo安裝 | 愚者樹屋</title>
+<title>愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -23,7 +24,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Hugo安裝 | 愚者樹屋" />
+    <meta property="og:title" content="愚者樹屋" />
     
     
     
@@ -34,24 +35,25 @@
     
 
 
+	
 
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta name="keywords" content="Hugo,blog">
-<meta name="author" content="foolowl/月月鴞">
+<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta name="keywords" content="">
+<meta name="author" content="">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta property="og:url" content="https://www.foolowl.tw/posts/hugo_install/">
+<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta property="og:url" content="https://www.foolowl.tw/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/hugo_install/">
+<link rel="canonical" href="https://www.foolowl.tw/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta property="article:published_time" content="2022-04-17T06:17:23&#43;00:00">
-<meta property="article:updated_time" content="2022-04-17T07:20:56&#43;00:00">
+<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
+<meta property="article:published_time" content="2023-01-22T00:35:42&#43;00:00">
+<meta property="article:updated_time" content="2023-01-22T00:35:42&#43;00:00">
 
 
 
@@ -271,80 +273,100 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-	
-	
-		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
-	
-			<main>
-				<article>
-					<h2 class="title text-4xl font-bold mb-2">Hugo安裝</h2>
-					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/04/17</time>
-					
-					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/04/17</time>
-					
+  
+  <div class="col-span-3 md:col-span-2 mb-2">
+  
+    
+	<main>
+    
+    
+    
+    
+    
+    <a href="/posts/hugo_install/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    <img alt="thumbnail" id="thumb"
+        class="lg:w-auto lg:h-44"
+        src='/img/default.png'>
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Hugo安裝</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。
+...</p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2022/04/17</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    
 
-					
-					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
-						<section>
-						<p>Hugo是一個靜態網站生成器，這邊簡單的紀錄一下安裝過程。</p>
-<p>Hugo是一個靜態網站生成器，使用模板布局，markdown檔案編寫內容，在經過程式處理後生成靜態html檔案，對我來說是看上html能使用的空間選擇較多且markdown檔案方便留下一份當作自己的筆記，而選擇使用Hugo來製作自己的blog，這邊簡單的紀錄一下安裝過程。</p>
-<h3 id="官方網站">官方網站</h3>
-<p><a href="https://gohugo.io/">官方網站</a></p>
-<p>詳細的步驟官網文件中有寫到<br>
-<a href="https://gohugo.io/getting-started/installing">官方安裝文件</a></p>
-<p>這邊記錄的是windows 10手動安裝hugo的過程，如果使用其他安裝工具的話只要照官方提供的指令輸入應該就能完成安裝。</p>
-<h4 id="安裝">安裝</h4>
-<p>首先建立存放hugo程式和產生網頁的兩個資料夾<br>
-這邊建立c:/Hugo/bin和c:/Hugo/sites，hugo程式的資料夾如果有更動的話需要重新設定路徑，建議選擇一個不會更動的地方，網站資料夾則可以隨時移動不受影響。</p>
-<p><a href="https://github.com/gohugoio/hugo/releases">檔案下載</a><br>
-接著下載對應系統的版本，將整個解壓縮至hugo中的bin資料夾。</p>
-<p>在開始按鈕上面點右鍵-&gt;系統<br>
-<img src="/img/install_1.png" alt="安裝步驟1"><br>
-點選進階系統設定<br>
-<img src="/img/install_2.png" alt="安裝步驟2"><br>
-點選環境變數<br>
-<img src="/img/install_3.png" alt="安裝步驟2"><br>
-選擇有系統路徑的參數點編輯，這邊習慣的關係選擇Path，在跳出的視窗中點選新增-&gt;選擇新增的行-&gt;瀏覽選擇剛才解壓縮含有hugo.exe的資料夾。</p>
-<p>接下來打開提示命令字元(cmd)，輸入hugo version測試是否安裝成功，只要跑出hugo版本號碼就表示安裝完成。</p>
-<h4 id="建立網站">建立網站</h4>
-<p>先將目前路徑移到想要存放網站的地方，這邊是c:/Hugo/sites (*直接在資料夾路徑的位置輸入cmd會直接將目前路徑指到目前資料夾)。</p>
-<p><code>hugo new site [``網站名稱``]</code></p>
-<p>這會在目前的資料夾建立一個新的網站資料夾。<br>
-接下來在模板網站中下載喜歡的主題<br>
-<a href="https://themes.gohugo.io/">hugo模板</a><br>
-每個模板稍有不同，建議看模板內的說明文件進行模板設定，通常照模板文件的git和npm指令輸入即可使用。<br>
-也可以下載檔案後放到對應的目錄(theme)下，再修改config或使用模板內附的config檔案來套用模板。</p>
-<p>再來輸入<br>
-<code>hugo server</code><br>
-試跑看看結果，會顯示一個localhost網址來測試建立的網站</p>
-<h4 id="建立文章">建立文章</h4>
-<p>一樣可以手動建立內容或是使用指令添加，在網站資料夾下輸入指令<br>
-<code>hugo new posts/my-first-post.md</code><br>
-內容可以參考模板內exampleSite內的格式進行修改，需要發布文章的話將檔案內的draft: true改為draft: false，對應的圖片檔案位置預設為static資料夾。</p>
-<h4 id="匯出靜態頁面">匯出靜態頁面</h4>
-<p>在網站資料夾下輸入<code>hugo</code>，預設匯出位置為public目錄</p>
-						</section>
-							
-						Tags : 
-						
-							<a href='/tags/Hugo'>
-								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									Hugo
-								</span>
-							</a>
-						
-					</div>
-					
-				</article>
-			</main>
-		</div>
-	
+<nav aria-label="page navigation">
+    <ul class="flex list-none my-5 p-0 justify-center">
         
-		<aside>
-			<div class="hidden md:block md:col-span-1">
-				<div class="mb-3">
+        
+        <li class="page-item"><a href="/" rel="first" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">First</a></li>
+        
+
+        
+        <li class="page-item"><a href="/page/8/" rel="prev" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">Prev</a></li>
+        
+
+        
+             
+            
+            <li class="page-item disabled"><a class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 cursor-auto pointer-events-none">...</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+             
+            <li class="page-item"><a href="/page/7/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">7</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/page/8/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">8</a></li>
+            
+        
+             
+            <li class="page-item active"><a href="/page/9/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-blue-600 border-blue-600 text-white hover:border-blue-700 dark:border-gray-600">9</a></li>
+            
+        
+
+        
+
+        
+        
+    </ul>
+</nav>
+
+
+	</main>
+  </div>
+  
+	<aside>
+    <div class="hidden md:block md:col-span-1">
+    
+    
+            
+            <div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -354,7 +376,9 @@
         <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
     </form>
 </div>
-				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -396,8 +420,12 @@
     
     
 </div>
-				
-				
+        
+            
+            
+        
+            
+            
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -485,49 +513,21 @@
 </div>
 
 
-				
+        
+            
+            
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/youtube_thumbnail/" class="">
+        <a href="/posts/hugo_folder/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/php_datetime/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php時間處理</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/01</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/php_json/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php json格式</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/19</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/php_cookies/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php cookies設定</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/16</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
                     </p>
                 </div>
             </div>
@@ -541,14 +541,46 @@
                     </p>
                 </div>
             </div>
+        <a href="/posts/nv-tlabs_get3d/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">3D AI 試玩(NVIDIA get3d)</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/vroid_model_edit/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">vroid模型改造並匯出vrm</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/12/10</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/web_speed_optimization/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">網頁速度優化</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/08/13</time>
+                    </p>
+                </div>
+            </div>
         </a>
     </div>
 </div>
-			</div>
-		</aside>
         
-    </div>
     
+</div>
+	</aside>
+  
+</div>
+
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     

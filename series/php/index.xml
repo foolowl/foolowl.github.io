@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 14 Jan 2023 15:17:24 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 00:35:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php 錯誤顯示</title>
+      <link>https://www.foolowl.tw/posts/php_display_errors/</link>
+      <pubDate>Sun, 22 Jan 2023 00:35:42 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_display_errors/</guid>
+      <description>&lt;p&gt;常用的錯誤開關設定，雖然php套件大部分都有自己做好開關與是否寫入檔案的控制，有時候進行單頁檢查時還是會使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php curl Moved Permanently解決方法</title>
       <link>https://www.foolowl.tw/posts/php_curl_moved_permanently_solve/</link>
