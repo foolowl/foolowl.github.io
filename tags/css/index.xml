@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/tags/css/</link>
+    <description>Recent content in css on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 05 Feb 2023 01:49:57 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css文字換行設定</title>
+      <link>https://www.foolowl.tw/posts/css_text_line/</link>
+      <pubDate>Sun, 05 Feb 2023 01:49:57 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/css_text_line/</guid>
+      <description>&lt;p&gt;這是非常常用的排版設定，可以控制文字在超過容器範圍後的處理方式，一般來說是直接換行處理，如果有需要的情況可以設定不換行但超出隱藏(overflow:hidden)，隱藏的部分還可以使用(&amp;hellip;)或其他特效處理。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
