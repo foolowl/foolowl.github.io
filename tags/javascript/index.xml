@@ -6,7 +6,16 @@
     <description>Recent content in javascript on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 13 Nov 2022 11:28:11 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Feb 2023 14:38:22 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jquery阻止冒泡bubbling</title>
+      <link>https://www.foolowl.tw/posts/jquery_stop_bubbling/</link>
+      <pubDate>Sun, 12 Feb 2023 14:38:22 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/jquery_stop_bubbling/</guid>
+      <description>&lt;p&gt;javasccript或jquery的事件會隨著觸發的容器往父項傳遞，在某些情況會造成同時觸發了無關的父項目事件，這種時候就可以阻止事件冒泡避免這種事情發生。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript字串型別轉換</title>
       <link>https://www.foolowl.tw/posts/javascript_string_convert/</link>

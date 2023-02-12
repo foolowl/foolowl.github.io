@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 05 Feb 2023 01:49:57 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Feb 2023 14:38:22 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript</title>
+      <link>https://www.foolowl.tw/tags/javascript/</link>
+      <pubDate>Sun, 12 Feb 2023 14:38:22 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jquery</title>
+      <link>https://www.foolowl.tw/tags/jquery/</link>
+      <pubDate>Sun, 12 Feb 2023 14:38:22 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/tags/jquery/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>css</title>
       <link>https://www.foolowl.tw/tags/css/</link>
@@ -62,15 +80,6 @@
     </item>
     
     <item>
-      <title>javascript</title>
-      <link>https://www.foolowl.tw/tags/javascript/</link>
-      <pubDate>Sun, 13 Nov 2022 11:28:11 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>AI</title>
       <link>https://www.foolowl.tw/tags/ai/</link>
       <pubDate>Wed, 02 Nov 2022 14:39:26 +0000</pubDate>
@@ -103,15 +112,6 @@
       <pubDate>Sun, 04 Sep 2022 12:17:43 +0000</pubDate>
       
       <guid>https://www.foolowl.tw/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jquery</title>
-      <link>https://www.foolowl.tw/tags/jquery/</link>
-      <pubDate>Sat, 27 Aug 2022 11:43:26 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/tags/jquery/</guid>
       <description></description>
     </item>
     
