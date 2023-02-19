@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 12 Feb 2023 14:38:22 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2023 09:01:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>obsidian檔案復原</title>
+      <link>https://www.foolowl.tw/posts/obsidian_recover/</link>
+      <pubDate>Sun, 19 Feb 2023 09:01:37 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/obsidian_recover/</guid>
+      <description>&lt;p&gt;有次在修改資料時剛好碰到系統當機，再次打開時變成一大串亂碼，查詢了以後發現有歷史紀錄的功能，使用此功能來救回損壞的檔案。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>jquery阻止冒泡bubbling</title>
       <link>https://www.foolowl.tw/posts/jquery_stop_bubbling/</link>
