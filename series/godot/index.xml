@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>godot on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/series/godot/</link>
+    <description>Recent content in godot on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 25 Feb 2023 09:50:01 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot 4筆記 - 學習資源</title>
+      <link>https://www.foolowl.tw/posts/godot_resource/</link>
+      <pubDate>Sat, 25 Feb 2023 09:50:01 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_resource/</guid>
+      <description>&lt;p&gt;最近開始慢慢學著用godot 4做2D遊戲，由於還沒正式推出的緣故，網路上的教學還是以3為主，這邊會紀錄使用4版照著教學製作所碰到的問題，這篇先簡單紀錄一下使用的資源。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
