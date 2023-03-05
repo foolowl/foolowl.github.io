@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 25 Feb 2023 09:50:01 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Mar 2023 11:07:15 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot玩家控制和其他3與4的一些程式差異</title>
+      <link>https://www.foolowl.tw/posts/godot_player_control/</link>
+      <pubDate>Sun, 05 Mar 2023 11:07:15 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_player_control/</guid>
+      <description>&lt;p&gt;紀錄參考的教學影片使用時碰到的一些問題，主要是影片是3的教學而我使用的版本為4所碰到的問題。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot 4筆記 - 學習資源</title>
       <link>https://www.foolowl.tw/posts/godot_resource/</link>

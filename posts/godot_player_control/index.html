@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>youtube點擊計數 | 愚者樹屋</title>
+<title>godot玩家控制和其他3與4的一些程式差異 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="youtube點擊計數 | 愚者樹屋" />
+    <meta property="og:title" content="godot玩家控制和其他3與4的一些程式差異 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="使用javascript與youtube api計算嵌入影片點擊次數">
-<meta name="keywords" content="javascript,youtube api">
+<meta name="description" content="紀錄玩家的方向控制與碰到的一些3與4的差異">
+<meta name="keywords" content="godot">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="使用javascript與youtube api計算嵌入影片點擊次數">
-<meta property="og:url" content="https://www.foolowl.tw/posts/youtube_counter/">
+<meta property="og:description" content="紀錄玩家的方向控制與碰到的一些3與4的差異">
+<meta property="og:url" content="https://www.foolowl.tw/posts/godot_player_control/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/youtube_counter/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/godot_player_control/">
 
-<meta name="twitter:description" content="使用javascript與youtube api計算嵌入影片點擊次數">
-<meta property="article:published_time" content="2022-06-05T12:48:05&#43;00:00">
-<meta property="article:updated_time" content="2022-06-05T12:48:05&#43;00:00">
+<meta name="twitter:description" content="紀錄玩家的方向控制與碰到的一些3與4的差異">
+<meta property="article:published_time" content="2023-03-05T11:07:15&#43;00:00">
+<meta property="article:updated_time" content="2023-03-05T11:07:15&#43;00:00">
 
 
 
@@ -303,73 +303,62 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">youtube點擊計數</h2>
+					<h2 class="title text-4xl font-bold mb-2">godot玩家控制和其他3與4的一些程式差異</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/06/05</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/03/05</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/06/05</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/03/05</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>紀錄一下如何使用youtube api來計算嵌入影片被點擊的次數，這個API也可以用來控制嵌入影片的撥放、暫停等等，這裡就是利用影片的播放狀態來進行撥放的判斷。</p>
-<p>youtube api網址<br>
-<a href="https://developers.google.com/youtube/iframe_api_reference?hl=zh-TW">https://developers.google.com/youtube/iframe_api_reference?hl=zh-TW</a></p>
-<p>下面為簡易範例，範例中$k為序號、vid為youtube的影片網址的v值、cid內則是自己判斷用的id。<br>
-首先是html的部分，這裡使用PHP的迴圈產生html。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;?php foreach($video_list as $k =&gt; $v){ ?&gt;</span>
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tychange_&lt;?=$k?&gt;&#34;</span> <span style="color:#a6e22e">vid</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?=$v[&#39;v&#39;]?&gt;&#34;</span> <span style="color:#a6e22e">cid</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?=$v[&#39;id&#39;]?&gt;&#34;</span> &gt;&lt;/<span style="color:#f92672">div</span>&gt;
-<span style="color:#75715e">&lt;?php } ?&gt;</span>
-</code></pre></div><p>接著利用api判斷撥放狀態，在狀態有變化時利用jquery來進行狀態回傳。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//基本載入函數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tag</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;script&#39;</span>);
-<span style="color:#a6e22e">tag</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.youtube.com/iframe_api&#34;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">firstScriptTag</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#39;script&#39;</span>)[<span style="color:#ae81ff">0</span>];
-<span style="color:#a6e22e">firstScriptTag</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">insertBefore</span>(<span style="color:#a6e22e">tag</span>, <span style="color:#a6e22e">firstScriptTag</span>);
-<span style="color:#75715e">//在youtube讀取完畢後執行
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">onYouTubeIframeAPIReady</span>() {
-	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.tychange&#39;</span>).<span style="color:#a6e22e">each</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">ind</span>){
-		<span style="color:#a6e22e">_vid</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;vid&#39;</span>);
-		<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">YT</span>.<span style="color:#a6e22e">Player</span>(<span style="color:#e6db74">&#39;tychange_&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">ind</span>, {
-			<span style="color:#a6e22e">videoId</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">_vid</span>
-			,<span style="color:#a6e22e">events</span><span style="color:#f92672">:</span> {
-				<span style="color:#e6db74">&#39;onStateChange&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">onPlayerStateChange</span>
-			}
-		});
-	});
-}
-<span style="color:#75715e">//狀態變化時會被呼叫的函數
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">onPlayerStateChange</span>(<span style="color:#a6e22e">event</span>){
-	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">data</span><span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>){<span style="color:#75715e">//判斷狀態進行回傳
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">cid</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">id</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;cid&#39;</span>);
-		<span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-		    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,
-		    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;回傳用的網址&#34;</span>,
-		    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
-		    	<span style="color:#a6e22e">cid</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">cid</span>
-			},
-			<span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span>,
-		    <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">data</span>){
-		    }
-   		});
-	}
-}
-</code></pre></div><p>接著在後端靠著傳來的id進行額外的處理即可。</p>
+						<p>紀錄參考的教學影片使用時碰到的一些問題，主要是影片是3的教學而我使用的版本為4所碰到的問題。</p>
+<p>參考的影片<br>
+<a href="https://www.youtube.com/playlist?list=PLhqJJNjsQ7KH_z21S_XeXD3Ht3WnSqW97">https://www.youtube.com/playlist?list=PLhqJJNjsQ7KH_z21S_XeXD3Ht3WnSqW97</a></p>
+<p>首先會碰到的是有一部分的宣告方式變更了，比如說讓參數顯示在引擎中屬性面版的export，其他還有onready等等，這種宣告的設定前面都多了@。<br>
+下方是這個有用到的部分。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#66d9ef">tool</span>
+<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">var</span> score: <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#66d9ef">onready</span> <span style="color:#66d9ef">var</span> <span style="color:#f92672">...</span>
+<span style="color:#960050;background-color:#1e0010">@</span>export_file <span style="color:#66d9ef">var</span> 
+</code></pre></div><h4 id="等待執行yield">等待執行(yield)</h4>
+<p>等待執行(yield)在新版中被移除了，新版中使用await來處理等待執行。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">await <span style="color:#f92672">$</span><span style="color:#a6e22e">AnimationPlayer</span><span style="color:#f92672">.</span>amination_finished
+<span style="color:#75715e">#等於舊版的 yield($AnimationPlayer, &#34;amination_finished&#34;)</span>
+</code></pre></div><h4 id="提示訊息">提示訊息</h4>
+<p>用來在場景編輯中顯示錯誤訊息變成使用array處理，在4版中沒辦法像3版一樣使用空值，必須使用空陣列來處理。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">func</span> _get_configuration_warnings() <span style="color:#f92672">-&gt;</span> PackedStringArray:
+	<span style="color:#66d9ef">var</span> string_array: <span style="color:#f92672">=</span> PackedStringArray([])
+	<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> next_scene:
+		string_array <span style="color:#f92672">=</span> PackedStringArray([<span style="color:#e6db74">&#34;The next scene property can&#39;t be empty&#34;</span>, <span style="color:#e6db74">&#34;中文測試&#34;</span>])
+	<span style="color:#66d9ef">return</span> string_array
+</code></pre></div><h4 id="輸入控制">輸入控制</h4>
+<p>有些參數變成內建，下方是我調整完後的方式，設定的部分照影片教學用即可。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#75715e">#每偵執行 delta為上一偵的時間差</span>
+<span style="color:#66d9ef">func</span> _physics_process(delta: <span style="color:#a6e22e">float</span>) <span style="color:#f92672">-&gt;</span> void:
+	<span style="color:#75715e">#輸入</span>
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">Input</span><span style="color:#f92672">.</span>is_key_pressed(KEY_LEFT):
+		velocity<span style="color:#f92672">.</span>x <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">Input</span><span style="color:#f92672">.</span>is_key_pressed(KEY_RIGHT):
+		velocity<span style="color:#f92672">.</span>x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">Input</span><span style="color:#f92672">.</span>is_key_pressed(KEY_UP):
+		velocity<span style="color:#f92672">.</span>y <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">Input</span><span style="color:#f92672">.</span>is_key_pressed(KEY_DOWN):
+		velocity<span style="color:#f92672">.</span>y <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+	
+	velocity <span style="color:#f92672">*=</span> <span style="color:#ae81ff">50</span>
+	<span style="color:#75715e">#呼叫移動 這個函數會抓velocity來移動</span>
+	move_and_slide()
+</code></pre></div>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/javascript'>
+							<a href='/tags/godot'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									javascript
-								</span>
-							</a>
-						
-							<a href='/tags/youtube%20api'>
-								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									youtube api
+									godot
 								</span>
 							</a>
 						
@@ -545,53 +534,53 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/php_curl_moved_permanently_solve/" class="">
+        <a href="/posts/jquery_ajax/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php curl Moved Permanently解決方法</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery ajax</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/01/14</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/08/27</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_copy_string/" class="">
+        <a href="/posts/mysql_conditionals/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串複製</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql條件式</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/29</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/04</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/mysql_string_functions/" class="">
+        <a href="/posts/php_folder/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql字串函數</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php資料夾權限</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/20</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/01/08</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/python_twitcasting_recorder/" class="">
+        <a href="/posts/hugo_plugin/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">使用python錄TwitCasting直播</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/30</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_display_errors/" class="">
+        <a href="/posts/community_share_update/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php 錯誤顯示</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">社群分享暫存資料更新</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/01/22</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/08/06</time>
                     </p>
                 </div>
             </div>
