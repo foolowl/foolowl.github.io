@@ -6,7 +6,16 @@
     <description>Recent content in godot on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 05 Mar 2023 11:07:15 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 03:35:06 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot瓦片地圖(tilemap)</title>
+      <link>https://www.foolowl.tw/posts/godot_tilemap/</link>
+      <pubDate>Sun, 12 Mar 2023 03:35:06 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_tilemap/</guid>
+      <description>&lt;p&gt;godot 4的瓦片地圖(tilemap)使用方法紀錄，和3版教學影片中比較大的差異在4版本的碰撞需要另外新增物理節點才會被啟用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot玩家控制和其他3與4的一些程式差異</title>
       <link>https://www.foolowl.tw/posts/godot_player_control/</link>
