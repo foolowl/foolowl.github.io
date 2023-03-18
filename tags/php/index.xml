@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 22 Jan 2023 00:35:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 08:06:21 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網址轉址</title>
+      <link>https://www.foolowl.tw/posts/url_redirection/</link>
+      <pubDate>Sat, 18 Mar 2023 08:06:21 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/url_redirection/</guid>
+      <description>&lt;p&gt;紀錄一下自己常用將使用者轉址的方式，基本上就是有些功能處理完後丟去其他地方使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php 錯誤顯示</title>
       <link>https://www.foolowl.tw/posts/php_display_errors/</link>

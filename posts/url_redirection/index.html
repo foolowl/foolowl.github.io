@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>php cookies設定 | 愚者樹屋</title>
+<title>網址轉址 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="php cookies設定 | 愚者樹屋" />
+    <meta property="og:title" content="網址轉址 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="紀錄php cookies設定方式">
-<meta name="keywords" content="php">
+<meta name="description" content="將使用者轉址的方式記錄">
+<meta name="keywords" content="轉址,重定向">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="紀錄php cookies設定方式">
-<meta property="og:url" content="https://www.foolowl.tw/posts/php_cookies/">
+<meta property="og:description" content="將使用者轉址的方式記錄">
+<meta property="og:url" content="https://www.foolowl.tw/posts/url_redirection/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/php_cookies/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/url_redirection/">
 
-<meta name="twitter:description" content="紀錄php cookies設定方式">
-<meta property="article:published_time" content="2022-07-16T08:29:26&#43;00:00">
-<meta property="article:updated_time" content="2022-07-16T08:29:26&#43;00:00">
+<meta name="twitter:description" content="將使用者轉址的方式記錄">
+<meta property="article:published_time" content="2023-03-18T08:06:21&#43;00:00">
+<meta property="article:updated_time" content="2023-03-18T08:06:21&#43;00:00">
 
 
 
@@ -303,79 +303,42 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">php cookies設定</h2>
+					<h2 class="title text-4xl font-bold mb-2">網址轉址</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/07/16</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/03/18</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/07/16</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/03/18</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>簡單記錄一下php的cookies設定，以及各參數的用途。</p>
-<p>php7和以前的cookies設定方式有些許差異，下面的範例使用PHP_VERSION_ID來進行版本判斷，如果程式有需要對應不同版本的PHP的話可以考慮使用此方式判斷。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//預設值設定
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">PHP_VERSION_ID</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">70300</span>) { <span style="color:#75715e">//7版
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">session_set_cookie_params</span>([
-		<span style="color:#e6db74">&#39;path&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;/&#39;</span>,
-		<span style="color:#e6db74">&#39;domain&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>,
-		<span style="color:#e6db74">&#39;secure&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">TRUE</span>,
-		<span style="color:#e6db74">&#39;httponly&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">TRUE</span>,
-		<span style="color:#e6db74">&#39;samesite&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;None&#39;</span>,
-	]);
-}<span style="color:#66d9ef">else</span>{
-	<span style="color:#a6e22e">session_set_cookie_params</span>(
-		<span style="color:#ae81ff">0</span>,
-		<span style="color:#e6db74">&#39;/; samesite=None&#39;</span>,
-		<span style="color:#e6db74">&#39;&#39;</span>,
-		<span style="color:#e6db74">&#34;1&#34;</span>,
-		<span style="color:#e6db74">&#34;1&#34;</span>
-	);
-}
-</code></pre></div><p>先設定好預設值的話，之後使用時沒指定的參數就會使用預設值處理。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//設定cookies
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">PHP_VERSION_ID</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">70300</span>) { <span style="color:#75715e">//php7
-</span><span style="color:#75715e">//setcookie(string $name, string $value = &#34;&#34;, array $options = []): bool
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">setcookie</span>($name, $value, [
-    <span style="color:#e6db74">&#39;expires&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">+</span> <span style="color:#ae81ff">86400</span>,
-    <span style="color:#e6db74">&#39;path&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;/&#39;</span>,
-    <span style="color:#e6db74">&#39;domain&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;domain.com&#39;</span>,
-    <span style="color:#e6db74">&#39;secure&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>,
-    <span style="color:#e6db74">&#39;httponly&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>,
-    <span style="color:#e6db74">&#39;samesite&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;None&#39;</span>,
-]);
-
-}<span style="color:#66d9ef">else</span>{
-<span style="color:#75715e">/*
-</span><span style="color:#75715e">setcookie(
-</span><span style="color:#75715e">    string $name,
-</span><span style="color:#75715e">    string $value = &#34;&#34;,
-</span><span style="color:#75715e">    int $expires_or_options = 0,
-</span><span style="color:#75715e">    string $path = &#34;&#34;,
-</span><span style="color:#75715e">    string $domain = &#34;&#34;,
-</span><span style="color:#75715e">    bool $secure = false,
-</span><span style="color:#75715e">    bool $httponly = false
-</span><span style="color:#75715e">)
-</span><span style="color:#75715e">*/</span>
-
-	<span style="color:#a6e22e">setcookie</span>($key, $msg, <span style="color:#a6e22e">time</span>()<span style="color:#f92672">+</span><span style="color:#ae81ff">60</span>,<span style="color:#e6db74">&#34;/&#34;</span>);
-}
-</code></pre></div><p>php7以後的版本使用陣列來設定，如果不設定的參數留空白就好，以前的版本則是對應的參數位置進行設定，如果需要設定後方的參數則必須一併設定較前面的參數。</p>
-<p>對應的參數功能如下</p>
-<ul>
-<li>expires : 保留時間</li>
-<li>path : 路徑，一般設為/就好</li>
-<li>domain : 網域，一般設為&quot;&ldquo;就好</li>
-<li>secure : true/false，開啟的話會鎖定加密連線(HTTPS)才能使用</li>
-<li>httponly : true/false，開啟的話只有伺服器能讀取，無法使用JS等方式取得</li>
-<li>samesite : Strict/Lax/None，是否開放跨網域存取，詳細的差異還蠻複雜的，有興趣的話可以去查詢不同設定的運作方式，一般來說沒有需求要給其他網站使用的情況都設定為None</li>
-</ul>
-<p>其中secure、httponly、samesite三個參數，如果環境許可最好設定為true、true、None來保護cookies資料，如果網站有資安要求的話非特殊原因也會被要求設定為這樣，否則會被視為風險因素。</p>
+						<p>紀錄一下自己常用將使用者轉址的方式，基本上就是有些功能處理完後丟去其他地方使用。</p>
+<h4 id="html">html</h4>
+<p>content中的數字可以設定等待秒數。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;refresh&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0;url=網址&#34;</span> /&gt;
+</code></pre></div><h4 id="js">js</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">document.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;網址&#34;</span>;
+</code></pre></div><h4 id="php">php</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">	<span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;Location: 網址&#39;</span>);
+    <span style="color:#66d9ef">exit</span>();
+</code></pre></div>
 						</section>
 							
 						Tags : 
+						
+							<a href='/tags/html'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									html
+								</span>
+							</a>
+						
+							<a href='/tags/javascript'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									javascript
+								</span>
+							</a>
 						
 							<a href='/tags/php'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
@@ -555,13 +518,23 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/jquery_ajax/" class="">
+        <a href="/posts/godot_resource/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery ajax</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot 4筆記 - 學習資源</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/27</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/02/25</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/javascript_encryption/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript加密</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/06/11</time>
                     </p>
                 </div>
             </div>
@@ -575,33 +548,23 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_json/" class="">
+        <a href="/posts/php_client_ip/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php json格式</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php取得使用者ip</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/19</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/17</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_github/" class="">
+        <a href="/posts/php_string_search/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php字串搜尋</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/php_file_path/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php檔案路徑</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/09/24</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/15</time>
                     </p>
                 </div>
             </div>

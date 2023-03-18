@@ -6,7 +6,16 @@
     <description>Recent content in javascript on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 13 Nov 2022 11:28:11 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2023 08:06:21 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網址轉址</title>
+      <link>https://www.foolowl.tw/posts/url_redirection/</link>
+      <pubDate>Sat, 18 Mar 2023 08:06:21 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/url_redirection/</guid>
+      <description>&lt;p&gt;紀錄一下自己常用將使用者轉址的方式，基本上就是有些功能處理完後丟去其他地方使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript字串型別轉換</title>
       <link>https://www.foolowl.tw/posts/javascript_string_convert/</link>
