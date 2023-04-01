@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 22 Jan 2023 00:35:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Apr 2023 09:49:23 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php顯示404</title>
+      <link>https://www.foolowl.tw/posts/php_404/</link>
+      <pubDate>Sat, 01 Apr 2023 09:49:23 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_404/</guid>
+      <description>&lt;p&gt;在需要的情況用來顯示讓一般人以為沒有此頁面，大概就是管理功能等等比較隱密的頁面如果登入或IP等等不符合的時候，現在的框架都有內建功能一般來說呼叫框架的404就好。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php 錯誤顯示</title>
       <link>https://www.foolowl.tw/posts/php_display_errors/</link>
