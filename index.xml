@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 01 Apr 2023 09:49:23 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Apr 2023 04:41:10 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot動畫播放</title>
+      <link>https://www.foolowl.tw/posts/godot_animationplayer/</link>
+      <pubDate>Sat, 08 Apr 2023 04:41:10 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_animationplayer/</guid>
+      <description>&lt;p&gt;godot 4的動畫播放(AnimationPlayer)使用方法紀錄，和3版教學影片中的差異大概只有4版中製作多個動畫時會自動產生一個reset動畫，基本上就是自動重設有更動的所有參數，可以防止忘了拉回初始狀態就去製作其他動畫時出現的問題，需要注意的是reset動畫中的position，可能需要視情況移除。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php顯示404</title>
       <link>https://www.foolowl.tw/posts/php_404/</link>
