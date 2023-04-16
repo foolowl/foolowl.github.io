@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Apr 2023 04:41:10 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Apr 2023 14:27:20 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php pathinfo中文檔案名稱問題</title>
+      <link>https://www.foolowl.tw/posts/php_pathinfo_chinese/</link>
+      <pubDate>Sun, 16 Apr 2023 14:27:20 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_pathinfo_chinese/</guid>
+      <description>&lt;p&gt;這次碰到需要保留檔案名稱並加上亂碼的需求碰到這個問題，pathinfo在取得filename的時候如果不是ASCII碼就有可能會碰到，以前都是直接洗掉名稱而沒注意到這件事。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot動畫播放</title>
       <link>https://www.foolowl.tw/posts/godot_animationplayer/</link>
