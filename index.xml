@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 16 Apr 2023 14:27:20 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2023 01:53:34 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot自動載入</title>
+      <link>https://www.foolowl.tw/posts/godot_autoload/</link>
+      <pubDate>Sun, 23 Apr 2023 01:53:34 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_autoload/</guid>
+      <description>&lt;p&gt;這功能和舊版完全一樣純粹做個紀錄，設定以後這個場景會一直存在且不會受到場景轉換影響，執行測試時可以看到設定的場景會被加入在root底下。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php pathinfo中文檔案名稱問題</title>
       <link>https://www.foolowl.tw/posts/php_pathinfo_chinese/</link>
