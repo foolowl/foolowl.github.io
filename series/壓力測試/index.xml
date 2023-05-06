@@ -6,7 +6,16 @@
     <description>Recent content in 壓力測試 on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 29 Apr 2023 01:06:56 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/%E5%A3%93%E5%8A%9B%E6%B8%AC%E8%A9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2023 10:26:52 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/%E5%A3%93%E5%8A%9B%E6%B8%AC%E8%A9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用jmeter進行壓力測試2 下載其他資源</title>
+      <link>https://www.foolowl.tw/posts/stress_testing_using_jmeter_2/</link>
+      <pubDate>Sat, 06 May 2023 10:26:52 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/stress_testing_using_jmeter_2/</guid>
+      <description>&lt;p&gt;結果上次資料交上去後馬上被反應有問題，主要是測試的時間與實際使用上的讀取時間相差太大，檢查後最主要的差異是圖片等等的載入並沒有進行，這邊簡單紀錄一下讀取其他資料的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>用jmeter進行壓力測試</title>
       <link>https://www.foolowl.tw/posts/stress_testing_using_jmeter/</link>
