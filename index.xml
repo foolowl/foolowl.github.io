@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 13 May 2023 03:04:57 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 May 2023 02:25:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql時間戳轉換</title>
+      <link>https://www.foolowl.tw/posts/mysql_from_unixtime/</link>
+      <pubDate>Sat, 20 May 2023 02:25:37 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_from_unixtime/</guid>
+      <description>&lt;p&gt;平常都是在程式中才進行處理時間戳的動作，碰到一個臨時需要匯出資料的一次性動作就在sql中進行轉換了，這邊單純的紀錄方法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php取得array key</title>
       <link>https://www.foolowl.tw/posts/php_array_search/</link>
