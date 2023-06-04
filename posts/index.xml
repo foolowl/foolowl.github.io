@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 27 May 2023 07:58:19 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jun 2023 14:36:45 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jquery 插入html</title>
+      <link>https://www.foolowl.tw/posts/jquery_inner_html/</link>
+      <pubDate>Sun, 04 Jun 2023 14:36:45 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/jquery_inner_html/</guid>
+      <description>&lt;p&gt;簡單紀錄一下使用Jquery插入html的幾個方法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>css垂直對齊設定</title>
       <link>https://www.foolowl.tw/posts/css_vertical_align/</link>

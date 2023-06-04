@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.foolowl.tw/tags/javascript/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/jquery/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/jquery/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/jquery_inner_html/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2023-06-04T14:36:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.foolowl.tw/tags/css/</loc>
     <lastmod>2023-05-27T07:58:19+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,26 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/css_vertical_align/</loc>
-    <lastmod>2023-05-27T07:58:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2023-05-27T07:58:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2023-05-27T07:58:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2023-05-27T07:58:19+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/</loc>
     <lastmod>2023-05-27T07:58:19+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -122,11 +142,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.foolowl.tw/tags/javascript/</loc>
-    <lastmod>2023-03-18T08:06:21+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.foolowl.tw/series/javascript/</loc>
     <lastmod>2023-03-18T08:06:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -164,16 +179,6 @@
   </url><url>
     <loc>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2023-02-19T09:01:37+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/jquery/</loc>
-    <lastmod>2023-02-12T14:38:22+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/jquery/</loc>
-    <lastmod>2023-02-12T14:38:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
