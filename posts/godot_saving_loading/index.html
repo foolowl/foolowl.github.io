@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>php時間處理 | 愚者樹屋</title>
+<title>godot存檔讀檔 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="php時間處理 | 愚者樹屋" />
+    <meta property="og:title" content="godot存檔讀檔 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="使用php檢查及處理時間">
-<meta name="keywords" content="php">
+<meta name="description" content="紀錄godot存檔讀檔的方式，以json為主，其他方式則簡單紀錄函數">
+<meta name="keywords" content="godot,saving,loading">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="使用php檢查及處理時間">
-<meta property="og:url" content="https://www.foolowl.tw/posts/php_datetime/">
+<meta property="og:description" content="紀錄godot存檔讀檔的方式，以json為主，其他方式則簡單紀錄函數">
+<meta property="og:url" content="https://www.foolowl.tw/posts/godot_saving_loading/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/php_datetime/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/godot_saving_loading/">
 
-<meta name="twitter:description" content="使用php檢查及處理時間">
-<meta property="article:published_time" content="2022-10-01T04:44:43&#43;00:00">
-<meta property="article:updated_time" content="2022-10-01T04:44:43&#43;00:00">
+<meta name="twitter:description" content="紀錄godot存檔讀檔的方式，以json為主，其他方式則簡單紀錄函數">
+<meta property="article:published_time" content="2023-06-24T03:17:40&#43;00:00">
+<meta property="article:updated_time" content="2023-06-24T03:17:40&#43;00:00">
 
 
 
@@ -311,53 +311,214 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">php時間處理</h2>
+					<h2 class="title text-4xl font-bold mb-2">godot存檔讀檔</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/10/01</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/06/24</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/10/01</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/06/24</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>簡單記錄一下php的時間檢查與轉換。</p>
-<p>時間檢查</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$showpasstime <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
-<span style="color:#75715e">//將字串轉為時間 成功的話就表示格式正確
-</span><span style="color:#75715e"></span>$chkd <span style="color:#f92672">=</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>, $timedata);
-<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($timedata) <span style="color:#f92672">&amp;&amp;</span> $chkd <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>) {
-	$showpasstime <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
-}<span style="color:#66d9ef">else</span>{
-	<span style="color:#66d9ef">if</span>($chkd<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;Y&#39;</span>) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1900</span>){
-    <span style="color:#75715e">//轉回文字
-</span><span style="color:#75715e"></span>		$showpasstime <span style="color:#f92672">=</span> $chkd<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>);
-	}
-}
-</code></pre></div><p>時間戳轉換<br>
-參考的原文章 <a href="https://www.php.net/manual/en/function.strtotime.php">https://www.php.net/manual/en/function.strtotime.php</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//時間戳-&gt;日期
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>, $timestamp);
-<span style="color:#75715e">//日期-&gt;時間戳
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">strtotime</span>(<span style="color:#e6db74">&#34;now&#34;</span>);
-<span style="color:#75715e">//日期-&gt;時間戳
-</span><span style="color:#75715e"></span>$dtime <span style="color:#f92672">=</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#34;Y-m-d&#34;</span>, <span style="color:#e6db74">&#34;2000-01-01&#34;</span>);
-$timestamp <span style="color:#f92672">=</span> $dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTimestamp</span>();
-<span style="color:#75715e">//調整時間
-</span><span style="color:#75715e"></span>$dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">modify</span>(<span style="color:#e6db74">&#39;+6 month&#39;</span>);
-$timestamp <span style="color:#f92672">=</span> $dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTimestamp</span>();
-<span style="color:#75715e">//轉換格式
-</span><span style="color:#75715e"></span>$date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;13-06-2015 23:45:52&#34;</span>;
-    <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#39;d-m-Y H:i:s&#39;</span>, $date)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;Y-m-d h:i:s&#39;</span>);
+						<p>紀錄一下godot4中存檔和讀檔的方式，使用的程式碼都來自於參考資料。</p>
+<p>參考資料<br>
+文件:<a href="https://docs.godotengine.org/en/stable/tutorials/io/saving_games.html">https://docs.godotengine.org/en/stable/tutorials/io/saving_games.html</a><br>
+參考範例1:<a href="https://godotengine.org/asset-library/asset/1711">Different save load methods demo - Godot Asset Library (godotengine.org)</a><br>
+參考範例2(官方範例):<a href="https://github.com/godotengine/godot-demo-projects/tree/4.0">GitHub - godotengine/godot-demo-projects at 4.0</a></p>
+<p>其中在官方範例中loading/serialization為存讀檔案的示範，展示了JSON和ConfigFile的方式。<br>
+而別人寫的範例中多示範了兩種方式，readme中有另外備註了不同類型的比較，其中還有備註了PackedScene(保存場景)的方式時間最久、而且檔案與更新的遊戲可能不相容。</p>
+<p><strong>此表格來自範例1備註</strong> </p>
+<table>
+<thead>
+<tr>
+<th>儲存與讀取類型</th>
+<th>Text</th>
+<th>Binary</th>
+<th>Standard format</th>
+<th>Stores all data types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>✅</td>
+<td>🟥</td>
+<td>✅</td>
+<td>🟥</td>
+</tr>
+<tr>
+<td>ConfigFile</td>
+<td>✅</td>
+<td>🟥</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Custom resource</td>
+<td>✅</td>
+<td>✅</td>
+<td>🟥</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>PackedScene</td>
+<td>✅</td>
+<td>✅</td>
+<td>🟥</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p>下方範例json的部分抓官方文件範例加上簡單註解，其餘則是範例中簡單截出的語法。</p>
+<h4 id="json">json</h4>
+<p>文件中推薦建立虛列化格式來方便處理存檔，在這邊處理存檔資料。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">func</span> save():
+    <span style="color:#66d9ef">var</span> save_dict <span style="color:#f92672">=</span> {
+        <span style="color:#e6db74">&#34;filename&#34;</span> : get_scene_file_path(),
+        <span style="color:#e6db74">&#34;parent&#34;</span> : get_parent()<span style="color:#f92672">.</span>get_path(),
+        <span style="color:#e6db74">&#34;pos_x&#34;</span> : position<span style="color:#f92672">.</span>x, <span style="color:#75715e"># Vector2 is not supported by JSON</span>
+        <span style="color:#e6db74">&#34;pos_y&#34;</span> : position<span style="color:#f92672">.</span>y,
+        <span style="color:#e6db74">&#34;attack&#34;</span> : attack,
+        <span style="color:#e6db74">&#34;defense&#34;</span> : defense,
+        <span style="color:#e6db74">&#34;current_health&#34;</span> : current_health,
+        <span style="color:#e6db74">&#34;max_health&#34;</span> : max_health,
+        <span style="color:#e6db74">&#34;damage&#34;</span> : damage,
+        <span style="color:#e6db74">&#34;regen&#34;</span> : regen,
+        <span style="color:#e6db74">&#34;experience&#34;</span> : experience,
+        <span style="color:#e6db74">&#34;tnl&#34;</span> : tnl,
+        <span style="color:#e6db74">&#34;level&#34;</span> : level,
+        <span style="color:#e6db74">&#34;attack_growth&#34;</span> : attack_growth,
+        <span style="color:#e6db74">&#34;defense_growth&#34;</span> : defense_growth,
+        <span style="color:#e6db74">&#34;health_growth&#34;</span> : health_growth,
+        <span style="color:#e6db74">&#34;is_alive&#34;</span> : is_alive,
+        <span style="color:#e6db74">&#34;last_attack&#34;</span> : last_attack
+    }
+    <span style="color:#66d9ef">return</span> save_dict
+</code></pre></div><p>存檔，用FileAccess開啟/建立檔案後開始抓資料寫入(store_line)。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">func</span> save_game():
+    <span style="color:#66d9ef">var</span> save_game <span style="color:#f92672">=</span> FileAccess<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#34;user://savegame.save&#34;</span>, FileAccess<span style="color:#f92672">.</span>WRITE)
+    <span style="color:#66d9ef">var</span> save_nodes <span style="color:#f92672">=</span> get_tree()<span style="color:#f92672">.</span>get_nodes_in_group(<span style="color:#e6db74">&#34;Persist&#34;</span>)
+    <span style="color:#66d9ef">for</span> node <span style="color:#f92672">in</span> save_nodes:
+        <span style="color:#75715e"># Check the node is an instanced scene so it can be instanced again during load.</span>
+        <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>scene_file_path<span style="color:#f92672">.</span>is_empty():
+            print(<span style="color:#e6db74">&#34;persistent node &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39; is not an instanced scene, skipped&#34;</span> <span style="color:#f92672">%</span> node<span style="color:#f92672">.</span>name)
+            <span style="color:#66d9ef">continue</span>
+
+		<span style="color:#75715e"># #####重點在這區 檢查設定的格式是否存在並使用</span>
+        <span style="color:#75715e"># Check the node has a save function.</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>node<span style="color:#f92672">.</span>has_method(<span style="color:#e6db74">&#34;save&#34;</span>):
+            print(<span style="color:#e6db74">&#34;persistent node &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39; is missing a save() function, skipped&#34;</span> <span style="color:#f92672">%</span> node<span style="color:#f92672">.</span>name)
+            <span style="color:#66d9ef">continue</span>
+
+        <span style="color:#75715e"># Call the node&#39;s save function.</span>
+        <span style="color:#66d9ef">var</span> node_data <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>call(<span style="color:#e6db74">&#34;save&#34;</span>)
+
+        <span style="color:#75715e"># JSON provides a static method to serialized JSON string.</span>
+        <span style="color:#66d9ef">var</span> json_string <span style="color:#f92672">=</span> JSON<span style="color:#f92672">.</span>stringify(node_data)
+
+        <span style="color:#75715e"># Store the save dictionary as a new line in the save file.</span>
+        save_game<span style="color:#f92672">.</span>store_line(json_string)
+</code></pre></div><p>讀檔，先確認檔案是否存在，存在的話讀取並塞回遊戲中。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript"><span style="color:#66d9ef">func</span> load_game():
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> FileAccess<span style="color:#f92672">.</span>file_exists(<span style="color:#e6db74">&#34;user://savegame.save&#34;</span>):
+        <span style="color:#66d9ef">return</span> <span style="color:#75715e"># Error! We don&#39;t have a save to load.</span>
+
+    <span style="color:#75715e"># We need to revert the game state so we&#39;re not cloning objects</span>
+    <span style="color:#75715e"># during loading. This will vary wildly depending on the needs of a</span>
+    <span style="color:#75715e"># project, so take care with this step.</span>
+    <span style="color:#75715e"># For our example, we will accomplish this by deleting saveable objects.</span>
+    <span style="color:#66d9ef">var</span> save_nodes <span style="color:#f92672">=</span> get_tree()<span style="color:#f92672">.</span>get_nodes_in_group(<span style="color:#e6db74">&#34;Persist&#34;</span>)
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> save_nodes:
+        i<span style="color:#f92672">.</span>queue_free()
+
+    <span style="color:#75715e"># Load the file line by line and process that dictionary to restore</span>
+    <span style="color:#75715e"># the object it represents.</span>
+    <span style="color:#66d9ef">var</span> save_game <span style="color:#f92672">=</span> FileAccess<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#34;user://savegame.save&#34;</span>, FileAccess<span style="color:#f92672">.</span>READ)
+    <span style="color:#66d9ef">while</span> save_game<span style="color:#f92672">.</span>get_position() <span style="color:#f92672">&lt;</span> save_game<span style="color:#f92672">.</span>get_length():
+        <span style="color:#66d9ef">var</span> json_string <span style="color:#f92672">=</span> save_game<span style="color:#f92672">.</span>get_line()
+
+        <span style="color:#75715e"># Creates the helper class to interact with JSON</span>
+        <span style="color:#66d9ef">var</span> json <span style="color:#f92672">=</span> JSON<span style="color:#f92672">.</span>new()
+
+        <span style="color:#75715e"># Check if there is any error while parsing the JSON string, skip in case of failure</span>
+        <span style="color:#66d9ef">var</span> parse_result <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>parse(json_string)
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> parse_result <span style="color:#f92672">==</span> OK:
+            print(<span style="color:#e6db74">&#34;JSON Parse Error: &#34;</span>, json<span style="color:#f92672">.</span>get_error_message(), <span style="color:#e6db74">&#34; in &#34;</span>, json_string, <span style="color:#e6db74">&#34; at line &#34;</span>, json<span style="color:#f92672">.</span>get_error_line())
+            <span style="color:#66d9ef">continue</span>
+
+        <span style="color:#75715e"># Get the data from the JSON object</span>
+        <span style="color:#66d9ef">var</span> node_data <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>get_data()
+
+        <span style="color:#75715e"># Firstly, we need to create the object and add it to the tree and set its position.</span>
+        <span style="color:#66d9ef">var</span> new_object <span style="color:#f92672">=</span> load(node_data[<span style="color:#e6db74">&#34;filename&#34;</span>])<span style="color:#f92672">.</span>instantiate()
+        get_node(node_data[<span style="color:#e6db74">&#34;parent&#34;</span>])<span style="color:#f92672">.</span>add_child(new_object)
+        new_object<span style="color:#f92672">.</span>position <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vector2</span>(node_data[<span style="color:#e6db74">&#34;pos_x&#34;</span>], node_data[<span style="color:#e6db74">&#34;pos_y&#34;</span>])
+
+        <span style="color:#75715e"># Now we set the remaining variables.</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> node_data<span style="color:#f92672">.</span>keys():
+            <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;filename&#34;</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;parent&#34;</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pos_x&#34;</span> <span style="color:#f92672">or</span> i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pos_y&#34;</span>:
+                <span style="color:#66d9ef">continue</span>
+            new_object<span style="color:#f92672">.</span>set(i, node_data[i])
+</code></pre></div><h4 id="config-file">config file</h4>
+<p>存檔</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">	<span style="color:#66d9ef">var</span> config_file :<span style="color:#f92672">=</span> <span style="color:#a6e22e">ConfigFile</span><span style="color:#f92672">.</span>new()
+	<span style="color:#66d9ef">for</span> actor <span style="color:#f92672">in</span> get_tree()<span style="color:#f92672">.</span>get_nodes_in_group(<span style="color:#e6db74">&#34;actors&#34;</span>):
+		config_file<span style="color:#f92672">.</span>set_value(<span style="color:#e6db74">&#34;actors&#34;</span>, actor<span style="color:#f92672">.</span>name, actor<span style="color:#f92672">.</span>serialize_config_file())
+	config_file<span style="color:#f92672">.</span>save(SAVE_PATH_CONFIG_FILE)
+</code></pre></div><p>讀檔</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">	<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> FileAccess<span style="color:#f92672">.</span>file_exists(SAVE_PATH_CONFIG_FILE):
+		<span style="color:#f92672">$</span>UILayer<span style="color:#f92672">/</span>UI<span style="color:#f92672">/</span>LoadConfigFile<span style="color:#f92672">.</span>disabled <span style="color:#f92672">=</span> true
+		<span style="color:#66d9ef">return</span>
+	clear_actors()
+	<span style="color:#66d9ef">var</span> config_file :<span style="color:#f92672">=</span> <span style="color:#a6e22e">ConfigFile</span><span style="color:#f92672">.</span>new()
+	config_file<span style="color:#f92672">.</span>load(SAVE_PATH_CONFIG_FILE)
+	<span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> config_file<span style="color:#f92672">.</span>get_section_keys(<span style="color:#e6db74">&#34;actors&#34;</span>):
+		<span style="color:#66d9ef">var</span> actor :<span style="color:#f92672">=</span> Actor<span style="color:#f92672">.</span>instantiate()
+		actor<span style="color:#f92672">.</span>init_config_file(config_file<span style="color:#f92672">.</span>get_value(<span style="color:#e6db74">&#34;actors&#34;</span>, key))
+		<span style="color:#f92672">$</span>Actors<span style="color:#f92672">.</span>add_child(actor)
+		actor<span style="color:#f92672">.</span>owner <span style="color:#f92672">=</span> <span style="color:#f92672">$</span>Actors
+</code></pre></div><h4 id="custom-resource">custom resource</h4>
+<p>存檔</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">	<span style="color:#66d9ef">var</span> actor_data: <span style="color:#a6e22e">Array</span>[ActorData] <span style="color:#f92672">=</span> []
+	<span style="color:#66d9ef">for</span> actor <span style="color:#f92672">in</span> get_tree()<span style="color:#f92672">.</span>get_nodes_in_group(<span style="color:#e6db74">&#34;actors&#34;</span>):
+		actor_data<span style="color:#f92672">.</span>append(actor<span style="color:#f92672">.</span>serialize_custom_resource())
+	<span style="color:#66d9ef">var</span> save_resource :<span style="color:#f92672">=</span> SaveResource<span style="color:#f92672">.</span>new(actor_data)
+	<span style="color:#a6e22e">ResourceSaver</span><span style="color:#f92672">.</span>save(save_resource, SAVE_PATH_CUSTOM_RESOURCE)
+</code></pre></div><p>讀檔</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">	<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> FileAccess<span style="color:#f92672">.</span>file_exists(SAVE_PATH_CUSTOM_RESOURCE):
+		<span style="color:#f92672">$</span>UILayer<span style="color:#f92672">/</span>UI<span style="color:#f92672">/</span>LoadCustomResource<span style="color:#f92672">.</span>disabled <span style="color:#f92672">=</span> true
+		<span style="color:#66d9ef">return</span>
+	clear_actors()
+	<span style="color:#66d9ef">var</span> save_resource :<span style="color:#f92672">=</span> <span style="color:#a6e22e">ResourceLoader</span><span style="color:#f92672">.</span>load(SAVE_PATH_CUSTOM_RESOURCE, <span style="color:#e6db74">&#34;SaveResource&#34;</span>)
+	<span style="color:#66d9ef">for</span> actor_data <span style="color:#f92672">in</span> save_resource<span style="color:#f92672">.</span>actor_data:
+		<span style="color:#66d9ef">var</span> actor :<span style="color:#f92672">=</span> Actor<span style="color:#f92672">.</span>instantiate()
+		actor<span style="color:#f92672">.</span>init_custom_resource(actor_data)
+		<span style="color:#f92672">$</span>Actors<span style="color:#f92672">.</span>add_child(actor)
+		actor<span style="color:#f92672">.</span>owner <span style="color:#f92672">=</span> <span style="color:#f92672">$</span>Actors
+</code></pre></div><h4 id="packed-scene">packed scene</h4>
+<p>存檔</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">	<span style="color:#66d9ef">var</span> scene :<span style="color:#f92672">=</span> <span style="color:#a6e22e">PackedScene</span><span style="color:#f92672">.</span>new()
+	scene<span style="color:#f92672">.</span>pack(<span style="color:#f92672">$</span>Actors)
+	<span style="color:#a6e22e">ResourceSaver</span><span style="color:#f92672">.</span>save(scene, SAVE_PATH_PACKED_SCENE)
+</code></pre></div><p>讀檔</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">	<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> FileAccess<span style="color:#f92672">.</span>file_exists(SAVE_PATH_PACKED_SCENE):
+		<span style="color:#f92672">$</span>UILayer<span style="color:#f92672">/</span>UI<span style="color:#f92672">/</span>LoadPackedScene<span style="color:#f92672">.</span>disabled <span style="color:#f92672">=</span> true
+		<span style="color:#66d9ef">return</span>
+	<span style="color:#f92672">$</span>Actors<span style="color:#f92672">.</span>free()
+	<span style="color:#66d9ef">var</span> scene :<span style="color:#f92672">=</span> <span style="color:#a6e22e">ResourceLoader</span><span style="color:#f92672">.</span>load(SAVE_PATH_PACKED_SCENE, <span style="color:#e6db74">&#34;PackedScene&#34;</span>)
+	add_child(scene<span style="color:#f92672">.</span>instantiate())
+</code></pre></div><h4 id="刪除檔案">刪除檔案</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">DirAccess<span style="color:#f92672">.</span>remove_absolute(<span style="color:#e6db74">&#34;檔案路徑&#34;</span>)
 </code></pre></div>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/php'>
+							<a href='/tags/godot'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									php
+									godot
 								</span>
 							</a>
 						
@@ -541,53 +702,53 @@ $timestamp <span style="color:#f92672">=</span> $dtime<span style="color:#f92672
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/godot_autoload/" class="">
+        <a href="/posts/javascript_encryption/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot自動載入</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript加密</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/04/23</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/06/11</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/jquery_inner_html/" class="">
+        <a href="/posts/javascript_lock_right_click/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery 插入html</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript鎖定右鍵</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/06/04</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/02</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/jquery_stop_bubbling/" class="">
+        <a href="/posts/css_vertical_align/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery阻止冒泡bubbling</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">css垂直對齊設定</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/02/12</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/05/27</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_pdf/" class="">
+        <a href="/posts/php_client_ip/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php pdf旋轉與合併</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php取得使用者ip</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/12/31</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/17</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/mysql_from_unixtime/" class="">
+        <a href="/posts/javascript_string_check/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql時間戳轉換</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串檢查</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/05/20</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/10</time>
                     </p>
                 </div>
             </div>
