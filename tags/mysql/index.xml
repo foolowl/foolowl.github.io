@@ -6,7 +6,16 @@
     <description>Recent content in mysql on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 20 May 2023 02:25:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jul 2023 05:58:23 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql 用select更新資料</title>
+      <link>https://www.foolowl.tw/posts/mysql_update_query_based_on_select/</link>
+      <pubDate>Sat, 01 Jul 2023 05:58:23 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_update_query_based_on_select/</guid>
+      <description>&lt;p&gt;最近碰到了需要一次性將A表格的資料更新到B表格的狀況，順便記錄一下mysql的語法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>mysql時間戳轉換</title>
       <link>https://www.foolowl.tw/posts/mysql_from_unixtime/</link>
