@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>網址轉址 | 愚者樹屋</title>
+<title>html 空白 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="網址轉址 | 愚者樹屋" />
+    <meta property="og:title" content="html 空白 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="將使用者轉址的方式記錄">
-<meta name="keywords" content="轉址,重定向">
+<meta name="description" content="記錄一下空白的種類與php移除空白的方式">
+<meta name="keywords" content="html,php">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="將使用者轉址的方式記錄">
-<meta property="og:url" content="https://www.foolowl.tw/posts/url_redirection/">
+<meta property="og:description" content="記錄一下空白的種類與php移除空白的方式">
+<meta property="og:url" content="https://www.foolowl.tw/posts/html_space/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/url_redirection/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/html_space/">
 
-<meta name="twitter:description" content="將使用者轉址的方式記錄">
-<meta property="article:published_time" content="2023-03-18T08:06:21&#43;00:00">
-<meta property="article:updated_time" content="2023-03-18T08:06:21&#43;00:00">
+<meta name="twitter:description" content="記錄一下空白的種類與php移除空白的方式">
+<meta property="article:published_time" content="2023-07-08T05:27:31&#43;00:00">
+<meta property="article:updated_time" content="2023-07-08T05:27:31&#43;00:00">
 
 
 
@@ -311,26 +311,38 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">網址轉址</h2>
+					<h2 class="title text-4xl font-bold mb-2">html 空白</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2023/03/18</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/07/08</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/03/18</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/07/08</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>紀錄一下自己常用將使用者轉址的方式，基本上就是有些功能處理完後丟去其他地方使用。</p>
-<h4 id="html">html</h4>
-<p>content中的數字可以設定等待秒數。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;refresh&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0;url=網址&#34;</span> /&gt;
-</code></pre></div><h4 id="js">js</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">document.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;網址&#34;</span>;
-</code></pre></div><h4 id="php">php</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">	<span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;Location: 網址&#39;</span>);
-    <span style="color:#66d9ef">exit</span>();
+						<p>最近又碰到了空白的問題，就記錄一下空白的種類與php移除空白的方式。</p>
+<p>空白參考資料，這邊記錄了不少排版或特殊用途的空白。<br>
+<a href="https://zh.wikipedia.org/wiki/%E7%A9%BA%E6%A0%BC">https://zh.wikipedia.org/wiki/%E7%A9%BA%E6%A0%BC</a></p>
+<p>php移除前後的空白可以用常見的 <code>trim()</code>進行處理，需要移除中文的也可以用 <code>str_replace</code>直接處理空白，麻煩的是一些少見的特殊空白。</p>
+<p>程式來源<a href="https://stackoverflow.com/questions/22600235/remove-or-match-a-unicode-zero-width-space-php">https://stackoverflow.com/questions/22600235/remove-or-match-a-unicode-zero-width-space-php</a><br>
+移除特殊空白的程式，這邊可以看到範例中使用的是unicode編碼來進行取代，如果有碰到其他特殊空白也能靠增加unicode來處理。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$string <span style="color:#f92672">=</span> <span style="color:#a6e22e">preg_replace</span>(<span style="color:#e6db74">&#39;/[\x{200B}-\x{200D}\x{FEFF}]/u&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>, $string);
+</code></pre></div><hr>
+<p>空白的種類</p>
+<h4 id="nbsp">&amp;nbsp;</h4>
+<p>最常用的空白，占用一個英文字寬度，英文是No-Break Space，和直接按空白鍵最大的差別就是連續空白不會被組合成1個</p>
+<h4 id="ensp">&amp;ensp;</h4>
+<p>排版用的半形空白，一般會佔一半的字體寬度，英文是En Space</p>
+<h4 id="emsp">&amp;emsp;</h4>
+<p>排版用的全形空白，一般會佔一個字體寬度，大部分情況和中文的全形空白占用寬度一樣，不過實際上是不同的文字，英文是Em Space</p>
+<p>注意以上的字體寬度和呈現都是指在常見瀏覽器的狀況，在其他檔案格式(EX:PDF)、其他軟體、部分字體中呈現的狀況會有所差別，像這邊就有碰過在PDF中某些字型的<code>&amp;ensp;</code>會佔有一個字體寬度，表現和<code>&amp;emsp;</code>一樣，所以在可能的情況還是避免使用這些來進行排版。</p>
+<p>一般來說比較不會用到的空白如下，似乎是在某些語言下才會使用</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&amp;thinsp; 短空白 U2009
+&amp;ZeroWidthSpace; 零寬度空白 U200B
+&amp;zwnj; 零寬度空白(不連字) U200C
+&amp;zwj; 零寬度空白(連字) U200D
 </code></pre></div>
 						</section>
 							
@@ -339,12 +351,6 @@
 							<a href='/tags/html'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
 									html
-								</span>
-							</a>
-						
-							<a href='/tags/javascript'>
-								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									javascript
 								</span>
 							</a>
 						
@@ -534,43 +540,23 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_folder/" class="">
+        <a href="/posts/php_cookies/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php cookies設定</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/16</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_string_check/" class="">
+        <a href="/posts/jquery_stop_bubbling/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串檢查</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery阻止冒泡bubbling</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/09/10</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/youtube_counter/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/php_datetime/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php時間處理</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/01</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/02/12</time>
                     </p>
                 </div>
             </div>
@@ -581,6 +567,26 @@
                     <div class="text-gray-900 font-bold text-xl dark:text-white">孔明舞(チキチキバンバン)跳舞用法</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/12/18</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/php_pathinfo_chinese/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php pathinfo中文檔案名稱問題</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/04/16</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/mysql_string_functions/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql字串函數</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/08/20</time>
                     </p>
                 </div>
             </div>

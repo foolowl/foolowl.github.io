@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 01 Jul 2023 05:58:23 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 05:27:31 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>html</title>
+      <link>https://www.foolowl.tw/tags/html/</link>
+      <pubDate>Sat, 08 Jul 2023 05:27:31 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://www.foolowl.tw/tags/php/</link>
+      <pubDate>Sat, 08 Jul 2023 05:27:31 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/tags/php/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>mysql</title>
       <link>https://www.foolowl.tw/tags/mysql/</link>
@@ -35,15 +53,6 @@
     </item>
     
     <item>
-      <title>php</title>
-      <link>https://www.foolowl.tw/tags/php/</link>
-      <pubDate>Sun, 11 Jun 2023 14:56:15 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>jquery</title>
       <link>https://www.foolowl.tw/tags/jquery/</link>
       <pubDate>Sun, 04 Jun 2023 14:36:45 +0000</pubDate>
@@ -67,15 +76,6 @@
       <pubDate>Sat, 06 May 2023 10:26:52 +0000</pubDate>
       
       <guid>https://www.foolowl.tw/tags/%E5%A3%93%E5%8A%9B%E6%B8%AC%E8%A9%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://www.foolowl.tw/tags/html/</link>
-      <pubDate>Sat, 18 Mar 2023 08:06:21 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/tags/html/</guid>
       <description></description>
     </item>
     
