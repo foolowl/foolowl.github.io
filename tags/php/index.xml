@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Jul 2023 05:27:31 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jul 2023 01:21:45 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php mysqli錯誤訊息</title>
+      <link>https://www.foolowl.tw/posts/php_mysqli_error_message/</link>
+      <pubDate>Sun, 16 Jul 2023 01:21:45 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_mysqli_error_message/</guid>
+      <description>&lt;p&gt;在除錯或是需要錯誤紀錄的時候常常會使用的東西，有需要的話也可以進行管理員的通知，雖然現在大多數套件都有內部處理的方式了，這邊還是簡單紀錄一下。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>html 空白</title>
       <link>https://www.foolowl.tw/posts/html_space/</link>
