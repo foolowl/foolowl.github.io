@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 22 Jul 2023 03:41:14 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 09:27:35 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>notepad&#43;&#43; 正則取代字串</title>
+      <link>https://www.foolowl.tw/posts/notepad&#43;&#43;_regex/</link>
+      <pubDate>Sat, 29 Jul 2023 09:27:35 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/notepad&#43;&#43;_regex/</guid>
+      <description>&lt;p&gt;碰到一些需要替換文字的檔案，在這邊紀錄一下notepad++中使用正則取代字串的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php 強型態</title>
       <link>https://www.foolowl.tw/posts/php_strong_type/</link>
