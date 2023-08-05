@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 29 Jul 2023 09:27:35 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 03:31:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php動態建立資源</title>
+      <link>https://www.foolowl.tw/posts/php_creation_of_dynamic_property/</link>
+      <pubDate>Sat, 05 Aug 2023 03:31:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_creation_of_dynamic_property/</guid>
+      <description>&lt;p&gt;最近升級php8碰到的另一個問題，動態建立資源雖然已棄用，不過有保留一個特殊的宣告可以啟用這個動作。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>notepad&#43;&#43; 正則取代字串</title>
       <link>https://www.foolowl.tw/posts/notepad&#43;&#43;_regex/</link>

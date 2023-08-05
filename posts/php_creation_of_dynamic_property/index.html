@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>3d軟體 | 愚者樹屋</title>
+<title>php動態建立資源 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="3d軟體 | 愚者樹屋" />
+    <meta property="og:title" content="php動態建立資源 | 愚者樹屋" />
     
     
     
@@ -44,25 +44,24 @@
     
 
 
-	
 
 
-<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta name="keywords" content="">
-<meta name="author" content="">
+<meta name="description" content="php8中動態建立資源的錯誤解決方法">
+<meta name="keywords" content="php">
+<meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="og:url" content="https://www.foolowl.tw/series/3d%E8%BB%9F%E9%AB%94/">
+<meta property="og:description" content="php8中動態建立資源的錯誤解決方法">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_creation_of_dynamic_property/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/series/3d%E8%BB%9F%E9%AB%94/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_creation_of_dynamic_property/">
 
-<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="article:published_time" content="2022-12-10T06:21:47&#43;00:00">
-<meta property="article:updated_time" content="2022-12-10T06:21:47&#43;00:00">
+<meta name="twitter:description" content="php8中動態建立資源的錯誤解決方法">
+<meta property="article:published_time" content="2023-08-05T03:31:28&#43;00:00">
+<meta property="article:updated_time" content="2023-08-05T03:31:28&#43;00:00">
 
 
 
@@ -314,51 +313,61 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-  
-  <div class="col-span-3 md:col-span-2 mb-2">
-  
-    <h2 class="text-4xl dark:text-white">3d軟體</h2>
-	<main>
-    
-    
-    
-    
-    
-    <a href="/posts/vroid_model_edit/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">vroid模型改造並匯出vrm</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">最近為了玩一下孔明舞(チキチキバンバン)，嘗試用了Vroid這款捏人軟體弄模型出來玩，雖然限制上蠻多的不過對於3D能力薄弱的人也能做出一個還可以的模型，記錄一下調整衣服和匯出、編輯VRM模型的方式。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/12/10</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    
+	
+	
+		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">php動態建立資源</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/08/05</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/08/05</time>
+					
 
-
-	</main>
-  </div>
-  
-	<aside>
-    <div class="hidden md:block md:col-span-1">
-    
-    
-            
-            <div class="mb-3">
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>最近升級php8碰到的另一個問題，動態建立資源雖然已棄用，不過有保留一個特殊的宣告可以啟用這個動作。</p>
+<h4 id="錯誤程式">錯誤程式</h4>
+<p>下面這段程式放到php8後會出現的錯誤訊息是<br>
+Deprecated: Creation of dynamic property XXXXXXX is deprecated in</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$config[<span style="color:#e6db74">&#39;email&#39;</span>][<span style="color:#e6db74">&#39;Host&#39;</span>]      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;127.0.0.1&#39;</span>;
+$config[<span style="color:#e6db74">&#39;email&#39;</span>][<span style="color:#e6db74">&#39;From&#39;</span>]      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+<span style="color:#75715e">#... 其他設定
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">//動態建立
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">foreach</span>($config <span style="color:#66d9ef">as</span> $key <span style="color:#f92672">=&gt;</span> $data)
+{
+	$this<span style="color:#f92672">-&gt;</span>$key <span style="color:#f92672">=</span> $data;
+}
+</code></pre></div><h4 id="解決方法">解決方法</h4>
+<p>雖然還可以繼續用，不想處理的話也只要關閉錯誤就好，不過有查到解決方式，在使用前加入以下宣告就好，個人是直接加入到有使用此功能的php檔案最上方。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">#[AllowDynamicProperties]
+</span></code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://www.php.net/manual/en/class.allowdynamicproperties.php">https://www.php.net/manual/en/class.allowdynamicproperties.php</a></p>
+						</section>
+							
+						Tags : 
+						
+							<a href='/tags/php'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									php
+								</span>
+							</a>
+						
+					</div>
+					
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden md:block md:col-span-1">
+				<div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -368,9 +377,7 @@
         <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
     </form>
 </div>
-        
-            
-            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -424,12 +431,8 @@
     
     
 </div>
-        
-            
-            
-        
-            
-            
+				
+				
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -537,74 +540,70 @@
 </div>
 
 
-        
-            
-            
+				
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/stress_testing_using_jmeter_2/" class="">
+        <a href="/posts/php_404/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">用jmeter進行壓力測試2 下載其他資源</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php顯示404</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/05/06</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/04/01</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/html_space/" class="">
+        <a href="/posts/phpcaptcha_noaudio_question/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">html 空白</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">phpcaptcha在ios上撥放沒有聲音</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/07/08</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/09</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_mysqli_error_message/" class="">
+        <a href="/posts/godot_tilemap/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php mysqli錯誤訊息</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot瓦片地圖(tilemap)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/07/16</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/03/12</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/winmerge/" class="">
+        <a href="/posts/php_creation_of_dynamic_property/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">程式碼差異比對工具 - winmerge</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php動態建立資源</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/25</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/08/05</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_background_run/" class="">
+        <a href="/posts/php_json/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php背景執行</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php json格式</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/23</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/19</time>
                     </p>
                 </div>
             </div>
         </a>
     </div>
 </div>
+			</div>
+		</aside>
         
+    </div>
     
-</div>
-	</aside>
-  
-</div>
-
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     
