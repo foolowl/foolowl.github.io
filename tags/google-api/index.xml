@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google api on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/tags/google-api/</link>
+    <description>Recent content in google api on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 12 Aug 2023 09:59:57 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/google-api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>google 自訂搜尋</title>
+      <link>https://www.foolowl.tw/posts/google_custom_search/</link>
+      <pubDate>Sat, 12 Aug 2023 09:59:57 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/google_custom_search/</guid>
+      <description>&lt;p&gt;設定只搜尋自己網站並嵌入的簡單紀錄，小網站的自製搜尋功能其實很難跟搜尋引擎提供的功能比了，如果沒有會員專用文章的需求還蠻常被使用。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

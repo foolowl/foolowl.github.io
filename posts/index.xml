@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 05 Aug 2023 03:31:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Aug 2023 09:59:57 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>google 自訂搜尋</title>
+      <link>https://www.foolowl.tw/posts/google_custom_search/</link>
+      <pubDate>Sat, 12 Aug 2023 09:59:57 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/google_custom_search/</guid>
+      <description>&lt;p&gt;設定只搜尋自己網站並嵌入的簡單紀錄，小網站的自製搜尋功能其實很難跟搜尋引擎提供的功能比了，如果沒有會員專用文章的需求還蠻常被使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php動態建立資源</title>
       <link>https://www.foolowl.tw/posts/php_creation_of_dynamic_property/</link>
