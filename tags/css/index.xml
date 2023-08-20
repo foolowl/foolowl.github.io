@@ -6,7 +6,16 @@
     <description>Recent content in css on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 27 May 2023 07:58:19 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Aug 2023 23:59:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css 文字隱藏</title>
+      <link>https://www.foolowl.tw/posts/css_text_hidden/</link>
+      <pubDate>Sat, 19 Aug 2023 23:59:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/css_text_hidden/</guid>
+      <description>&lt;p&gt;簡單筆記一下用css隱藏超出範圍的文字，並將超出的文字顯示為刪節號(…)&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>css垂直對齊設定</title>
       <link>https://www.foolowl.tw/posts/css_vertical_align/</link>

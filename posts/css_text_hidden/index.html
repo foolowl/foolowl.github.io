@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>php動態建立資源 | 愚者樹屋</title>
+<title>css 文字隱藏 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="php動態建立資源 | 愚者樹屋" />
+    <meta property="og:title" content="css 文字隱藏 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="php8中動態建立資源的錯誤解決方法">
-<meta name="keywords" content="php">
+<meta name="description" content="用css隱藏超出範圍的文字">
+<meta name="keywords" content="css,文字隱藏">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="php8中動態建立資源的錯誤解決方法">
-<meta property="og:url" content="https://www.foolowl.tw/posts/php_creation_of_dynamic_property/">
+<meta property="og:description" content="用css隱藏超出範圍的文字">
+<meta property="og:url" content="https://www.foolowl.tw/posts/css_text_hidden/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/php_creation_of_dynamic_property/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/css_text_hidden/">
 
-<meta name="twitter:description" content="php8中動態建立資源的錯誤解決方法">
-<meta property="article:published_time" content="2023-08-05T03:31:28&#43;00:00">
-<meta property="article:updated_time" content="2023-08-05T03:31:28&#43;00:00">
+<meta name="twitter:description" content="用css隱藏超出範圍的文字">
+<meta property="article:published_time" content="2023-08-19T23:59:28&#43;00:00">
+<meta property="article:updated_time" content="2023-08-19T23:59:28&#43;00:00">
 
 
 
@@ -322,42 +322,37 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">php動態建立資源</h2>
+					<h2 class="title text-4xl font-bold mb-2">css 文字隱藏</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2023/08/05</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/08/19</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/08/05</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/08/19</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>最近升級php8碰到的另一個問題，動態建立資源雖然已棄用，不過有保留一個特殊的宣告可以啟用這個動作。</p>
-<h4 id="錯誤程式">錯誤程式</h4>
-<p>下面這段程式放到php8後會出現的錯誤訊息是<br>
-Deprecated: Creation of dynamic property XXXXXXX is deprecated in</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$config[<span style="color:#e6db74">&#39;email&#39;</span>][<span style="color:#e6db74">&#39;Host&#39;</span>]      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;127.0.0.1&#39;</span>;
-$config[<span style="color:#e6db74">&#39;email&#39;</span>][<span style="color:#e6db74">&#39;From&#39;</span>]      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
-<span style="color:#75715e">#... 其他設定
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//動態建立
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">foreach</span>($config <span style="color:#66d9ef">as</span> $key <span style="color:#f92672">=&gt;</span> $data)
-{
-	$this<span style="color:#f92672">-&gt;</span>$key <span style="color:#f92672">=</span> $data;
-}
-</code></pre></div><h4 id="解決方法">解決方法</h4>
-<p>雖然還可以繼續用，不想處理的話也只要關閉錯誤就好，不過有查到解決方式，在使用前加入以下宣告就好，個人是直接加入到有使用此功能的php檔案最上方。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">#[AllowDynamicProperties]
-</span></code></pre></div><h4 id="參考資料">參考資料</h4>
-<p><a href="https://www.php.net/manual/en/class.allowdynamicproperties.php">https://www.php.net/manual/en/class.allowdynamicproperties.php</a></p>
+						<p>簡單筆記一下用css隱藏超出範圍的文字，並將超出的文字顯示為刪節號(…)</p>
+<p>隱藏超出範圍只要在設定寬/高後使用overflow隱藏即可</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">overflow</span><span style="color:#f92672">:</span> <span style="color:#f92672">hidden</span><span style="color:#f92672">;</span>
+</code></pre></div><p>在這個設定之下限制文字不換行並設定超出的文字樣式就可以讓文字顯示為刪節號</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">white-space</span><span style="color:#f92672">:</span> <span style="color:#f92672">nowrap</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">text-overflow</span><span style="color:#f92672">:</span> <span style="color:#f92672">ellipsis</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">overflow</span><span style="color:#f92672">:</span> <span style="color:#f92672">hidden</span><span style="color:#f92672">;</span>
+</code></pre></div><p>進階設定隱藏的行數，雖然是-webkit-開頭不過比較新的瀏覽器都有支援了，在這種情況下就不用鎖定不換行，而是設定line-clamp來決定能顯示的最大行數。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">-webkit-box-orient</span><span style="color:#f92672">:</span> <span style="color:#f92672">vertical</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">-webkit-line-clamp</span><span style="color:#f92672">:</span> <span style="color:#f92672">3</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">text-overflow</span><span style="color:#f92672">:</span> <span style="color:#f92672">ellipsis</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">overflow</span><span style="color:#f92672">:</span> <span style="color:#f92672">hidden</span><span style="color:#f92672">;</span>
+</code></pre></div>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/php'>
+							<a href='/tags/css'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									php
+									css
 								</span>
 							</a>
 						
@@ -552,53 +547,53 @@ $config[<span style="color:#e6db74">&#39;email&#39;</span>][<span style="color:#
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/javascript_string_convert/" class="">
+        <a href="/posts/javascript_lock_right_click/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串型別轉換</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript鎖定右鍵</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/13</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/07/02</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_client_ip/" class="">
+        <a href="/posts/mysql_conditionals/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php取得使用者ip</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql條件式</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/09/17</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/09/04</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/jquery_inner_html/" class="">
+        <a href="/posts/game_vampire_survivors/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery 插入html</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">吸血鬼倖存者(vampire survivors)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/06/04</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/22</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_config/" class="">
+        <a href="/posts/mysql_update_query_based_on_select/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo config設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql 用select更新資料</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/04/30</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/07/01</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_string_check/" class="">
+        <a href="/posts/php_file_upload/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串檢查</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php檔案上傳</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/09/10</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/12/03</time>
                     </p>
                 </div>
             </div>
