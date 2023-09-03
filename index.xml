@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 26 Aug 2023 02:22:43 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Sep 2023 04:38:16 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql group by max取得同一行其他資料</title>
+      <link>https://www.foolowl.tw/posts/mysql_group_by_max_value_of_another_column/</link>
+      <pubDate>Sun, 03 Sep 2023 04:38:16 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_group_by_max_value_of_another_column/</guid>
+      <description>&lt;p&gt;最近在本身已經有使用join的語句碰到這件事，就查了有沒有什麼方法不用搜兩層來處理，沒想到真的有大神想出方法而且處理速度上還比兩層快，這邊做個紀錄。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Holo倖存者(Holocure)</title>
       <link>https://www.foolowl.tw/posts/game_holo_cure/</link>
