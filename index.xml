@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 03 Sep 2023 04:38:16 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Sep 2023 03:32:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php rss讀取</title>
+      <link>https://www.foolowl.tw/posts/php_load_rss/</link>
+      <pubDate>Sat, 09 Sep 2023 03:32:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_load_rss/</guid>
+      <description>&lt;p&gt;碰到需要抓rss資料的需求，紀錄一下使用php讀取rss檔案內容的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>mysql group by max取得同一行其他資料</title>
       <link>https://www.foolowl.tw/posts/mysql_group_by_max_value_of_another_column/</link>

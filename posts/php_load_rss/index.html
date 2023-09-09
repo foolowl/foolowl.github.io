@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>youtube api | 愚者樹屋</title>
+<title>php rss讀取 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="youtube api | 愚者樹屋" />
+    <meta property="og:title" content="php rss讀取 | 愚者樹屋" />
     
     
     
@@ -44,25 +44,24 @@
     
 
 
-	
 
 
-<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta name="keywords" content="">
-<meta name="author" content="">
+<meta name="description" content="使用php讀取rss檔案內容">
+<meta name="keywords" content="php">
+<meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="og:url" content="https://www.foolowl.tw/tags/youtube-api/">
+<meta property="og:description" content="使用php讀取rss檔案內容">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_load_rss/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/tags/youtube-api/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_load_rss/">
 
-<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="article:published_time" content="2022-06-05T12:48:05&#43;00:00">
-<meta property="article:updated_time" content="2022-06-05T12:48:05&#43;00:00">
+<meta name="twitter:description" content="使用php讀取rss檔案內容">
+<meta property="article:published_time" content="2023-09-09T03:32:28&#43;00:00">
+<meta property="article:updated_time" content="2023-09-09T03:32:28&#43;00:00">
 
 
 
@@ -317,51 +316,66 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-  
-  <div class="col-span-3 md:col-span-2 mb-2">
-  
-    <h2 class="text-4xl dark:text-white">Youtube API</h2>
-	<main>
-    
-    
-    
-    
-    
-    <a href="/posts/youtube_counter/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">youtube點擊計數</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">紀錄一下如何使用youtube api來計算嵌入影片被點擊的次數，這個API也可以用來控制嵌入影片的撥放、暫停等等，這裡就是利用影片的播放狀態來進行撥放的判斷。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    
+	
+	
+		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">php rss讀取</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/09/09</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/09/09</time>
+					
 
-
-	</main>
-  </div>
-  
-	<aside>
-    <div class="hidden md:block md:col-span-1">
-    
-    
-            
-            <div class="mb-3">
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>碰到需要抓rss資料的需求，紀錄一下使用php讀取rss檔案內容的方式。</p>
+<h4 id="rss讀取">rss讀取</h4>
+<p>直接使用simplexml_load_file讀取網址內容，接著就可以用迴圈處理資料。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>($x <span style="color:#f92672">=</span> <span style="color:#a6e22e">simplexml_load_file</span>($file_or_url))){
+			<span style="color:#a6e22e">error_back</span>(<span style="color:#e6db74">&#34;讀取失敗，請確認網址是否正確&#34;</span>);
+		}
+        <span style="color:#66d9ef">foreach</span> ($x<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">channel</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">item</span> <span style="color:#66d9ef">as</span> $item)
+        {
+			$dline[<span style="color:#e6db74">&#34;datestr&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d&#39;</span>, <span style="color:#a6e22e">strtotime</span>($item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">pubDate</span>));
+			$dline[<span style="color:#e6db74">&#34;link&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">trim</span>((<span style="color:#a6e22e">string</span>) $item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">link</span>);
+			$dline[<span style="color:#e6db74">&#34;guid&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">trim</span>((<span style="color:#a6e22e">string</span>) $item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">guid</span>);
+			$dline[<span style="color:#e6db74">&#34;fileurl&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">trim</span>((<span style="color:#a6e22e">string</span>) $item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">enclosure</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attributes</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">url</span>);
+			$dline[<span style="color:#e6db74">&#34;title&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">trim</span>((<span style="color:#a6e22e">string</span>) $item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">title</span>);
+			$dline[<span style="color:#e6db74">&#34;description&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">trim</span>((<span style="color:#a6e22e">string</span>) $item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">description</span>);
+        }
+</code></pre></div><p>其中有碰到有部分欄位開頭是@的狀況，網路上的方法測試後只有使用()呼叫才有辦法取得，可能是設定或版本問題(這邊使用php7)其他方法使用後直接跳出錯誤。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//這個php7測試無法使用
+</span><span style="color:#75715e"></span>{<span style="color:#e6db74">&#39;@attributes&#39;</span>};
+<span style="color:#75715e">//使用下面這個方法
+</span><span style="color:#75715e"></span>$item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">enclosure</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attributes</span>();
+</code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://stackoverflow.com/questions/250679/best-way-to-parse-rss-atom-feeds-with-php">https://stackoverflow.com/questions/250679/best-way-to-parse-rss-atom-feeds-with-php</a><br>
+<a href="https://stackoverflow.com/questions/16629826/accessing-attribute-from-php-object">https://stackoverflow.com/questions/16629826/accessing-attribute-from-php-object</a></p>
+						</section>
+							
+						Tags : 
+						
+							<a href='/tags/php'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									php
+								</span>
+							</a>
+						
+					</div>
+					
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden md:block md:col-span-1">
+				<div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -371,9 +385,7 @@
         <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
     </form>
 </div>
-        
-            
-            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -430,12 +442,8 @@
     
     
 </div>
-        
-            
-            
-        
-            
-            
+				
+				
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -543,74 +551,70 @@
 </div>
 
 
-        
-            
-            
+				
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/stress_testing_using_jmeter/" class="">
+        <a href="/posts/godot_player_control/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">用jmeter進行壓力測試</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot玩家控制和其他3與4的一些程式差異</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/04/29</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/03/05</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_pathinfo_chinese/" class="">
+        <a href="/posts/php_load_rss/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php pathinfo中文檔案名稱問題</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php rss讀取</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/04/16</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/09/09</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/youtube_thumbnail/" class="">
+        <a href="/posts/mysql_string_functions/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube縮圖</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql字串函數</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/06/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/08/20</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/css_text_line/" class="">
+        <a href="/posts/hugo_post2/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">css文字換行設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/02/05</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/vroid_model_edit/" class="">
+        <a href="/posts/mysql_group_by_max_value_of_another_column/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">vroid模型改造並匯出vrm</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql group by max取得同一行其他資料</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/12/10</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/09/03</time>
                     </p>
                 </div>
             </div>
         </a>
     </div>
 </div>
+			</div>
+		</aside>
         
+    </div>
     
-</div>
-	</aside>
-  
-</div>
-
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     
