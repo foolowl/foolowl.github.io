@@ -3,36 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.foolowl.tw/tags/php/</loc>
-    <lastmod>2023-09-09T03:32:28+00:00</lastmod>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/php/</loc>
-    <lastmod>2023-09-09T03:32:28+00:00</lastmod>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.foolowl.tw/posts/php_load_rss/</loc>
-    <lastmod>2023-09-09T03:32:28+00:00</lastmod>
+    <loc>https://www.foolowl.tw/posts/php_remove_emojis/</loc>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2023-09-09T03:32:28+00:00</lastmod>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2023-09-09T03:32:28+00:00</lastmod>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2023-09-09T03:32:28+00:00</lastmod>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/php_load_rss/</loc>
     <lastmod>2023-09-09T03:32:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

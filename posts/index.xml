@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 09 Sep 2023 03:32:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Sep 2023 02:34:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php 移除emojis</title>
+      <link>https://www.foolowl.tw/posts/php_remove_emojis/</link>
+      <pubDate>Sat, 16 Sep 2023 02:34:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_remove_emojis/</guid>
+      <description>&lt;p&gt;上次取得rss資料時碰到表情符號需要移除的狀況，純粹記錄下在網路上找到的資料。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php rss讀取</title>
       <link>https://www.foolowl.tw/posts/php_load_rss/</link>
