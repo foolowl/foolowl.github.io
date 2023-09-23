@@ -6,7 +6,16 @@
     <description>Recent content in 免費軟體 on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 19 Feb 2023 09:01:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 09:49:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>備份軟體freefilesync</title>
+      <link>https://www.foolowl.tw/posts/backup_software_freefilesync/</link>
+      <pubDate>Sat, 23 Sep 2023 09:49:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/backup_software_freefilesync/</guid>
+      <description>&lt;p&gt;這是我用來做檔案備份的免費軟體，雖然很多人應該是使用網路空間來進行自動備份了，不過這邊還是會另外用一份在隨身硬碟中，用這款就可以省下大量的複製時間。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>obsidian檔案復原</title>
       <link>https://www.foolowl.tw/posts/obsidian_recover/</link>
