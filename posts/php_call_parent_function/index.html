@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>godot | 愚者樹屋</title>
+<title>php呼叫父項函數 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="godot | 愚者樹屋" />
+    <meta property="og:title" content="php呼叫父項函數 | 愚者樹屋" />
     
     
     
@@ -44,25 +44,24 @@
     
 
 
-	
 
 
-<meta name="description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta name="keywords" content="">
-<meta name="author" content="">
+<meta name="description" content="php中class呼叫父項函數的方法">
+<meta name="keywords" content="php">
+<meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="og:url" content="https://www.foolowl.tw/series/godot/">
+<meta property="og:description" content="php中class呼叫父項函數的方法">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_call_parent_function/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/series/godot/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_call_parent_function/">
 
-<meta name="twitter:description" content="程式筆記、畫圖筆記、免費軟體筆記">
-<meta property="article:published_time" content="2023-06-24T03:17:40&#43;00:00">
-<meta property="article:updated_time" content="2023-06-24T03:17:40&#43;00:00">
+<meta name="twitter:description" content="php中class呼叫父項函數的方法">
+<meta property="article:published_time" content="2023-09-29T07:56:45&#43;00:00">
+<meta property="article:updated_time" content="2023-09-29T07:56:45&#43;00:00">
 
 
 
@@ -317,165 +316,62 @@
 <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
-  
-  <div class="col-span-3 md:col-span-2 mb-2">
-  
-    <h2 class="text-4xl dark:text-white">Godot</h2>
-	<main>
-    
-    
-    
-    
-    
-    <a href="/posts/godot_saving_loading/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">godot存檔讀檔</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">紀錄一下godot4中存檔和讀檔的方式，使用的程式碼都來自於參考資料。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2023/06/24</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/godot_autoload/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">godot自動載入</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">這功能和舊版完全一樣純粹做個紀錄，設定以後這個場景會一直存在且不會受到場景轉換影響，執行測試時可以看到設定的場景會被加入在root底下。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2023/04/23</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/godot_animationplayer/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">godot動畫播放</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">godot 4的動畫播放(AnimationPlayer)使用方法紀錄，和3版教學影片中的差異大概只有4版中製作多個動畫時會自動產生一個reset動畫，基本上就是自動重設有更動的所有參數，可以防止忘了拉回初始狀態就去製作其他動畫時出現的問題，需要注意的是...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2023/04/08</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/godot_tilemap/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">godot瓦片地圖(tilemap)</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">godot 4的瓦片地圖(tilemap)使用方法紀錄，和3版教學影片中比較大的差異在4版本的碰撞需要另外新增物理節點才會被啟用。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2023/03/12</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/godot_player_control/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">godot玩家控制和其他3與4的一些程式差異</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">紀錄參考的教學影片使用時碰到的一些問題，主要是影片是3的教學而我使用的版本為4所碰到的問題。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2023/03/05</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/posts/godot_resource/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src='/img/default.png'>
-    
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">godot 4筆記 - 學習資源</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">最近開始慢慢學著用godot 4做2D遊戲，由於還沒正式推出的緣故，網路上的教學還是以3為主，這邊會紀錄使用4版照著教學製作所碰到的問題，這篇先簡單紀錄一下使用的資源。
-...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2023/02/25</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    
+	
+	
+		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">php呼叫父項函數</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/09/29</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/09/29</time>
+					
 
-
-	</main>
-  </div>
-  
-	<aside>
-    <div class="hidden md:block md:col-span-1">
-    
-    
-            
-            <div class="mb-3">
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>簡單紀錄一下php中平常使用extends繼承的class，在需要呼叫父項函數時使用的方法。</p>
+<p>下方範例是使用extends繼承的class</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">PHP</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">aaa_</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">aaa</span> {
+  <span style="color:#f92672">...</span>
+}
+</code></pre></div><h4 id="方法">方法</h4>
+<p>繼承中可以使用Parent::呼叫父項的函數</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">Parent</span><span style="color:#f92672">::</span><span style="color:#a6e22e">functionname</span>();
+</code></pre></div><p>如果父項呼叫中有使用this呼叫函數的話會呼叫到繼承後的函數，如果要呼叫原本class中的函數在撰寫時必須使用self或指定class名稱</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//這個會使用繼承後的函數
+</span><span style="color:#75715e"></span>$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">functionname</span>();
+<span style="color:#75715e">//會呼叫寫上self這層的函數(EX:aaa內寫的就呼叫aaa中的函數，aaa_內寫的就呼叫aaa_中的函數)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">self</span><span style="color:#f92672">::</span><span style="color:#a6e22e">functionname</span>();
+<span style="color:#75715e">//這個指定名稱可以使用原本的函數
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">aaa</span><span style="color:#f92672">::</span><span style="color:#a6e22e">functionname</span>();
+</code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://stackoverflow.com/questions/151969/when-should-i-use-self-over-this">https://stackoverflow.com/questions/151969/when-should-i-use-self-over-this</a><br>
+<a href="https://stackoverflow.com/questions/61456883/how-to-call-parent-class-functions-when-extending-in-child-class">https://stackoverflow.com/questions/61456883/how-to-call-parent-class-functions-when-extending-in-child-class</a></p>
+						</section>
+							
+						Tags : 
+						
+							<a href='/tags/php'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									php
+								</span>
+							</a>
+						
+					</div>
+					
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden md:block md:col-span-1">
+				<div class="mb-3">
     <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
         <label>
             <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
@@ -485,9 +381,7 @@
         <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
     </form>
 </div>
-        
-            
-            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
     
     
@@ -544,12 +438,8 @@
     
     
 </div>
-        
-            
-            
-        
-            
-            
+				
+				
 <div class="bg-white panel mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
     <div class="panel-block p-2">
@@ -657,24 +547,12 @@
 </div>
 
 
-        
-            
-            
+				
 
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/community_share_update/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">社群分享暫存資料更新</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/06</time>
-                    </p>
-                </div>
-            </div>
         <a href="/posts/javascript_encryption/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -685,46 +563,54 @@
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_json/" class="">
+        <a href="/posts/cikicikibambam_dance/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php json格式</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">孔明舞(チキチキバンバン)跳舞用法</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/19</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/12/18</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/mysql_string_functions/" class="">
+        <a href="/posts/hugo_github/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql字串函數</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">將hugo網站放上github</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/20</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/28</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/hugo_folder/" class="">
+        <a href="/posts/game_holo_cure/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo資料夾用途</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Holo倖存者(Holocure)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/21</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/08/26</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/css_vertical_align/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">css垂直對齊設定</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/05/27</time>
                     </p>
                 </div>
             </div>
         </a>
     </div>
 </div>
+			</div>
+		</aside>
         
+    </div>
     
-</div>
-	</aside>
-  
-</div>
-
             </div>
         </div><footer class="bg-gray-800 text-white p-6">
     

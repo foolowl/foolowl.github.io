@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.foolowl.tw/tags/php/</loc>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/php/</loc>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/php_call_parent_function/</loc>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2023-09-23T09:49:28+00:00</lastmod>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2023-09-23T09:49:28+00:00</lastmod>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2023-09-23T09:49:28+00:00</lastmod>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2023-09-29T07:56:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -29,21 +49,6 @@
   </url><url>
     <loc>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2023-09-23T09:49:28+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/</loc>
-    <lastmod>2023-09-23T09:49:28+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/php/</loc>
-    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/php/</loc>
-    <lastmod>2023-09-16T02:34:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
