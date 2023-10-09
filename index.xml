@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 29 Sep 2023 07:56:45 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Oct 2023 08:41:12 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地城謎蹤</title>
+      <link>https://www.foolowl.tw/posts/game_dungeon_and_puzzles/</link>
+      <pubDate>Mon, 09 Oct 2023 08:41:12 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/game_dungeon_and_puzzles/</guid>
+      <description>&lt;p&gt;算蠻有意思的解謎遊戲，後面要在步數內有會點難度，純粹要過關的話倒是還好，這邊記錄一下自己的過法，沒特別標的就是剛好的步數破關(皇冠)。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php呼叫父項函數</title>
       <link>https://www.foolowl.tw/posts/php_call_parent_function/</link>
