@@ -6,7 +6,16 @@
     <description>Recent content in css on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 19 Aug 2023 23:59:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Oct 2023 03:24:46 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css 動態計算功能</title>
+      <link>https://www.foolowl.tw/posts/css_calc/</link>
+      <pubDate>Sun, 15 Oct 2023 03:24:46 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/css_calc/</guid>
+      <description>&lt;p&gt;以前以為需要動態調整寬度或高度時都會需要javascript，剛好看到這個方法就記錄起來，在部分情況下就可以只用css來進行處理。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>css 文字隱藏</title>
       <link>https://www.foolowl.tw/posts/css_text_hidden/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in Tags on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 09 Oct 2023 08:41:12 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Oct 2023 03:24:46 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css</title>
+      <link>https://www.foolowl.tw/tags/css/</link>
+      <pubDate>Sun, 15 Oct 2023 03:24:46 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/tags/css/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>遊戲推薦</title>
       <link>https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</link>
@@ -40,15 +49,6 @@
       <pubDate>Sun, 03 Sep 2023 04:38:16 +0000</pubDate>
       
       <guid>https://www.foolowl.tw/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>https://www.foolowl.tw/tags/css/</link>
-      <pubDate>Sat, 19 Aug 2023 23:59:28 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/tags/css/</guid>
       <description></description>
     </item>
     
