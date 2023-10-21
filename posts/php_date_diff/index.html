@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>用jmeter進行壓力測試 | 愚者樹屋</title>
+<title>php 計算時間差 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="用jmeter進行壓力測試 | 愚者樹屋" />
+    <meta property="og:title" content="php 計算時間差 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="簡易的用jmeter進行壓力測試">
-<meta name="keywords" content="壓力測試,jmeter">
+<meta name="description" content="php中計算天數的功能(date_diff)">
+<meta name="keywords" content="php">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="簡易的用jmeter進行壓力測試">
-<meta property="og:url" content="https://www.foolowl.tw/posts/stress_testing_using_jmeter/">
+<meta property="og:description" content="php中計算天數的功能(date_diff)">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_date_diff/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/stress_testing_using_jmeter/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_date_diff/">
 
-<meta name="twitter:description" content="簡易的用jmeter進行壓力測試">
-<meta property="article:published_time" content="2023-04-29T01:06:56&#43;00:00">
-<meta property="article:updated_time" content="2023-04-29T01:06:56&#43;00:00">
+<meta name="twitter:description" content="php中計算天數的功能(date_diff)">
+<meta property="article:published_time" content="2023-10-21T07:24:29&#43;00:00">
+<meta property="article:updated_time" content="2023-10-21T07:24:29&#43;00:00">
 
 
 
@@ -322,46 +322,36 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">用jmeter進行壓力測試</h2>
+					<h2 class="title text-4xl font-bold mb-2">php 計算時間差</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2023/04/29</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/10/21</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/04/29</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/10/21</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>最近久違的有網站需要做這件事就順便做個紀錄，使用的軟體是Jmeter，不過這邊只有簡單的測試連線人數沒有進行其他額外的設定，這邊記錄一個簡易的使用方式。</p>
-<p>Jmeter官方網站<br>
-<a href="https://jmeter.apache.org/">https://jmeter.apache.org/</a></p>
-<p>執行這個軟體需要JAVA，如果沒辦法執行的話請先去安裝java<br>
-接著去下載zip解壓縮後執行bin/ApacheJMeter.jar</p>
-<p>新增執行序<br>
-<img src="/img/Pasted%20image%2020230429085658.png" alt=""><br>
-其中執行序的數量設定等於測試人數<br>
-執行緒數量：要發幾次訊息<br>
-啟動延遲：幾秒內要發完<br>
-迴圈次數：重複幾次</p>
-<p>接著在執行序中新增http的要求<br>
-<img src="/img/Pasted%20image%2020230429085725.png" alt=""><br>
-填寫要測試的網址等等資料<br>
-<img src="/img/Pasted%20image%2020230429085735.png" alt=""><br>
-如果測試的位置需要Post資料或是header等等也需要新增對應的設定</p>
-<p>接下來在執行序中新增-&gt;接聽-&gt;彙整報告<br>
-<img src="/img/Pasted%20image%2020230429085743.png" alt=""><br>
-或著你想看其他訊息也可以在接聽中加進來</p>
-<p>儲存設定後執行就可以看到結果<br>
-在彙整報告中下方會有save table data可以匯出csv<br>
-在報告中的單位為毫秒，就可以用這份資料來大致的確認回應時間及錯誤率</p>
+						<p>最近碰到需要計算天數差的功能，簡單紀錄一下這個功能。</p>
+<h4 id="方法">方法</h4>
+<p>使用date_diff就可以簡單計算兩個日期相差的天數或時間。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$origin <span style="color:#f92672">=</span> <span style="color:#a6e22e">date_create</span>(<span style="color:#e6db74">&#39;2018-04-07&#39;</span>);
+$target <span style="color:#f92672">=</span> <span style="color:#a6e22e">date_create</span>(<span style="color:#e6db74">&#39;2021-06-20&#39;</span>);
+$interval <span style="color:#f92672">=</span> <span style="color:#a6e22e">date_diff</span>($origin, $target);
+<span style="color:#66d9ef">echo</span> $interval<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">days</span>;<span style="color:#75715e">//1170  取得天數差
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">echo</span> $interval<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">d</span>;<span style="color:#75715e">//13
+</span></code></pre></div><p>需要注意的是取得差幾天時需要使用days而不是d，d的話只會取得兩個日的差別而已，其他可計算項目可以參考參考資料第一項。</p>
+<h4 id="參考資料">參考資料</h4>
+<p><a href="https://www.php.net/manual/en/class.dateinterval.php">https://www.php.net/manual/en/class.dateinterval.php</a><br>
+<a href="https://www.php.net/manual/en/datetime.diff.php">https://www.php.net/manual/en/datetime.diff.php</a></p>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/%e5%a3%93%e5%8a%9b%e6%b8%ac%e8%a9%a6'>
+							<a href='/tags/php'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									壓力測試
+									php
 								</span>
 							</a>
 						
@@ -556,53 +546,53 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/php_remove_emojis/" class="">
+        <a href="/posts/hugo_post/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php 移除emojis</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/09/16</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/vroid_model_edit/" class="">
+        <a href="/posts/godot_resource/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">vroid模型改造並匯出vrm</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot 4筆記 - 學習資源</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/12/10</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/02/25</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_mysqli_error_message/" class="">
+        <a href="/posts/note_software/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php mysqli錯誤訊息</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">筆記軟體推薦</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/07/16</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/01/29</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/css_calc/" class="">
+        <a href="/posts/nv-tlabs_get3d/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">css 動態計算功能</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">3D AI 試玩(NVIDIA get3d)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/10/15</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/css_text_line/" class="">
+        <a href="/posts/javascript_check_function_exists/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">css文字換行設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript檢查函數是否存在</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/02/05</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/05</time>
                     </p>
                 </div>
             </div>

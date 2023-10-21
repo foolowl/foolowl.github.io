@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 15 Oct 2023 03:24:46 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Oct 2023 07:24:29 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php 計算時間差</title>
+      <link>https://www.foolowl.tw/posts/php_date_diff/</link>
+      <pubDate>Sat, 21 Oct 2023 07:24:29 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_date_diff/</guid>
+      <description>&lt;p&gt;最近碰到需要計算天數差的功能，簡單紀錄一下這個功能。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>css 動態計算功能</title>
       <link>https://www.foolowl.tw/posts/css_calc/</link>
