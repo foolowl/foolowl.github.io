@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>hugo發表文章 | 愚者樹屋</title>
+<title>php取得星期幾 | 愚者樹屋</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
@@ -33,7 +33,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="hugo發表文章 | 愚者樹屋" />
+    <meta property="og:title" content="php取得星期幾 | 愚者樹屋" />
     
     
     
@@ -46,22 +46,22 @@
 
 
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
-<meta name="keywords" content="Hugo">
+<meta name="description" content="php中取得星期幾的方式">
+<meta name="keywords" content="php">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
-<meta property="og:url" content="https://www.foolowl.tw/posts/hugo_post/">
+<meta property="og:description" content="php中取得星期幾的方式">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_get_day_of_the_week/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/hugo_post/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_get_day_of_the_week/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄,Hugo發文,markdown">
-<meta property="article:published_time" content="2022-05-08T09:21:49&#43;00:00">
-<meta property="article:updated_time" content="2022-05-08T09:21:49&#43;00:00">
+<meta name="twitter:description" content="php中取得星期幾的方式">
+<meta property="article:published_time" content="2023-11-11T08:09:08&#43;00:00">
+<meta property="article:updated_time" content="2023-11-11T08:09:08&#43;00:00">
 
 
 
@@ -322,144 +322,34 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">hugo發表文章</h2>
+					<h2 class="title text-4xl font-bold mb-2">php取得星期幾</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/05/08</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2023/11/11</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/05/08</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/11/11</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>Hugo的文章基本上是以md檔案儲存的，這邊紀錄一下md能使用的語法。</p>
-<p>markdown是一種標記語言的格式，他可以用容易閱讀的方式來進行文件編輯，然後再利用其他程式(EX:Hugo)把檔案轉換成html文件來使用，使用這種文件撰寫可以同時保留一個容易閱讀的文件與分享出去的html文件。</p>
-<p>原則上除了換行以外多數的MD編輯器都有功能案就可以使用，如果不想記憶這些寫法的話，只要記得行尾兩個空白可以換行，一行以上的換行可以換段落就好，剩下的使用編輯器進行補助。</p>
-<h3 id="行內html">行內HTML</h3>
-<p>不在md標籤內的部分都可以直接使用html <br>
-區塊元素table、div、pre等標籤需要在前方空一行<br>
-而且無法在內部使用md語法</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">table</span>&gt;
-    &lt;<span style="color:#f92672">tr</span>&gt;
-        &lt;<span style="color:#f92672">th</span>&gt;測試&lt;/<span style="color:#f92672">th</span>&gt;
-        &lt;<span style="color:#f92672">th</span>&gt;測試2&lt;/<span style="color:#f92672">th</span>&gt;
-    &lt;/<span style="color:#f92672">tr</span>&gt;
-    &lt;<span style="color:#f92672">tr</span>&gt;
-        &lt;<span style="color:#f92672">td</span>&gt;測試&lt;/<span style="color:#f92672">td</span>&gt;
-        &lt;<span style="color:#f92672">td</span>&gt;測試2&lt;/<span style="color:#f92672">td</span>&gt;
-    &lt;/<span style="color:#f92672">tr</span>&gt;
-&lt;/<span style="color:#f92672">table</span>&gt;
-</code></pre></div><p>其他標籤則不受這限制並且可以混用md語法</p>
-<h3 id="特殊字元轉換">特殊字元轉換</h3>
-<p>在html中&amp;不會被自動轉換<br>
-而一般md語法則會被轉換成&amp;amp;<br>
-直接轉換的例子 &amp;copy;-&gt;©</p>
-<h3 id="段落和換行">段落和換行</h3>
-<p>一個以上的空行會切分出不同的段落<br>
-換行則是在行尾加入兩個空白</p>
-<h3 id="標題">標題</h3>
-<p>有兩種方式，一種是用底線</p>
-<blockquote>
-<p>標題<br>
-======
-第二階標題<br>
--&mdash;&ndash;</p>
-</blockquote>
-<p>另一種形式則是在前方加#，對應html的h1~h6</p>
-<blockquote>
-<p># 標題<br>
-## 標題二  最多6個#</p>
-</blockquote>
-<h3 id="區塊引言">區塊引言</h3>
-<p>在前方加入&gt;即可</p>
-<blockquote>
-<p>&gt; 引言區塊</p>
-</blockquote>
-<p>需要多層的話只要在區塊內再使用&gt;<br>
-並且在區塊內可以使用其他md語法</p>
-<h3 id="清單">清單</h3>
-<p>無序號清單使用*或+或-做開頭</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">*</span> 清單
-<span style="color:#66d9ef">*</span> 清單
-+ tt
-+ tt
-<span style="color:#66d9ef">-</span> tt
-<span style="color:#66d9ef">-</span> tt
-</code></pre></div><p>有序號清單使用數字加.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">1.</span> 清單
-<span style="color:#66d9ef">2.</span> 清單
-<span style="color:#66d9ef">8.</span> 數字不照順序也可以
-</code></pre></div><p>清單如果要包含多個段落，段落的開頭都必須有四個空白或一個tab</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">1.</span>  test
-    
-    ttte
-</code></pre></div><p>放入引言也是需要四個空白</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">1.</span>  test
-<span style="color:#66d9ef">
-</span><span style="color:#66d9ef">    &gt; </span><span style="font-style:italic">test1111
-</span></code></pre></div><p>放入程式碼區塊則需要八個空白或兩個tab</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">*</span>   code  
-        &lt;<span style="color:#f92672">code</span> <span style="color:#a6e22e">goes</span> <span style="color:#a6e22e">here</span>&gt;
-        int test
-        &lt;/<span style="color:#f92672">code</span>&gt;
-</code></pre></div><h3 id="分隔線">分隔線</h3>
-<p>在一行中用三個以上的*或-或_可以建立分隔線</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">***
----
-___
-</code></pre></div><h3 id="連結">連結</h3>
-<p>有兩種標記法，第一種是用方括號[]後面用()插入連結即可</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#f92672">連結文字</span>](<span style="color:#a6e22e">http://網址 &#34;網址title&#34;</span>)  
-[<span style="color:#f92672">相對路徑</span>](<span style="color:#a6e22e">/網址 &#34;網址title&#34;</span>)  
-</code></pre></div><p>另一種方式是是用方括號後再用一個方括號填入連結標籤</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[連結文字][linkaa]  
-</code></pre></div><p>然後在文件任意地點定義這個標籤，定義前記得空一行<br>
-定義方式為方括弧[]後接冒號:，接著空一格以上輸入網址，在空一格輸入標籤<br>
-這邊要注意定義不區分大小寫</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[linkaa]:   http://網址.com.tw &#34;test&#34;  
-</code></pre></div><p>簡單的連結也可以直接用&lt;&gt;包起來<br>
-只要用角括號包起來就會自動轉換成連結</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">&lt;<span style="color:#f92672">http:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">連結</span>&gt;  
-&lt;<span style="color:#f92672">email</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">ex</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">test</span>&gt;  
-</code></pre></div><h3 id="強調">強調</h3>
-<p>用*或_標記強調的文字，單個會變轉成&lt;em&gt;標籤，兩個則會轉為&lt;strong&gt;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">*test*  
-<span style="font-weight:bold">**test**</span>  
-<span style="font-style:italic">_test_</span>  
-<span style="font-weight:bold">__test__</span>
-</code></pre></div><h3 id="程式碼區塊">程式碼區塊</h3>
-<p>程式碼區塊只要空行後四個空格或一個tab即可</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">    code block
-        codeline2
-</code></pre></div><p>程式碼區塊會一直到沒有縮排為止<br>
-也可以使用三個`來包住程式碼</p>
-<blockquote>
-<p>```語言的英文(EX:PHP)<br>
-程式碼<br>
-```</p>
-</blockquote>
-<h3 id="程式碼">程式碼</h3>
-<p>如果要標記一小段程式碼可以用反引號`包起來</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#e6db74">` int a`</span>  
-</code></pre></div><p>如果程式碼中需要出現反引號的話可以使用兩個反引號作為開頭與結束</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">`` code need use <span style="color:#e6db74">`  `</span>`  
-</code></pre></div><h3 id="圖片">圖片</h3>
-<p>圖片有行內和參考兩種寫法<br>
-先一個驚嘆號!大括號[文字]括號(網址)<br>
-目前為止還沒有辦法指定圖片的寬高，如果需要其他設定需要直接使用html</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">圖片文字</span>](<span style="color:#a6e22e">/path/jpg &#34;title文字&#34;</span>)  
-用參考的方式和超連結一樣
-![<span style="color:#f92672">圖片文字</span>](<span style="color:#a6e22e">參考標籤</span>)  
-</code></pre></div><h3 id="跳脫字元">跳脫字元</h3>
-<p>在特殊字元前面加上反斜線\就可以顯示為原本的符號</p>
+						<p>第一次碰到了需要在固定星期幾執行的功能，順便做個紀錄。</p>
+<h4 id="方法">方法</h4>
+<p>date中就有參數可以取得</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;N&#34;</span>);<span style="color:#75715e">//1（星期一）到 7（星期天）
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;w&#34;</span>);<span style="color:#75715e">//0（星期天）到 6（星期六）
+</span></code></pre></div><p>字串的判斷先產生日期格式然後再取出</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">    $dtime <span style="color:#f92672">=</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#34;2000-01-01&#34;</span>, <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#34;Y-m-d&#34;</span>));
+    <span style="color:#66d9ef">echo</span> $dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;N&#39;</span>);
+</code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://www.php.net/manual/en/datetime.format.php">https://www.php.net/manual/en/datetime.format.php</a></p>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/Hugo'>
+							<a href='/tags/php'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									Hugo
+									php
 								</span>
 							</a>
 						
@@ -654,6 +544,26 @@ ___
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
+        <a href="/posts/game_dungeon_and_puzzles/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">地城謎蹤</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/10/09</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/php_display_errors/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php 錯誤顯示</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/01/22</time>
+                    </p>
+                </div>
+            </div>
         <a href="/posts/javascript_loops/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
@@ -664,43 +574,23 @@ ___
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_string_search/" class="">
+        <a href="/posts/jquery_stop_bubbling/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php字串搜尋</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery阻止冒泡bubbling</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/15</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/02/12</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/mysql_update_query_based_on_select/" class="">
+        <a href="/posts/game_vampire_survivors/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql 用select更新資料</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">吸血鬼倖存者(vampire survivors)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/07/01</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/godot_animationplayer/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot動畫播放</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/04/08</time>
-                    </p>
-                </div>
-            </div>
-        <a href="/posts/php_background_run/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php背景執行</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/07/23</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/22</time>
                     </p>
                 </div>
             </div>

@@ -3,36 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.foolowl.tw/tags/php/</loc>
-    <lastmod>2023-11-04T04:33:13+00:00</lastmod>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/php/</loc>
-    <lastmod>2023-11-04T04:33:13+00:00</lastmod>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.foolowl.tw/posts/php_excel_import__exportphpspreadsheet/</loc>
-    <lastmod>2023-11-04T04:33:13+00:00</lastmod>
+    <loc>https://www.foolowl.tw/posts/php_get_day_of_the_week/</loc>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2023-11-04T04:33:13+00:00</lastmod>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2023-11-04T04:33:13+00:00</lastmod>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2023-11-04T04:33:13+00:00</lastmod>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2023-11-11T08:09:08+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/php_excel_import__exportphpspreadsheet/</loc>
     <lastmod>2023-11-04T04:33:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
