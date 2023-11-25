@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 18 Nov 2023 15:07:19 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Nov 2023 09:45:55 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站嵌入google翻譯(舊版本)</title>
+      <link>https://www.foolowl.tw/posts/embed_google_translateold-version/</link>
+      <pubDate>Sat, 25 Nov 2023 09:45:55 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/embed_google_translateold-version/</guid>
+      <description>&lt;p&gt;這是舊版網站嵌入google翻譯的方法，以前設定的翻譯頁面已經近不去一段時間了，不確定還能使用多久，不過目前把程式貼上去還是能使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript 圖片預覽</title>
       <link>https://www.foolowl.tw/posts/javascript_preview_image/</link>
