@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 02 Dec 2023 15:45:09 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Dec 2023 15:34:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript 物件轉陣列</title>
+      <link>https://www.foolowl.tw/posts/javascript_object_to_array/</link>
+      <pubDate>Sat, 09 Dec 2023 15:34:37 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/javascript_object_to_array/</guid>
+      <description>&lt;p&gt;使用ajax時陣列資料傳送到前端時會呈現物件的狀態，這邊記錄一下將他轉換成array來使用的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php tcpdf 字形</title>
       <link>https://www.foolowl.tw/posts/php_tcpdf_font/</link>
