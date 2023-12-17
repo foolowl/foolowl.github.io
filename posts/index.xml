@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 09 Dec 2023 15:34:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Dec 2023 03:44:19 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript 統一編號檢查</title>
+      <link>https://www.foolowl.tw/posts/javascript_check_tax_id_number/</link>
+      <pubDate>Sun, 17 Dec 2023 03:44:19 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/javascript_check_tax_id_number/</guid>
+      <description>&lt;p&gt;最近的網站有這個需求就把以前的程式碼挖了出來，順便貼上來做個紀錄&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript 物件轉陣列</title>
       <link>https://www.foolowl.tw/posts/javascript_object_to_array/</link>
