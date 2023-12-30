@@ -6,7 +6,16 @@
     <description>Recent content in html on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Jul 2023 05:27:31 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Dec 2023 04:24:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>設定手機加到主畫面圖案</title>
+      <link>https://www.foolowl.tw/posts/settings_phone_website_add_to_home_screen_icon/</link>
+      <pubDate>Sat, 30 Dec 2023 04:24:42 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/settings_phone_website_add_to_home_screen_icon/</guid>
+      <description>&lt;p&gt;碰到了這個問題查了一下沒想到網站是可以進行圖案的設定就紀錄一下，實際上測試的時候不是所有瀏覽器都有支援就是了，有支援的瀏覽器就會讀取設定位置的圖案當成icon使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>html 空白</title>
       <link>https://www.foolowl.tw/posts/html_space/</link>
