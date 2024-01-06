@@ -6,7 +6,16 @@
     <description>Recent content in mysql on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 03 Sep 2023 04:38:16 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 15:36:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql指定排序</title>
+      <link>https://www.foolowl.tw/posts/mysql_specify_sort_order/</link>
+      <pubDate>Sat, 06 Jan 2024 15:36:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_specify_sort_order/</guid>
+      <description>&lt;p&gt;在首頁顯示東西時意外用到這個東西，可以照指定的值來進行排序的方法，單純做個紀錄。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>mysql group by max取得同一行其他資料</title>
       <link>https://www.foolowl.tw/posts/mysql_group_by_max_value_of_another_column/</link>

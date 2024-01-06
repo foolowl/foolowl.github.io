@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 30 Dec 2023 04:24:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 15:36:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql指定排序</title>
+      <link>https://www.foolowl.tw/posts/mysql_specify_sort_order/</link>
+      <pubDate>Sat, 06 Jan 2024 15:36:28 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_specify_sort_order/</guid>
+      <description>&lt;p&gt;在首頁顯示東西時意外用到這個東西，可以照指定的值來進行排序的方法，單純做個紀錄。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>設定手機加到主畫面圖案</title>
       <link>https://www.foolowl.tw/posts/settings_phone_website_add_to_home_screen_icon/</link>

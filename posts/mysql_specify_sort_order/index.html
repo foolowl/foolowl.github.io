@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>php字串搜尋 | 愚者樹屋</title>
+<title>mysql指定排序 | 愚者樹屋</title>
 	<script type="application/ld+json">
     {
 	  "@context": "https://schema.org",
@@ -42,7 +42,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="php字串搜尋 | 愚者樹屋" />
+    <meta property="og:title" content="mysql指定排序 | 愚者樹屋" />
     
     
     
@@ -55,22 +55,22 @@
 
 
 
-<meta name="description" content="用php搜尋字串">
-<meta name="keywords" content="php">
+<meta name="description" content="mysql指定排序的方法">
+<meta name="keywords" content="mysql">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="用php搜尋字串">
-<meta property="og:url" content="https://www.foolowl.tw/posts/php_string_search/">
+<meta property="og:description" content="mysql指定排序的方法">
+<meta property="og:url" content="https://www.foolowl.tw/posts/mysql_specify_sort_order/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/php_string_search/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/mysql_specify_sort_order/">
 
-<meta name="twitter:description" content="用php搜尋字串">
-<meta property="article:published_time" content="2022-10-15T09:18:37&#43;00:00">
-<meta property="article:updated_time" content="2022-10-15T09:18:37&#43;00:00">
+<meta name="twitter:description" content="mysql指定排序的方法">
+<meta property="article:published_time" content="2024-01-06T15:36:28&#43;00:00">
+<meta property="article:updated_time" content="2024-01-06T15:36:28&#43;00:00">
 
 
 
@@ -337,92 +337,30 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">php字串搜尋</h2>
+					<h2 class="title text-4xl font-bold mb-2">mysql指定排序</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/10/15</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2024/01/06</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/10/15</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2024/01/06</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>紀錄一些常用的字串比對與字串搜尋方法，這些主要用來檢查使用者輸入的資料，畢竟搜尋資料多數都在資料庫時就處理掉了，只有少數情況會需要使用php搜尋已儲存的資料。</p>
-<h4 id="email檢查">email檢查</h4>
-<p>注意這個方式要php5.2版本以後才能使用<br>
-資料來源 <a href="https://stackoverflow.com/questions/1725907/check-if-a-string-is-an-email-address-in-php">https://stackoverflow.com/questions/1725907/check-if-a-string-is-an-email-address-in-php</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//php版本需&gt;5.2
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">filter_var</span>(<span style="color:#e6db74">&#34;some@address.com&#34;</span>, <span style="color:#a6e22e">FILTER_VALIDATE_EMAIL</span>)) {
-	<span style="color:#75715e">// valid address
-</span><span style="color:#75715e"></span>}
-</code></pre></div><h4 id="密碼">密碼</h4>
-<p>常用的密碼限制檢查，現在越來越多密碼改成英文大寫、英文小寫、數字、符號4選3就是了。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//英文 數字 符號 3選2
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">isset</span>($_POST[<span style="color:#e6db74">&#39;newpwd&#39;</span>]) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#34;/^(?![a-zA-Z]+$)(?![\W_]+$)(?![0-9]+$)[a-zA-Z0-9\W_]{8,}$/&#34;</span>, $_POST[<span style="color:#e6db74">&#34;newpwd&#34;</span>])){
-					$_SESSION[<span style="color:#e6db74">&#39;errmsg&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;密碼格式不符合，至少要包含2種字元，8~20個字元&#34;</span>;
-				}
-<span style="color:#75715e">//英文數字
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#34;/^[a-zA-Z0-9]+$/&#34;</span>, <span style="color:#e6db74">&#34;檢查字串&#34;</span>);
-<span style="color:#75715e">//加i可忽略大小寫
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#34;/^[a-zA-Z0-9]+$/i&#34;</span>, <span style="color:#e6db74">&#34;檢查字串&#34;</span>);
-</code></pre></div><h4 id="手機">手機</h4>
-<p>台灣手機用，這邊沒有檢查+886的輸入方法。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">		<span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#34;/^09[0-9]{2}\-[0-9]{3}\-[0-9]{3}$/&#34;</span>, $_POST[<span style="color:#e6db74">&#34;teahcer_phone&#34;</span>])){
-			<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-		}
-</code></pre></div><h4 id="字串比對">字串比對</h4>
-<h5 id="strpos">strpos</h5>
-<p>只回傳ture或false，不需要取得剩下字串的話速度最快。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">strpos</span>($originalString, $checkString, $offset);
-<span style="color:#75715e">//檢查字串 檢查的字 起始位置
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">strpos</span>($mystring, <span style="color:#e6db74">&#34;program.&#34;</span>) <span style="color:#f92672">!==</span> <span style="color:#66d9ef">false</span>) {
-    <span style="color:#66d9ef">echo</span>(<span style="color:#e6db74">&#34;True&#34;</span>);
-}
-</code></pre></div><h5 id="preg_match">preg_match</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">preg_match</span>($pattern, $inputString, $matches, $flag, $offset);
-<span style="color:#75715e">/*
-</span><span style="color:#75715e">$regexPattern	必填	它是我們將在原始字串中搜尋的模式。
-</span><span style="color:#75715e">$string	必填	它是我們將在原始字串中搜尋的字串。
-</span><span style="color:#75715e">$matches	選填	這個引數中儲存了匹配過程的結果。
-</span><span style="color:#75715e">$flag	選填	這個引數指定了標誌。這個引數有兩個標誌：PREG_OFFSET_CAPTURE 和 PREG_UNMATCHED_AS_NULL。
-</span><span style="color:#75715e">$offset	選填	這個引數告訴我們匹配過程的開始位置
-</span><span style="color:#75715e">*/</span>
-$mystring <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is a php program.&#34;</span>;
-$search <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>;
-<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#34;/</span><span style="color:#e6db74">{</span>$search<span style="color:#e6db74">}</span><span style="color:#e6db74">/i&#34;</span>, $mystring)) {
-    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;True&#34;</span>; } <span style="color:#66d9ef">else</span> {
-    <span style="color:#66d9ef">echo</span>(<span style="color:#e6db74">&#34;False&#34;</span>);
-}
-</code></pre></div><h5 id="strstr">strstr</h5>
-<p>有找到會返回找到的位子後面的字串，沒有回false。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> $email <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;aaa@example.com&#39;</span>;
- $domain <span style="color:#f92672">=</span> <span style="color:#a6e22e">strstr</span>($email, <span style="color:#e6db74">&#39;@&#39;</span>);
- <span style="color:#66d9ef">echo</span> $domain; <span style="color:#75715e">// @example.com
-</span></code></pre></div><h5 id="stristr">stristr</h5>
-<p>strstr不區分大小寫的模式，其他功能與strstr完全一樣。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"> $email <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;aab@example.com&#39;</span>;
- $test <span style="color:#f92672">=</span> <span style="color:#a6e22e">strstr</span>($email, <span style="color:#e6db74">&#39;B&#39;</span>);
- <span style="color:#66d9ef">echo</span> $test; <span style="color:#75715e">// b@example.com
-</span></code></pre></div><h5 id="substr_count">substr_count</h5>
-<p>統計字串出現的次數</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#a6e22e">substr_count</span>($haystack,$needle,$offset,$length);
-<span style="color:#75715e">/*
-</span><span style="color:#75715e">$haystack 必填 檢查字串
-</span><span style="color:#75715e">$needle 必填 要找的字串
-</span><span style="color:#75715e">$offset 選填 起始位置
-</span><span style="color:#75715e">$length 選填 最大搜尋長度
-</span><span style="color:#75715e">*/</span>
-$text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;This is a test&#39;</span>;
-<span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">substr_count</span>($text, <span style="color:#e6db74">&#39;is&#39;</span>); <span style="color:#75715e">// 2
-</span></code></pre></div>
+						<p>在首頁顯示東西時意外用到這個東西，可以照指定的值來進行排序的方法，單純做個紀錄。</p>
+<h4 id="方法">方法</h4>
+<p>mysql可以使用使用FIELD來指定順序，欄位名稱後面用,指定值得順序就好，只要有相同的值就會照這個順序排下來</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#a6e22e">FIELD</span> (<span style="color:#960050;background-color:#1e0010">欄位名稱</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">10</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">12</span>)
+</code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://stackoverflow.com/questions/7802944/explicitly-specify-sort-order-for-mysql-query">https://stackoverflow.com/questions/7802944/explicitly-specify-sort-order-for-mysql-query</a></p>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/php'>
+							<a href='/tags/mysql'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									php
+									mysql
 								</span>
 							</a>
 						
@@ -623,53 +561,53 @@ $text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Th
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/game_dungeon_and_puzzles/" class="">
+        <a href="/posts/javascript_string_convert/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">地城謎蹤</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript字串型別轉換</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/10/09</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/13</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_excel_import__exportphpspreadsheet/" class="">
+        <a href="/posts/css_text_hidden/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php excel匯出匯入(PhpSpreadsheet)</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">css 文字隱藏</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/11/04</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/08/19</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/url_redirection/" class="">
+        <a href="/posts/php_array_search/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">網址轉址</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php取得array key</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/03/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/05/13</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_preview_image/" class="">
+        <a href="/posts/php_load_rss/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript 圖片預覽</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php rss讀取</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/11/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/09/09</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/css_vertical_align/" class="">
+        <a href="/posts/javascript_check_tax_id_number/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">css垂直對齊設定</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript 統一編號檢查</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/05/27</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/12/17</time>
                     </p>
                 </div>
             </div>
