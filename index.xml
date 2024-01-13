@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Jan 2024 15:36:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jan 2024 02:56:38 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>社群分享按鈕</title>
+      <link>https://www.foolowl.tw/posts/social_networks_share_link_button/</link>
+      <pubDate>Sat, 13 Jan 2024 02:56:38 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/social_networks_share_link_button/</guid>
+      <description>&lt;p&gt;簡單紀錄一下常用的社群網站分享按鈕&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>mysql指定排序</title>
       <link>https://www.foolowl.tw/posts/mysql_specify_sort_order/</link>
