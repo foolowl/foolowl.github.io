@@ -6,7 +6,16 @@
     <description>Recent content in mysql on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Jan 2024 15:36:28 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2024 03:43:13 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql 類型轉換</title>
+      <link>https://www.foolowl.tw/posts/mysql_cast-functions/</link>
+      <pubDate>Sun, 28 Jan 2024 03:43:13 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_cast-functions/</guid>
+      <description>&lt;p&gt;忘記當初是為什麼要做這個處理，總之這個方式可以在取出(select)或在語法中進行運算時，直接在mysql中轉換型態的方法&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>mysql指定排序</title>
       <link>https://www.foolowl.tw/posts/mysql_specify_sort_order/</link>
