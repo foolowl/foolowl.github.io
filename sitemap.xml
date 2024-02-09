@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.foolowl.tw/posts/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/game_into_the_breach/</loc>
+    <lastmod>2024-02-09T14:02:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.foolowl.tw/tags/mysql/</loc>
     <lastmod>2024-01-28T03:43:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,26 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/mysql_cast-functions/</loc>
-    <lastmod>2024-01-28T03:43:13+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2024-01-28T03:43:13+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2024-01-28T03:43:13+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2024-01-28T03:43:13+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/</loc>
     <lastmod>2024-01-28T03:43:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -173,16 +188,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/game_dungeon_and_puzzles/</loc>
-    <lastmod>2023-10-09T08:41:12+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
-    <lastmod>2023-10-09T08:41:12+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
     <lastmod>2023-10-09T08:41:12+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>php時間處理 | 愚者樹屋</title>
+<title>陷陣之志(Into the Breach) | 愚者樹屋</title>
 	<script type="application/ld+json">
     {
 	  "@context": "https://schema.org",
@@ -42,7 +42,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="php時間處理 | 愚者樹屋" />
+    <meta property="og:title" content="陷陣之志(Into the Breach) | 愚者樹屋" />
     
     
     
@@ -55,22 +55,22 @@
 
 
 
-<meta name="description" content="使用php檢查及處理時間">
-<meta name="keywords" content="php">
+<meta name="description" content="遊戲推薦陷陣之志(Into the Breach)">
+<meta name="keywords" content="遊戲推薦,陷陣之志,Into the Breach">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="使用php檢查及處理時間">
-<meta property="og:url" content="https://www.foolowl.tw/posts/php_datetime/">
+<meta property="og:description" content="遊戲推薦陷陣之志(Into the Breach)">
+<meta property="og:url" content="https://www.foolowl.tw/posts/game_into_the_breach/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/php_datetime/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/game_into_the_breach/">
 
-<meta name="twitter:description" content="使用php檢查及處理時間">
-<meta property="article:published_time" content="2022-10-01T04:44:43&#43;00:00">
-<meta property="article:updated_time" content="2022-10-01T04:44:43&#43;00:00">
+<meta name="twitter:description" content="遊戲推薦陷陣之志(Into the Breach)">
+<meta property="article:published_time" content="2024-02-09T14:02:37&#43;00:00">
+<meta property="article:updated_time" content="2024-02-09T14:02:37&#43;00:00">
 
 
 
@@ -337,53 +337,48 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">php時間處理</h2>
+					<h2 class="title text-4xl font-bold mb-2">陷陣之志(Into the Breach)</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/10/01</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2024/02/09</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/10/01</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2024/02/09</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>簡單記錄一下php的時間檢查與轉換。</p>
-<p>時間檢查</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$showpasstime <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
-<span style="color:#75715e">//將字串轉為時間 成功的話就表示格式正確
-</span><span style="color:#75715e"></span>$chkd <span style="color:#f92672">=</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>, $timedata);
-<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($timedata) <span style="color:#f92672">&amp;&amp;</span> $chkd <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>) {
-	$showpasstime <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
-}<span style="color:#66d9ef">else</span>{
-	<span style="color:#66d9ef">if</span>($chkd<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;Y&#39;</span>) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1900</span>){
-    <span style="color:#75715e">//轉回文字
-</span><span style="color:#75715e"></span>		$showpasstime <span style="color:#f92672">=</span> $chkd<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>);
-	}
-}
-</code></pre></div><p>時間戳轉換<br>
-參考的原文章 <a href="https://www.php.net/manual/en/function.strtotime.php">https://www.php.net/manual/en/function.strtotime.php</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">//時間戳-&gt;日期
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>, $timestamp);
-<span style="color:#75715e">//日期-&gt;時間戳
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">strtotime</span>(<span style="color:#e6db74">&#34;now&#34;</span>);
-<span style="color:#75715e">//日期-&gt;時間戳
-</span><span style="color:#75715e"></span>$dtime <span style="color:#f92672">=</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#34;Y-m-d&#34;</span>, <span style="color:#e6db74">&#34;2000-01-01&#34;</span>);
-$timestamp <span style="color:#f92672">=</span> $dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTimestamp</span>();
-<span style="color:#75715e">//調整時間
-</span><span style="color:#75715e"></span>$dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">modify</span>(<span style="color:#e6db74">&#39;+6 month&#39;</span>);
-$timestamp <span style="color:#f92672">=</span> $dtime<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getTimestamp</span>();
-<span style="color:#75715e">//轉換格式
-</span><span style="color:#75715e"></span>$date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;13-06-2015 23:45:52&#34;</span>;
-    <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">DateTime</span><span style="color:#f92672">::</span><span style="color:#a6e22e">createFromFormat</span>(<span style="color:#e6db74">&#39;d-m-Y H:i:s&#39;</span>, $date)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;Y-m-d h:i:s&#39;</span>);
-</code></pre></div>
+						<p>應該是小有名氣的作品，非常和我胃口的戰棋式遊戲，對這類型有興趣的務必要試看看。</p>
+<p><a href="https://store.steampowered.com/app/590380/Into_the_Breach/">商店頁面</a><br>
+遊戲分類：roguelike、像素、回合制策略(SRPG)</p>
+<p>個人覺得是將傳統的格子戰旗遊戲玩出新玩法的遊戲<br>
+最大的特色是敵人會先行動，移動後展示出攻擊位置在地圖上，而玩家就必須要利用攻擊、位移、地形等東西讓損傷降到最小。<br>
+要比喻的話就像是每回合<strong>出題</strong>給玩家，而玩家則利用自己的機體特性來<strong>解題</strong>，解題狀況好的話就可以拿到額外的獎勵來強化機體</p>
+<p>優點</p>
+<ul>
+<li>獨特的玩法</li>
+<li>可選擇難度與變化</li>
+<li>不同隊伍的特性有做出差別使得遊戲耐玩很多</li>
+<li>隨時存檔方便離開</li>
+</ul>
+<p>缺點</p>
+<ul>
+<li>場數多了以後會發現地形其實是固定設計好的在輪，雖然會因為隨機賦予的任務、敵人種類而產生變化</li>
+<li>武器變化上的小缺點，雖然隊伍的組合強度都不會差太多，不過有些武器真的很弱，會有下位版本的存在</li>
+</ul>
+<p>另外記錄一下一個麻煩的成就[有朋自遠方來]<br>
+首先進入地圖後查看山或是碎冰的地方有沒有發光的位置<br>
+下圖是在碎冰的地方出現的<br>
+<img src="/img/20240209183507_1.jpg" alt="碎冰發光"><br>
+接著打破冰或山後讓一個機體去那個位置觸發開關，下一回合就會出現特殊時間艙<br>
+成功撿到時間艙並戰鬥勝利後會取得特殊駕駛員(總共有3種)並解鎖成就</p>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/php'>
+							<a href='/tags/%e9%81%8a%e6%88%b2%e6%8e%a8%e8%96%a6'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									php
+									遊戲推薦
 								</span>
 							</a>
 						
@@ -584,53 +579,53 @@ $timestamp <span style="color:#f92672">=</span> $dtime<span style="color:#f92672
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/hugo_post/" class="">
+        <a href="/posts/nv-tlabs_get3d/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">3D AI 試玩(NVIDIA get3d)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/robots_txt/" class="">
+        <a href="/posts/php_move_file/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">網站爬蟲設定(robots.txt)</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php 檔案移動</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/08</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/06/11</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_file_upload/" class="">
+        <a href="/posts/javascript_time_comparison/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php檔案上傳</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript日期、時間比較</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/12/03</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/06/17</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/backup_software_freefilesync/" class="">
+        <a href="/posts/php_pdf/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">備份軟體freefilesync</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php pdf旋轉與合併</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/09/23</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/12/31</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/game_vampire_survivors/" class="">
+        <a href="/posts/hugo_post2/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">吸血鬼倖存者(vampire survivors)</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/22</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
                     </p>
                 </div>
             </div>
