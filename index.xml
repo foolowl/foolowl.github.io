@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 09 Feb 2024 14:02:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 13:44:05 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>台灣公司登記資料</title>
+      <link>https://www.foolowl.tw/posts/taiwan_company_registration_information/</link>
+      <pubDate>Sat, 24 Feb 2024 13:44:05 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/taiwan_company_registration_information/</guid>
+      <description>&lt;p&gt;碰到這個東西簡單紀錄一下，不過使用API需要申請，私人用途可能不是那麼容易通過，或是只要簡單的列表的話可以下載CSV來查詢。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>陷陣之志(Into the Breach)</title>
       <link>https://www.foolowl.tw/posts/game_into_the_breach/</link>

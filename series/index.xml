@@ -6,7 +6,16 @@
     <description>Recent content in Series on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 09 Feb 2024 14:02:37 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 13:44:05 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php</title>
+      <link>https://www.foolowl.tw/series/php/</link>
+      <pubDate>Sat, 24 Feb 2024 13:44:05 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/series/php/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>遊戲推薦</title>
       <link>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</link>
@@ -31,15 +40,6 @@
       <pubDate>Sat, 13 Jan 2024 02:56:38 +0000</pubDate>
       
       <guid>https://www.foolowl.tw/series/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>https://www.foolowl.tw/series/php/</link>
-      <pubDate>Sun, 24 Dec 2023 12:43:17 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/series/php/</guid>
       <description></description>
     </item>
     

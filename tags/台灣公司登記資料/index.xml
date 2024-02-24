@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>台灣公司登記資料 on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/tags/%E5%8F%B0%E7%81%A3%E5%85%AC%E5%8F%B8%E7%99%BB%E8%A8%98%E8%B3%87%E6%96%99/</link>
+    <description>Recent content in 台灣公司登記資料 on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 24 Feb 2024 13:44:05 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E5%8F%B0%E7%81%A3%E5%85%AC%E5%8F%B8%E7%99%BB%E8%A8%98%E8%B3%87%E6%96%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>台灣公司登記資料</title>
+      <link>https://www.foolowl.tw/posts/taiwan_company_registration_information/</link>
+      <pubDate>Sat, 24 Feb 2024 13:44:05 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/taiwan_company_registration_information/</guid>
+      <description>&lt;p&gt;碰到這個東西簡單紀錄一下，不過使用API需要申請，私人用途可能不是那麼容易通過，或是只要簡單的列表的話可以下載CSV來查詢。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
