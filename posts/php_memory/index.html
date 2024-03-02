@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>javascript 統一編號檢查 | 愚者樹屋</title>
+<title>php 記憶體使用狀況 | 愚者樹屋</title>
 	<script type="application/ld+json">
     {
 	  "@context": "https://schema.org",
@@ -42,7 +42,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="javascript 統一編號檢查 | 愚者樹屋" />
+    <meta property="og:title" content="php 記憶體使用狀況 | 愚者樹屋" />
     
     
     
@@ -55,22 +55,22 @@
 
 
 
-<meta name="description" content="使用javascript檢查統一編號">
-<meta name="keywords" content="javascript">
+<meta name="description" content="檢查php記憶體使用狀況的方法">
+<meta name="keywords" content="php記憶體,php memory,memory_get_usage">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="使用javascript檢查統一編號">
-<meta property="og:url" content="https://www.foolowl.tw/posts/javascript_check_tax_id_number/">
+<meta property="og:description" content="檢查php記憶體使用狀況的方法">
+<meta property="og:url" content="https://www.foolowl.tw/posts/php_memory/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/javascript_check_tax_id_number/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/php_memory/">
 
-<meta name="twitter:description" content="使用javascript檢查統一編號">
-<meta property="article:published_time" content="2023-12-17T03:44:19&#43;00:00">
-<meta property="article:updated_time" content="2023-12-17T03:44:19&#43;00:00">
+<meta name="twitter:description" content="檢查php記憶體使用狀況的方法">
+<meta property="article:published_time" content="2024-03-02T04:23:03&#43;00:00">
+<meta property="article:updated_time" content="2024-03-02T04:23:03&#43;00:00">
 
 
 
@@ -337,63 +337,41 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">javascript 統一編號檢查</h2>
+					<h2 class="title text-4xl font-bold mb-2">php 記憶體使用狀況</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2023/12/17</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2024/03/02</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2023/12/17</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2024/03/02</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>最近的網站有這個需求就把以前的程式碼挖了出來，順便貼上來做個紀錄</p>
+						<p>最近碰到了一些不明錯誤需要查詢，其中檢查了這部分就順手記錄下來php檢查記憶體使用狀況和設定記憶體上限的方法。</p>
 <h4 id="方法">方法</h4>
-<p>使用javascript檢查統一編號的程式碼如下<br>
-通過的話會回傳true</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">check_tax_number</span>(<span style="color:#a6e22e">gui_number</span>) {
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cx</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>];
-  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cnum</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">gui_number</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#39;</span>);
-  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">cc</span>(<span style="color:#a6e22e">num</span>) {
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">num</span>;
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">total</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">9</span>) {
-      <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">total</span>.<span style="color:#a6e22e">toString</span>();
-      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span>;
-      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span>;
-      <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">n1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">n2</span>;
-    }
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">total</span>;
-  }
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">gui_number</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">!==</span> <span style="color:#ae81ff">8</span>) {
-    <span style="color:#75715e">//長度不對
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-  }
-  <span style="color:#a6e22e">cnum</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">item</span>, <span style="color:#a6e22e">index</span>) =&gt; {
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">gui_number</span>.<span style="color:#a6e22e">charCodeAt</span>() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">48</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">gui_number</span>.<span style="color:#a6e22e">charCodeAt</span>() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">57</span>) {
-      <span style="color:#75715e">//有非數字
-</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-    }
-    <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">cc</span>(<span style="color:#a6e22e">item</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">cx</span>[<span style="color:#a6e22e">index</span>]);
-  });
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">sum</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
-	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
-  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cnum</span>[<span style="color:#ae81ff">6</span>] <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;7&#39;</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#a6e22e">sum</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
-	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
-  } <span style="color:#66d9ef">else</span> {
-    <span style="color:#75715e">//規則檢查不過
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-  }
-}
-</code></pre></div>
+<p>取得記憶體使用量的方法是memory_get_usage()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">	$mstart <span style="color:#f92672">=</span> <span style="color:#a6e22e">memory_get_usage</span>(<span style="color:#66d9ef">true</span>);
+    <span style="color:#75715e">//其他程式
+</span><span style="color:#75715e"></span>    $mend <span style="color:#f92672">=</span> <span style="color:#a6e22e">memory_get_usage</span>(<span style="color:#66d9ef">true</span>);
+
+    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;開始時: </span><span style="color:#e6db74">{</span>$mstart<span style="color:#e6db74">}</span><span style="color:#e6db74"> Bytes&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">PHP_EOL</span>;
+    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;結束時: </span><span style="color:#e6db74">{</span>$mend<span style="color:#e6db74">}</span><span style="color:#e6db74"> Bytes&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">PHP_EOL</span>;
+    <span style="color:#66d9ef">exit</span>;
+</code></pre></div><p>其中設為true時為系統內分配過來的總記憶體，預設值(false)只取得已使用的記憶體</p>
+<p>記憶體設定的方法，如果無效的話可能是主機設定的關係。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">    <span style="color:#a6e22e">ini_get</span>(<span style="color:#e6db74">&#39;memory_limit&#39;</span>); <span style="color:#75715e">//取得目前記憶體使用上限
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ini_set</span>(<span style="color:#e6db74">&#39;memory_limit&#39;</span>, <span style="color:#e6db74">&#39;1024M&#39;</span>); <span style="color:#75715e">//設定記憶體使用上限
+</span></code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://stackoverflow.com/questions/27474629/out-of-memory-although-memory-limit-is-large-enough">https://stackoverflow.com/questions/27474629/out-of-memory-although-memory-limit-is-large-enough</a><br>
+<a href="https://www.php.net/manual/en/function.memory-get-usage.php">https://www.php.net/manual/en/function.memory-get-usage.php</a></p>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/javascript'>
+							<a href='/tags/php'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									javascript
+									php
 								</span>
 							</a>
 						
@@ -594,53 +572,53 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/jquery_ajax/" class="">
+        <a href="/posts/php_string_functions/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery ajax</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php 字串處理</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/27</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/obsidian_recover/" class="">
+        <a href="/posts/hugo_plugin/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">obsidian檔案復原</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo外掛</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/02/19</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/04/24</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_excel_import__exportphpspreadsheet/" class="">
+        <a href="/posts/jquery_inner_html/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php excel匯出匯入(PhpSpreadsheet)</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery 插入html</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/11/04</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/06/04</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/mysql_string_functions/" class="">
+        <a href="/posts/hugo_post2/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">mysql字串函數</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章2</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/08/20</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/05/15</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/embed_google_translateold-version/" class="">
+        <a href="/posts/php_curl_moved_permanently_solve/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">網站嵌入google翻譯(舊版本)</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php curl Moved Permanently解決方法</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/11/25</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/01/14</time>
                     </p>
                 </div>
             </div>

@@ -6,7 +6,16 @@
     <description>Recent content in Tags on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 24 Feb 2024 13:44:05 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 04:23:03 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php</title>
+      <link>https://www.foolowl.tw/tags/php/</link>
+      <pubDate>Sat, 02 Mar 2024 04:23:03 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/tags/php/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>台灣公司登記資料</title>
       <link>https://www.foolowl.tw/tags/%E5%8F%B0%E7%81%A3%E5%85%AC%E5%8F%B8%E7%99%BB%E8%A8%98%E8%B3%87%E6%96%99/</link>
@@ -40,15 +49,6 @@
       <pubDate>Sat, 13 Jan 2024 02:56:38 +0000</pubDate>
       
       <guid>https://www.foolowl.tw/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>https://www.foolowl.tw/tags/php/</link>
-      <pubDate>Sun, 24 Dec 2023 12:43:17 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/tags/php/</guid>
       <description></description>
     </item>
     
