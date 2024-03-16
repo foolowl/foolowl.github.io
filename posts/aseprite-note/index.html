@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw" class="dark">
+<head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FR2TLMEHLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FR2TLMEHLT');
+</script>
+
+
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "fzpribj7o4");
+</script>
+<title>aseprite 筆記 | 愚者樹屋</title>
+	<script type="application/ld+json">
+    {
+	  "@context": "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "愚者樹屋",
+      "url" : "https://www.foolowl.tw/"
+    }
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="aseprite 筆記 | 愚者樹屋" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.ac6055b2635cfe437a8d0803dcf4e9e392be3f2ca9f1536067a3e234765a60ca.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+
+<meta name="description" content="aseprite的一些操作與快捷鍵的筆記">
+<meta name="keywords" content="aseprite,pixel art,dot art,像素畫">
+<meta name="author" content="foolowl/月月鴞">
+<meta property="og:site_name" content="愚者樹屋">
+<meta property="og:description" content="aseprite的一些操作與快捷鍵的筆記">
+<meta property="og:url" content="https://www.foolowl.tw/posts/aseprite-note/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://www.foolowl.tw/posts/aseprite-note/">
+
+<meta name="twitter:description" content="aseprite的一些操作與快捷鍵的筆記">
+<meta property="article:published_time" content="2024-03-16T03:21:42&#43;00:00">
+<meta property="article:updated_time" content="2024-03-16T03:21:42&#43;00:00">
+
+
+
+
+
+<meta property="og:image" content="https://www.foolowl.tw/">
+<meta property="og:image:url" content="https://www.foolowl.tw/">
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head><body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><header class="bg-gray-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <h1><a href="https://www.foolowl.tw/"><span class="font-semibold text-2xl tracking-tight">愚者樹屋</span></a></h1>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+				<div class="block md:hidden ">
+					<div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
+    </form>
+</div>
+					<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/3d%e8%bb%9f%e9%ab%94">3d軟體 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/css">css (4)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/godot">godot (6)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/google-api">google-api (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/google%e7%bf%bb%e8%ad%af">google翻譯 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/html">html (5)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/javasciprt">javasciprt (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/javascript">javascript (13)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/jquery">jquery (3)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/mysql">mysql (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/notepad&#43;&#43;">notepad&#43;&#43; (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/php">php (31)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/python">python (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/unity">unity (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%83%8f%e7%b4%a0%e7%95%ab">像素畫 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%85%8d%e8%b2%bb%e8%bb%9f%e9%ab%94">免費軟體 (5)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%a3%93%e5%8a%9b%e6%b8%ac%e8%a9%a6">壓力測試 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e7%a4%be%e7%be%a4%e7%b6%b2%e7%ab%99">社群網站 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e9%81%8a%e6%88%b2%e6%8e%a8%e8%96%a6">遊戲推薦 (4)</a>
+    
+    
+</div>
+					
+					
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/3d%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                3d軟體
+            </span></a>
+        <a href='/tags/ai'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                ai
+            </span></a>
+        <a href='/tags/css'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                css
+            </span></a>
+        <a href='/tags/godot'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                godot
+            </span></a>
+        <a href='/tags/google-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                google-api
+            </span></a>
+        <a href='/tags/google%E7%BF%BB%E8%AD%AF'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                google翻譯
+            </span></a>
+        <a href='/tags/html'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                html
+            </span></a>
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+        <a href='/tags/javasciprt'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javasciprt
+            </span></a>
+        <a href='/tags/javascript'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javascript
+            </span></a>
+        <a href='/tags/jquery'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                jquery
+            </span></a>
+        <a href='/tags/mysql'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                mysql
+            </span></a>
+        <a href='/tags/notepad&#43;&#43;'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                notepad&#43;&#43;
+            </span></a>
+        <a href='/tags/php'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                php
+            </span></a>
+        <a href='/tags/python'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                python
+            </span></a>
+        <a href='/tags/tcpdf'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                tcpdf
+            </span></a>
+        <a href='/tags/unity'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                unity
+            </span></a>
+        <a href='/tags/vroid'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                vroid
+            </span></a>
+        <a href='/tags/youtube-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                youtube-api
+            </span></a>
+        <a href='/tags/%E5%83%8F%E7%B4%A0%E7%95%AB'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                像素畫
+            </span></a>
+    </div>
+</div>
+
+
+				</div>
+            </div>
+        </nav>
+    </div>
+</header>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+	
+	
+		<div class="bg-white col-span-3 md:col-span-2 p-5 dark:bg-warmgray-900 dark:text-white">
+	
+			<main>
+				<article>
+					<h2 class="title text-4xl font-bold mb-2">aseprite 筆記</h2>
+					
+					<time><span class="icon-access_time mr-1"></span>post date - 2024/03/16</time>
+					
+					
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2024/03/16</time>
+					
+
+					
+					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
+						<section>
+						<p>最近完像素把aseprite功能簡單的摸了一遍，在這邊紀錄一下自己常用快捷鍵和部分功能。</p>
+<h4 id="操作">操作</h4>
+<h5 id="複製圖層">複製圖層</h5>
+<p>選圖層後按著ctrl拖曳可以進行複製到其他圖層</p>
+<h5 id="複製像素">複製像素</h5>
+<p>選取中按住ctlr拖曳會複製選取像素</p>
+<h5 id="將選取範圍變成圖章工具">將選取範圍變成圖章工具</h5>
+<p>選取後按ctrl+d 可變成圖章工具</p>
+<h5 id="tag">tag</h5>
+<p>影格上設定tag可以讓不同動作分開，輸出時也可以選取所有影格然後照tag輸出遊戲素材</p>
+<h5 id="色票">色票</h5>
+<p>色塊板上的選單-&gt;new palette itom sprite可以讓色板產生現在檔案才有用的色票<br>
+sprite-&gt;color mode-&gt;indexed模式中，點色下票上eidt color(大鎖)的按鈕後，改變同色票的顏色也會讓檔案中的顏色改變</p>
+<p>產生過渡顏色<br>
+新增一個色票後再色票區往右拉開產生色票格子，設定開始與結束色票，選取開頭到結束的色票，上方的箭頭-&gt;Gradient後會產生過渡色票<br>
+<img src="/img/Pasted%20image%2020230924145136.png" alt=""><br>
+產生目前色票<br>
+色票區上方三槓選單-&gt;new palette form sprite可以由目前檔案產生使用的色票</p>
+<h5 id="筆刷shading變深變淺筆刷">筆刷shading(變深/變淺筆刷)</h5>
+<p><img src="/img/Pasted%20image%2020230930192200.png" alt=""><br>
+筆刷的shading可以設定選擇個顏色，使用這個畫時會從第一個顏色開始上，重複塗時會變成第二個顏色、第三個顏色&hellip;，右鍵上色則是變淺一層。</p>
+<h5 id="鏡射">鏡射</h5>
+<p>view-&gt;symmetry option打開後會看到鏡射選項，打開後可以拖曳線調整鏡射位置</p>
+<h5 id="無縫模式">無縫模式</h5>
+<p>view-&gt;Tiled mode可以開啟無縫模式</p>
+<h5 id="影格">影格</h5>
+<p>影格連動修改<br>
+動畫影格選取後右鍵-&gt;link可以讓它變同一個，編輯時也會全部連動，再次選取右鍵-&gt;unlink可以解開</p>
+<p>影格z軸<br>
+在影格上按右鍵-&gt;賽璐璐片屬性中可以設定z軸<br>
+可以利用這個微調只有幾格需要上下變化的圖層</p>
+<h5 id="tilemap-地圖圖層">Tilemap 地圖圖層</h5>
+<p>圖層-&gt;建立-&gt;New Tilemap Layer  (空白+n)<br>
+<img src="/img/Pasted%20image%2020240120164134.png" alt=""><br>
+建立的時候設定每格的大小，之後在此圖層繪製的內容就會在左方形成tilemap的格子，之後就可以用這個格子來繪製內容<br>
+除了直接選以外，也可以用space+tab切換使用顏色或地圖塊</p>
+<p>顏色上方有tilemap的修改模式可調整<br>
+<img src="/img/Pasted%20image%2020240120164838.png" alt=""><br>
+1格方塊 : 直接修改對應的地圖區塊<br>
+2格平行方塊 : 檢查有無其他格子使用相同地圖區塊，沒有的話直接修改，有的話複製一格新的修改<br>
+2格一大一小的方塊 : 不管之前有無使用，一修改就複製新的來儲存</p>
+<h5 id="快速改變顏色">快速改變顏色</h5>
+<p>用魔術棒選取後按F(填充選取範圍)就可以快速調整</p>
+<h5 id="全域設定">全域設定</h5>
+<p>上方的sprite-&gt;屬性可以設定檔案全域設定<br>
+標籤顏色、透明度顏色等等</p>
+<h4 id="個人常用快捷鍵">個人常用快捷鍵</h4>
+<p>shift+n 新增圖層
+alt+n 可以直接複製到新影格<br>
+shift+s 右下角出現文字後選取影格，可以直接對選取的所有影格做操作<br>
+f 可以填充選取範圍<br>
+ctrl+shift+c 複製合併，可以複製多的圖層合併為一個貼上<br>
+ctrl+h 打開線格<br>
+shift+o 可以描邊(外框線)，也能做出影子般的立體感<br>
+ctrl+滾輪 調整筆的大小<br>
+ctrl+u 色相/彩度/明度調整<br>
+ctrl+m 色彩曲線<br>
+shift+r 取代顏色<br>
+shift+h 左右翻轉<br>
+shift+v 上下翻轉<br>
+F3 影格洋蔥皮(前後影格)開關<br>
+F7 預覽視窗開關</p>
+						</section>
+							
+						Tags : 
+						
+							<a href='/tags/%e5%83%8f%e7%b4%a0%e7%95%ab'>
+								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+									像素畫
+								</span>
+							</a>
+						
+					</div>
+					
+				</article>
+			</main>
+		</div>
+	
+        
+		<aside>
+			<div class="hidden md:block md:col-span-1">
+				<div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://www.foolowl.tw/" />
+    </form>
+</div>
+				<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">series</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/3d%e8%bb%9f%e9%ab%94">3d軟體 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/css">css (4)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/godot">godot (6)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/google-api">google-api (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/google%e7%bf%bb%e8%ad%af">google翻譯 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/html">html (5)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/hugo%e5%ae%89%e8%a3%9d">hugo安裝 (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/javasciprt">javasciprt (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/javascript">javascript (13)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/jquery">jquery (3)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/mysql">mysql (7)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/notepad&#43;&#43;">notepad&#43;&#43; (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/php">php (31)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/python">python (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/unity">unity (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%83%8f%e7%b4%a0%e7%95%ab">像素畫 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%85%8d%e8%b2%bb%e8%bb%9f%e9%ab%94">免費軟體 (5)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e5%a3%93%e5%8a%9b%e6%b8%ac%e8%a9%a6">壓力測試 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e7%a4%be%e7%be%a4%e7%b6%b2%e7%ab%99">社群網站 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://www.foolowl.tw//series/%e9%81%8a%e6%88%b2%e6%8e%a8%e8%96%a6">遊戲推薦 (4)</a>
+    
+    
+</div>
+				
+				
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/3d%E8%BB%9F%E9%AB%94'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                3d軟體
+            </span></a>
+        <a href='/tags/ai'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                ai
+            </span></a>
+        <a href='/tags/css'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                css
+            </span></a>
+        <a href='/tags/godot'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                godot
+            </span></a>
+        <a href='/tags/google-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                google-api
+            </span></a>
+        <a href='/tags/google%E7%BF%BB%E8%AD%AF'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                google翻譯
+            </span></a>
+        <a href='/tags/html'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                html
+            </span></a>
+        <a href='/tags/hugo'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                hugo
+            </span></a>
+        <a href='/tags/javasciprt'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javasciprt
+            </span></a>
+        <a href='/tags/javascript'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                javascript
+            </span></a>
+        <a href='/tags/jquery'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                jquery
+            </span></a>
+        <a href='/tags/mysql'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                mysql
+            </span></a>
+        <a href='/tags/notepad&#43;&#43;'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                notepad&#43;&#43;
+            </span></a>
+        <a href='/tags/php'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                php
+            </span></a>
+        <a href='/tags/python'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                python
+            </span></a>
+        <a href='/tags/tcpdf'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                tcpdf
+            </span></a>
+        <a href='/tags/unity'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                unity
+            </span></a>
+        <a href='/tags/vroid'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                vroid
+            </span></a>
+        <a href='/tags/youtube-api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                youtube-api
+            </span></a>
+        <a href='/tags/%E5%83%8F%E7%B4%A0%E7%95%AB'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                像素畫
+            </span></a>
+    </div>
+</div>
+
+
+				
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        
+        <a href="/posts/obsidian_recover/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">obsidian檔案復原</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/02/19</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/php_creation_of_dynamic_property/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php動態建立資源</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/08/05</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/youtube_counter/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">youtube點擊計數</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/06/05</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/url_redirection/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">網址轉址</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/03/18</time>
+                    </p>
+                </div>
+            </div>
+        <a href="/posts/hugo_post/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">hugo發表文章</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/05/08</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+			</div>
+		</aside>
+        
+    </div>
+    
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+    
+    <div class="flex justify-center w-full md:flex md:flex-row sm:items-center sm:w-auto mb-4">
+        <div>
+            
+            <a href="https://artsio.com/@foolowl"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                mastodon
+            </a>
+            
+            <a href="https://misskey.io/@foolowl"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                misskey
+            </a>
+            
+            <a href="https://www.pixiv.net/users/1824576"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                pixiv
+            </a>
+            
+            <a href="https://www.plurk.com/ringo8"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                plurk
+            </a>
+            
+            <a href="https://twitter.com/uryuu_ringo"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                twitter
+            </a>
+            
+            <a href="https://home.gamer.com.tw/profile/index.php?&amp;owner=uryuuringo"
+                class="no-underline block sm:inline-block duration-200 text-white hover:opacity-50">
+                巴哈姆特
+            </a>
+            
+        </div>
+    </div>
+    
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <p>&copy; 2022-2024 <a href="https://www.foolowl.tw/" class="duration-200 hover:opacity-50">愚者樹屋</a></p>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        var icon2 = document.getElementById("icon2");
+        
+        if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          icon.classList.remove("icon-moon");
+          icon.classList.add("icon-sun");
+          icon2.classList.remove("icon-moon");
+          icon2.classList.add("icon-sun");
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+        function toggleDarkMode() {
+        if (document.documentElement.classList.contains('dark')) {
+            icon.classList.remove("icon-sun");
+            icon.classList.add("icon-moon");
+            icon2.classList.remove("icon-sun");
+            icon2.classList.add("icon-moon");
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
+        } else {
+            icon.classList.remove("icon-moon");
+            icon.classList.add("icon-sun");
+            icon2.classList.remove("icon-moon");
+            icon2.classList.add("icon-sun");
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark'
+        }
+    }
+    </script>
+</footer>
+</div>
+</body>
+
+</html>
