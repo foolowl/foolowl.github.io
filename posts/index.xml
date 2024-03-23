@@ -6,14 +6,23 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 16 Mar 2024 03:21:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Mar 2024 10:04:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>無障礙網站工具</title>
+      <link>https://www.foolowl.tw/posts/web_accessibility_tool/</link>
+      <pubDate>Sat, 23 Mar 2024 10:04:42 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/web_accessibility_tool/</guid>
+      <description>&lt;p&gt;無障礙是一種為了一些行動不便的人士所設計的規範，照著這些規範處理網站，就可以讓這些人可以靠自己上網瀏覽網頁並取得資訊，這篇先介紹一下工具如何使用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>aseprite 筆記</title>
       <link>https://www.foolowl.tw/posts/aseprite-note/</link>
       <pubDate>Sat, 16 Mar 2024 03:21:42 +0000</pubDate>
       
       <guid>https://www.foolowl.tw/posts/aseprite-note/</guid>
-      <description>&lt;p&gt;最近完像素把aseprite功能簡單的摸了一遍，在這邊紀錄一下自己常用快捷鍵和部分功能。&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近玩像素把aseprite功能簡單的摸了一遍，在這邊紀錄一下自己常用快捷鍵和部分功能。&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>無障礙網站 on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/tags/%E7%84%A1%E9%9A%9C%E7%A4%99%E7%B6%B2%E7%AB%99/</link>
+    <description>Recent content in 無障礙網站 on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 23 Mar 2024 10:04:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E7%84%A1%E9%9A%9C%E7%A4%99%E7%B6%B2%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>無障礙網站工具</title>
+      <link>https://www.foolowl.tw/posts/web_accessibility_tool/</link>
+      <pubDate>Sat, 23 Mar 2024 10:04:42 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/web_accessibility_tool/</guid>
+      <description>&lt;p&gt;無障礙是一種為了一些行動不便的人士所設計的規範，照著這些規範處理網站，就可以讓這些人可以靠自己上網瀏覽網頁並取得資訊，這篇先介紹一下工具如何使用。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
