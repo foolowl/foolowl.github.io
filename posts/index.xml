@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 23 Mar 2024 10:04:42 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Apr 2024 06:25:14 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql 合併查詢</title>
+      <link>https://www.foolowl.tw/posts/mysql_union/</link>
+      <pubDate>Thu, 04 Apr 2024 06:25:14 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_union/</guid>
+      <description>&lt;p&gt;當需要同時查詢多個表格或是需要使用不同參數做group by查詢的使用可以使用的方式，可以把不同的查詢接成一個表格來處理。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>無障礙網站工具</title>
       <link>https://www.foolowl.tw/posts/web_accessibility_tool/</link>

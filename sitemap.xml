@@ -2,27 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.foolowl.tw/tags/html/</loc>
-    <lastmod>2024-03-23T10:04:42+00:00</lastmod>
+    <loc>https://www.foolowl.tw/tags/mysql/</loc>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/mysql/</loc>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/mysql_union/</loc>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2024-03-23T10:04:42+00:00</lastmod>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2024-03-23T10:04:42+00:00</lastmod>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2024-03-23T10:04:42+00:00</lastmod>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2024-04-04T06:25:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/html/</loc>
     <lastmod>2024-03-23T10:04:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -94,16 +109,6 @@
   </url><url>
     <loc>https://www.foolowl.tw/posts/game_into_the_breach/</loc>
     <lastmod>2024-02-09T14:02:37+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/mysql/</loc>
-    <lastmod>2024-01-28T03:43:13+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/mysql/</loc>
-    <lastmod>2024-01-28T03:43:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
