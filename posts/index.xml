@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 04 Apr 2024 06:25:14 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Apr 2024 15:22:54 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>firefox couldn&#39;t load xpcom 錯誤</title>
+      <link>https://www.foolowl.tw/posts/firefox_couldnt_load_xpcom/</link>
+      <pubDate>Fri, 26 Apr 2024 15:22:54 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/firefox_couldnt_load_xpcom/</guid>
+      <description>&lt;p&gt;前陣子電腦當機後firefox無法開啟並出現了couldn&amp;rsquo;t load xpcom錯誤，記錄一下解決方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>mysql 合併查詢</title>
       <link>https://www.foolowl.tw/posts/mysql_union/</link>

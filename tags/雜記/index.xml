@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>雜記 on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/tags/%E9%9B%9C%E8%A8%98/</link>
+    <description>Recent content in 雜記 on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 26 Apr 2024 15:22:54 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/%E9%9B%9C%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>firefox couldn&#39;t load xpcom 錯誤</title>
+      <link>https://www.foolowl.tw/posts/firefox_couldnt_load_xpcom/</link>
+      <pubDate>Fri, 26 Apr 2024 15:22:54 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/firefox_couldnt_load_xpcom/</guid>
+      <description>&lt;p&gt;前陣子電腦當機後firefox無法開啟並出現了couldn&amp;rsquo;t load xpcom錯誤，記錄一下解決方式。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
