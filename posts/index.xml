@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 26 Apr 2024 15:22:54 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 May 2024 03:12:16 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>html關閉輸入框自動帶入</title>
+      <link>https://www.foolowl.tw/posts/html_input_close_autocomplete/</link>
+      <pubDate>Sat, 11 May 2024 03:12:16 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/html_input_close_autocomplete/</guid>
+      <description>&lt;p&gt;在輸入帳密的地方現在瀏覽器通常會自動帶入儲存的帳密，這在建立帳號的地方會造成很多麻煩，通常會進行這種設定來關閉。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>firefox couldn&#39;t load xpcom 錯誤</title>
       <link>https://www.foolowl.tw/posts/firefox_couldnt_load_xpcom/</link>
