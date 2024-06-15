@@ -6,7 +6,16 @@
     <description>Recent content in godot on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 24 Jun 2023 03:17:40 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jun 2024 06:26:14 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot顯示設定</title>
+      <link>https://www.foolowl.tw/posts/godot_screen_set/</link>
+      <pubDate>Sat, 15 Jun 2024 06:26:14 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_screen_set/</guid>
+      <description>&lt;p&gt;紀錄godot 4中設定視窗大小、全螢幕、無痕的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot存檔讀檔</title>
       <link>https://www.foolowl.tw/posts/godot_saving_loading/</link>
