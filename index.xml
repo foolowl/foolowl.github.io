@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 15 Jun 2024 06:26:14 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jun 2024 03:03:04 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用yt-dlp下載需登入的嵌入式vimeo影片</title>
+      <link>https://www.foolowl.tw/posts/yt-dlp_download_vimeo_embed/</link>
+      <pubDate>Sat, 22 Jun 2024 03:03:04 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/yt-dlp_download_vimeo_embed/</guid>
+      <description>&lt;p&gt;最近看了使用嵌入vimeo的付費影片，由於是小型的網站服務所以沒辦法直接只用網址下載，花了點時間下載保存所做的筆記。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot顯示設定</title>
       <link>https://www.foolowl.tw/posts/godot_screen_set/</link>

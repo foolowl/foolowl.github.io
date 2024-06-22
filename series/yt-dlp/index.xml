@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yt-dlp on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/series/yt-dlp/</link>
+    <description>Recent content in yt-dlp on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 22 Jun 2024 03:03:04 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/yt-dlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用yt-dlp下載需登入的嵌入式vimeo影片</title>
+      <link>https://www.foolowl.tw/posts/yt-dlp_download_vimeo_embed/</link>
+      <pubDate>Sat, 22 Jun 2024 03:03:04 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/yt-dlp_download_vimeo_embed/</guid>
+      <description>&lt;p&gt;最近看了使用嵌入vimeo的付費影片，由於是小型的網站服務所以沒辦法直接只用網址下載，花了點時間下載保存所做的筆記。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
