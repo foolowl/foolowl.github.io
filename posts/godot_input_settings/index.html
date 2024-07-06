@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fzpribj7o4");
 </script>
-<title>hugo資料夾用途 | 愚者樹屋</title>
+<title>godot 4 輸入設定 | 愚者樹屋</title>
 	<script type="application/ld+json">
     {
 	  "@context": "https://schema.org",
@@ -42,7 +42,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="hugo資料夾用途 | 愚者樹屋" />
+    <meta property="og:title" content="godot 4 輸入設定 | 愚者樹屋" />
     
     
     
@@ -55,22 +55,22 @@
 
 
 
-<meta name="description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta name="keywords" content="Hugo">
+<meta name="description" content="godot使用程式更改輸入設定">
+<meta name="keywords" content="godot">
 <meta name="author" content="foolowl/月月鴞">
 <meta property="og:site_name" content="愚者樹屋">
-<meta property="og:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta property="og:url" content="https://www.foolowl.tw/posts/hugo_folder/">
+<meta property="og:description" content="godot使用程式更改輸入設定">
+<meta property="og:url" content="https://www.foolowl.tw/posts/godot_input_settings/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
 
-<link rel="canonical" href="https://www.foolowl.tw/posts/hugo_folder/">
+<link rel="canonical" href="https://www.foolowl.tw/posts/godot_input_settings/">
 
-<meta name="twitter:description" content="Hugo安裝過程簡易紀錄,blog架設紀錄">
-<meta property="article:published_time" content="2022-05-21T09:56:10&#43;00:00">
-<meta property="article:updated_time" content="2022-05-21T09:56:10&#43;00:00">
+<meta name="twitter:description" content="godot使用程式更改輸入設定">
+<meta property="article:published_time" content="2024-07-06T07:59:21&#43;00:00">
+<meta property="article:updated_time" content="2024-07-06T07:59:21&#43;00:00">
 
 
 
@@ -349,43 +349,73 @@
 	
 			<main>
 				<article>
-					<h2 class="title text-4xl font-bold mb-2">hugo資料夾用途</h2>
+					<h2 class="title text-4xl font-bold mb-2">godot 4 輸入設定</h2>
 					
-					<time><span class="icon-access_time mr-1"></span>post date - 2022/05/21</time>
+					<time><span class="icon-access_time mr-1"></span>post date - 2024/07/06</time>
 					
 					
-					<br><time><span class="icon-access_time mr-1"></span>last update - 2022/05/21</time>
+					<br><time><span class="icon-access_time mr-1"></span>last update - 2024/07/06</time>
 					
 
 					
 					<div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
 						<section>
-						<p>這篇單純紀錄hugo各個資料夾的用途，一般來說只要知道圖片、文章和產生的檔案在哪邊就行了。</p>
-<h4 id="content">/content</h4>
-<p>是儲存 md 檔的地方，md 是 markdown 的縮寫，現在你所看到的文章內容與樣式，就是在 md 檔中撰寫而成</p>
-<h4 id="archetypes">/archetypes</h4>
-<p>儲存hugo new使用模板的地方，最少要包含date、title和draft資訊<br>
-在新建的時候可以指定模板使用的檔案</p>
-<pre tabindex="0"><code>hugo new [模板的md檔案名稱]/[文章名稱].md
-</code></pre><h4 id="assets">/assets</h4>
-<p>儲存<a href="https://gohugo.io/hugo-pipes/">hugo pipes</a> 相關的東西，只有.Permalink或.RelPermalink會發布到這個目錄</p>
-<h4 id="data">/data</h4>
-<p>用來存放設定檔，讓hugo可以在生成網站時使用</p>
-<h4 id="layouts">/layouts</h4>
-<p>撰寫模板語法的地方，除了可自定義配置外，還能寫基本的 function、變數。模板包括 list、homepage、Taxonomy、partials、single 頁面。</p>
-<h4 id="public">/public</h4>
-<p>build 後的預設資料夾，可以將資料夾放在 Firebase Hosting 或是 GitHub Page 等等進行佈署。</p>
-<h4 id="static">/static</h4>
-<p>用來儲存靜態資源，放置圖片、js、css 等檔案的資料夾。</p>
-<h4 id="themes">/themes</h4>
-<p>放置設計模板。</p>
+						<p>記錄一下godot使用程式更改輸入設定的方法。</p>
+<p>預設的按鍵設定在專案-&gt;專案設定中，切換到輸入映射的tab中直接設定即可。<br>
+下方記錄一下如果要使用程式變更按鍵設定的方法。</p>
+<h4 id="方法">方法</h4>
+<p>使用InputMap來進行輸入映射的調整</p>
+<p>恢復專案設定</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript"><span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>load_from_project_settings()
+</code></pre></div><p>取得指定動作</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript"><span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_get_events(<span style="color:#e6db74">&#34;action名稱&#34;</span>)
+
+<span style="color:#75715e">#判斷指定動作是否存在</span>
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_get_events(<span style="color:#e6db74">&#34;action名稱&#34;</span>)<span style="color:#f92672">.</span>size() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</code></pre></div><p>遍歷動作</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript"><span style="color:#66d9ef">for</span> action <span style="color:#f92672">in</span> <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>get_actions():
+	print(action)
+</code></pre></div><p>取得按鍵文字as_text()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript"><span style="color:#66d9ef">for</span> value <span style="color:#f92672">in</span> <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_get_events(action):
+	text <span style="color:#f92672">=</span> value<span style="color:#f92672">.</span>as_text()
+</code></pre></div><p>加入按鍵，這邊使用_unhandled_input來取得按下的按鍵資料</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript"><span style="color:#66d9ef">func</span> _unhandled_input(event):
+  <span style="color:#66d9ef">if</span> event<span style="color:#f92672">.</span>pressed:
+    <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_add_event(<span style="color:#e6db74">&#34;action名稱&#34;</span>, event)
+</code></pre></div><p>移除動作</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript"><span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_erase_events(<span style="color:#e6db74">&#34;action名稱&#34;</span>)
+
+<span style="color:#75715e">#只移除指定按鍵</span>
+<span style="color:#75715e">#value為 action_get_events取得的事件</span>
+<span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_erase_event(<span style="color:#e6db74">&#34;action名稱&#34;</span>, value)
+</code></pre></div><p>另外可以用 is InputEventKey判斷輸入方式<br>
+稍微試了一下使用繪圖板的筆會被視為滑鼠處理<br>
+下方的程式可以印出類型作為檢查用，其中判斷字串ui_排除預設值</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-GDScript" data-lang="GDScript">	<span style="color:#66d9ef">for</span> action <span style="color:#f92672">in</span> <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>get_actions():
+		<span style="color:#66d9ef">if</span> action<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#34;ui_&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:
+			<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_get_events(action)<span style="color:#f92672">.</span>size() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+				<span style="color:#66d9ef">for</span> value <span style="color:#f92672">in</span> <span style="color:#a6e22e">InputMap</span><span style="color:#f92672">.</span>action_get_events(action):
+					print(value)
+					<span style="color:#66d9ef">if</span>(value is <span style="color:#a6e22e">InputEventKey</span>):
+						print(<span style="color:#e6db74">&#34;key&#34;</span>)
+					<span style="color:#66d9ef">elif</span>(value is InputEventJoypadButton):
+						print(<span style="color:#e6db74">&#34;Joypad&#34;</span>)
+					<span style="color:#66d9ef">elif</span>(value is <span style="color:#a6e22e">InputEventMouseButton</span>):
+						print(<span style="color:#e6db74">&#34;Mouse&#34;</span>)
+					<span style="color:#66d9ef">elif</span>(value is <span style="color:#a6e22e">InputEventScreenTouch</span>):
+						print(<span style="color:#e6db74">&#34;Touch&#34;</span>)
+					<span style="color:#66d9ef">else</span>:
+						print(<span style="color:#e6db74">&#34;other&#34;</span>)
+</code></pre></div><h4 id="參考資料">參考資料</h4>
+<p><a href="https://docs.godotengine.org/zh-tw/4.x/classes/class_inputmap.html">https://docs.godotengine.org/zh-tw/4.x/classes/class_inputmap.html</a>
+<a href="https://godotengine.org/asset-library/asset/2578">https://godotengine.org/asset-library/asset/2578</a></p>
 						</section>
 							
 						Tags : 
 						
-							<a href='/tags/Hugo'>
+							<a href='/tags/godot'>
 								<span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-									Hugo
+									godot
 								</span>
 							</a>
 						
@@ -598,53 +628,53 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
         
-        <a href="/posts/jquery_stop_bubbling/" class="">
+        <a href="/posts/nv-tlabs_get3d/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">jquery阻止冒泡bubbling</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">3D AI 試玩(NVIDIA get3d)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/02/12</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_404/" class="">
+        <a href="/posts/stress_testing_using_jmeter_2/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php顯示404</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">用jmeter進行壓力測試2 下載其他資源</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/04/01</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/05/06</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_check_function_exists/" class="">
+        <a href="/posts/php_curl_moved_permanently_solve/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript檢查函數是否存在</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">php curl Moved Permanently解決方法</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/05</time>
+                        <time><span class="icon-access_time mr-1"></span>2023/01/14</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/php_strong_type/" class="">
+        <a href="/posts/godot_screen_set/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">php 強型態</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">godot顯示設定</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/07/22</time>
+                        <time><span class="icon-access_time mr-1"></span>2024/06/15</time>
                     </p>
                 </div>
             </div>
-        <a href="/posts/javascript_preview_image/" class="">
+        <a href="/posts/robots_txt/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-xl dark:text-white">javascript 圖片預覽</div>
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">網站爬蟲設定(robots.txt)</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2023/11/18</time>
+                        <time><span class="icon-access_time mr-1"></span>2022/10/08</time>
                     </p>
                 </div>
             </div>
