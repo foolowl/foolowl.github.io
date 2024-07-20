@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Jul 2024 07:59:21 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Jul 2024 06:49:16 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網站header設定</title>
+      <link>https://www.foolowl.tw/posts/web_security_headers/</link>
+      <pubDate>Sat, 20 Jul 2024 06:49:16 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/web_security_headers/</guid>
+      <description>&lt;p&gt;最近被客戶要求所以做了header的調整就整理一下紀錄，伺服器是apache，所做的調整則是在.htaccess檔案中。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot 4 輸入設定</title>
       <link>https://www.foolowl.tw/posts/godot_input_settings/</link>
