@@ -6,7 +6,16 @@
     <description>Recent content in godot on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Jul 2024 07:59:21 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 02:02:32 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/godot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>godot攜帶版設定</title>
+      <link>https://www.foolowl.tw/posts/godot_portable_version/</link>
+      <pubDate>Sun, 11 Aug 2024 02:02:32 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/godot_portable_version/</guid>
+      <description>&lt;p&gt;因為電腦開始出問題所以查了一下如何更加方便的轉移或備份，發現有這個方法可以設定為攜帶版，之後直接整包資料夾備份就可以連自己的設定都帶走。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>godot 4 輸入設定</title>
       <link>https://www.foolowl.tw/posts/godot_input_settings/</link>
