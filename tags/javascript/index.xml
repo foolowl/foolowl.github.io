@@ -6,7 +6,16 @@
     <description>Recent content in javascript on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 17 Dec 2023 03:44:19 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Sep 2024 13:17:05 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript 時間文字轉yyyymmdd</title>
+      <link>https://www.foolowl.tw/posts/javascript_time_string_to_yyyymmdd/</link>
+      <pubDate>Sat, 07 Sep 2024 13:17:05 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/javascript_time_string_to_yyyymmdd/</guid>
+      <description>&lt;p&gt;在處理前台效果時碰到了一些套件回傳的時間只有字串的問題(EX:Wed Aug 07 2024 00:00:00 GMT+0800)，找了下把他轉回常用的yyyy-mm-dd的方式。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript 統一編號檢查</title>
       <link>https://www.foolowl.tw/posts/javascript_check_tax_id_number/</link>
