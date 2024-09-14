@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 07 Sep 2024 13:17:05 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Sep 2024 09:42:51 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql 時間計算</title>
+      <link>https://www.foolowl.tw/posts/mysql_timestampdiff/</link>
+      <pubDate>Sat, 14 Sep 2024 09:42:51 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/mysql_timestampdiff/</guid>
+      <description>&lt;p&gt;工作時碰到了需要計算時間差天數的搜尋條件，記錄一下在mysql中計算時間差的功能。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>javascript 時間文字轉yyyymmdd</title>
       <link>https://www.foolowl.tw/posts/javascript_time_string_to_yyyymmdd/</link>
