@@ -6,7 +6,16 @@
     <description>Recent content in php on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Jun 2024 01:55:31 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 09:55:58 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php 切出每個中文字</title>
+      <link>https://www.foolowl.tw/posts/php_split_chinese/</link>
+      <pubDate>Sat, 28 Sep 2024 09:55:58 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/php_split_chinese/</guid>
+      <description>&lt;p&gt;最近用來製作模糊搜尋使用的方法，將每個中文字切出後尋找同時有出現這些中文字的資料。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php exif處理</title>
       <link>https://www.foolowl.tw/posts/php_exif_orientation/</link>
