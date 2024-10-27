@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 28 Sep 2024 09:55:58 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Oct 2024 05:00:34 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>krita ai diffusion 筆記</title>
+      <link>https://www.foolowl.tw/posts/krita-ai-diffusion/</link>
+      <pubDate>Sun, 27 Oct 2024 05:00:34 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/krita-ai-diffusion/</guid>
+      <description>&lt;p&gt;有次上網亂逛時看到這個將ai整合進繪圖軟體的功能，覺得這很接近我覺得能用的工具了，於是裝來實驗的筆記。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>php 切出每個中文字</title>
       <link>https://www.foolowl.tw/posts/php_split_chinese/</link>
