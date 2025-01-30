@@ -6,7 +6,16 @@
     <description>Recent content on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 27 Oct 2024 05:00:34 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 12:14:13 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>修補Clickjacking CSP frame-ancestors missing弱點</title>
+      <link>https://www.foolowl.tw/posts/patch_clickjackingcspframe-ancestorsmissing/</link>
+      <pubDate>Thu, 30 Jan 2025 12:14:13 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/patch_clickjackingcspframe-ancestorsmissing/</guid>
+      <description>&lt;p&gt;前陣子弱點掃描碰到了這個問題記錄一下，這邊選擇修改&lt;code&gt;.htaccess&lt;/code&gt;進行調整。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>krita ai diffusion 筆記</title>
       <link>https://www.foolowl.tw/posts/krita-ai-diffusion/</link>
@@ -582,15 +591,6 @@
       
       <guid>https://www.foolowl.tw/posts/godot_player_control/</guid>
       <description>&lt;p&gt;紀錄參考的教學影片使用時碰到的一些問題，主要是影片是3的教學而我使用的版本為4所碰到的問題。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>godot 4筆記 - 學習資源</title>
-      <link>https://www.foolowl.tw/posts/godot_resource/</link>
-      <pubDate>Sat, 25 Feb 2023 09:50:01 +0000</pubDate>
-      
-      <guid>https://www.foolowl.tw/posts/godot_resource/</guid>
-      <description>&lt;p&gt;最近開始慢慢學著用godot 4做2D遊戲，由於還沒正式推出的緣故，網路上的教學還是以3為主，這邊會紀錄使用4版照著教學製作所碰到的問題，這篇先簡單紀錄一下使用的資源。&lt;/p&gt;</description>
     </item>
     
     <item>
