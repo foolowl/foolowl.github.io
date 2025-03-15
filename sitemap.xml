@@ -2,18 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.foolowl.tw/posts/cloc_count_lines_of_code/</loc>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2025-01-30T12:14:13+00:00</lastmod>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2025-01-30T12:14:13+00:00</lastmod>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2025-01-30T12:14:13+00:00</lastmod>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-03-15T03:26:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -32,11 +57,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.foolowl.tw/</loc>
-    <lastmod>2025-01-30T12:14:13+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.foolowl.tw/tags/2d%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2024-10-27T05:00:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,16 +68,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/posts/krita-ai-diffusion/</loc>
-    <lastmod>2024-10-27T05:00:34+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
-    <lastmod>2024-10-27T05:00:34+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2024-10-27T05:00:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -784,11 +794,6 @@
   </url><url>
     <loc>https://www.foolowl.tw/posts/javascript_lock_right_click/</loc>
     <lastmod>2022-07-02T10:56:55+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/%E7%A8%8B%E5%BC%8F%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2022-06-25T09:03:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

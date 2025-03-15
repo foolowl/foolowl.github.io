@@ -6,7 +6,16 @@
     <description>Recent content in 免費軟體 on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 27 Oct 2024 05:00:34 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Mar 2025 03:26:17 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cloc計算程式碼行數</title>
+      <link>https://www.foolowl.tw/posts/cloc_count_lines_of_code/</link>
+      <pubDate>Sat, 15 Mar 2025 03:26:17 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/cloc_count_lines_of_code/</guid>
+      <description>&lt;p&gt;工作上需要有個需要計算目前行數的需求，找到了這個cloc軟體順便做個紀錄。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>krita ai diffusion 筆記</title>
       <link>https://www.foolowl.tw/posts/krita-ai-diffusion/</link>
