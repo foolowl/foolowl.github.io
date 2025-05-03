@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 愚者樹屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 15 Mar 2025 03:26:17 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 May 2025 09:55:30 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>krita ai diffusion 自架伺服器(custom server)安裝筆記</title>
+      <link>https://www.foolowl.tw/posts/krita-ai-diffusion-custom-server/</link>
+      <pubDate>Sat, 03 May 2025 09:55:30 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/krita-ai-diffusion-custom-server/</guid>
+      <description>&lt;p&gt;最近電腦更換後為了之後更新與備份ai更容易，就嘗試了使用連線到自己的伺服器(custom server)的方法，整理一下需要安裝的東西&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>cloc計算程式碼行數</title>
       <link>https://www.foolowl.tw/posts/cloc_count_lines_of_code/</link>
