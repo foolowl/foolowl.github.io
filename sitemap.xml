@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.foolowl.tw/posts/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/game_aeruta/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
+    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.foolowl.tw/tags/2d%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2025-05-03T09:55:30+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,32 +52,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2025-05-03T09:55:30+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2025-05-03T09:55:30+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2025-05-03T09:55:30+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.foolowl.tw/tags/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
     <lastmod>2025-05-03T09:55:30+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/%E5%85%8D%E8%B2%BB%E8%BB%9F%E9%AB%94/</loc>
-    <lastmod>2025-05-03T09:55:30+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/</loc>
     <lastmod>2025-05-03T09:55:30+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -264,16 +279,6 @@
   </url><url>
     <loc>https://www.foolowl.tw/posts/taiwan_company_registration_information/</loc>
     <lastmod>2024-02-24T13:44:05+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/tags/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
-    <lastmod>2024-03-08T09:51:41+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/series/%E9%81%8A%E6%88%B2%E6%8E%A8%E8%96%A6/</loc>
-    <lastmod>2024-03-08T09:51:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
