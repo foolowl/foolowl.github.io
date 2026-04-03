@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eagle on 愚者樹屋</title>
+    <link>https://www.foolowl.tw/series/eagle/</link>
+    <description>Recent content in eagle on 愚者樹屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 03 Apr 2026 11:07:22 +0000</lastBuildDate><atom:link href="https://www.foolowl.tw/series/eagle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eagle mcp使用claude設定筆記</title>
+      <link>https://www.foolowl.tw/posts/eagle_mcp_using_claude_notes/</link>
+      <pubDate>Fri, 03 Apr 2026 11:07:22 +0000</pubDate>
+      
+      <guid>https://www.foolowl.tw/posts/eagle_mcp_using_claude_notes/</guid>
+      <description>&lt;p&gt;在設定eagle mcp時碰到了一些問題在官方說明中沒有的，把它紀錄下來。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

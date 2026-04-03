@@ -2,27 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.foolowl.tw/tags/eagle/</loc>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/series/eagle/</loc>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/eagle_mcp_using_claude_notes/</loc>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.foolowl.tw/posts/</loc>
-    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/series/</loc>
-    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/tags/</loc>
-    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.foolowl.tw/posts/game_aeruta/</loc>
-    <lastmod>2026-02-22T01:16:50+00:00</lastmod>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.foolowl.tw/</loc>
+    <lastmod>2026-04-03T11:07:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.foolowl.tw/posts/game_aeruta/</loc>
     <lastmod>2026-02-22T01:16:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
